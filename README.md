@@ -19,7 +19,7 @@ yum install -y wget curl git socat ca-certificates && update-ca-trust force-enab
 ---
 - 一键安装xary脚本，需要域名
 ```yaml
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/281677160/agent/main/xray_install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/waynesg/scripts/main/xray_install.sh)"
 ```
 #
 ---
@@ -27,7 +27,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/281677160/agent/main/xra
 ---
 - [一键安装带x-ui面版的xray](https://github.com/vaxilu/x-ui)
 ```yaml
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/281677160/agent/main/x-ui.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/waynesg/scripts/main/x-ui.sh)"
 ```
 #
 ---
@@ -112,29 +112,6 @@ Caddy 配置文件路径：/etc/caddy/Caddyfile
 ---
 #
 ---
-- clash节点转换安装三部曲
-
-- 首先您要有域名跟解析好两个子域名，分别为一个前端（登录网页用），一个后端（服务器IP用）
-- 需要安装宝塔、Nginx和占用443端口，要看清楚跟你现在服务器的有没有冲突
-#
-- 运行第一个命令，顺利运行后《[看这里](https://github.com/281677160/agent/blob/main/doc/taota01.png)》
-```yaml
-bash <(curl -fsSL git.io/clashzh1.sh)
-```
----
-- 运行第二个命令，顺利运行后《[看这里](https://github.com/281677160/agent/blob/main/doc/clash.md)》
-```yaml
-bash <(curl -fsSL git.io/clashzh2.sh)
-```
----
-- 运行第三个命令，顺利运行后《[看这里](https://github.com/281677160/agent/blob/main/doc/taota13.png)》
-```yaml
-bash <(curl -fsSL git.io/clashzh3.sh)
-```
-#
----
-#
----
 - [一键安装BBR](https://github.com/ylx2016/Linux-NetSpeed)，使用BBR+CAKE加速方案，后期管理再次输入命令
 ```yaml
 wget -N --no-check-certificate "https://raw.githubusercontent.com/ylx2016/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
@@ -163,18 +140,32 @@ bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionChec
 #
 ---
 #
-#
-- # 捐赠
-- 如果你觉得此项目对你有帮助，请请我喝一杯82年的凉白开，感谢！
-
--微信-
-# <img src="https://github.com/danshui-git/shuoming/blob/master/doc/weixin4.png" />
-#
-#
 ---
 ```yaml
-https://www.godaddy.com
-https://www.cloudflare.com/zh-cn
-https://www.vpscang.com
-https://www.namecheap.com
-```
+wget -O server-tools.sh https://raw.githubusercontent.com/waynesg/scripts/main/server-tools.sh && chmod +x server-tools.sh && clear && ./server-tools.sh
+服务器检查：
+Lemonbench 综合测试
+三网Speedtest测速
+内存压力测试
+回程路由追踪
+Speedtest测速
+获取本机IP
+流媒体解锁测试
+检测/诊断Youtube地域
+服务器功能
+Linux换源脚本
+ipv4/6优先级调整
+虚拟内存SWAP一键安装
+一键安装BBR
+系统网络配置优化
+宝塔中文官方一键安装
+宝塔英文官方一键安装（无需验证）
+宝塔破解纯净版
+Cloudflare WARP 一键配置脚本（2021年7月3日添加）
+科学上网工具
+iptables一键中转
+gost一键中转
+MTP&TLS 一键脚本
+xray一键安装8合一脚本
+v2-ui一键安装
+wulabing一键xray脚本
