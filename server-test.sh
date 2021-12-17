@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash 
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 Green_font="\033[32m" && Red_font="\033[31m" && Font_suffix="\033[0m"
