@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash 
 # v2ray/xray WordPress一键安装脚本
 # Author: hijk<https://hijk.art>
 
