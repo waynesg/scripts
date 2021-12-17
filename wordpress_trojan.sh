@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash 
 # trojan WordPress一键安装脚本
 # Author: hijk<https://hijk.art>
 
