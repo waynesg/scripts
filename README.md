@@ -143,11 +143,7 @@ bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionChec
 ---
 ```yaml
 wget -O server-tools.sh https://raw.githubusercontent.com/waynesg/scripts/main/server-tools.sh && chmod +x server-tools.sh && clear && ./server-tools.sh
----
-#
----
-#
----
+```
 服务器检查：
 Lemonbench 综合测试
 三网Speedtest测速
@@ -174,3 +170,7 @@ MTP&TLS 一键脚本
 xray一键安装8合一脚本
 v2-ui一键安装
 wulabing一键xray脚本
+#
+---
+#
+---
