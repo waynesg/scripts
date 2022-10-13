@@ -1,21 +1,79 @@
-# bench.sh 特点：
+防止服务器没curl使用不了一键命令，进入root用户后，执行安装curl、wget命令（安装过后，只要没御载curl、wget或者重置过系统都不需要再次执行了）
+```yaml
+yum install -y curl wget || apt update && apt install -y curl wget
+```
+
+---
 #
 ---
-1、显示当前测试的各种系统信息；
-2、取自世界多处的知名数据中心的测试点，下载测试比较全面；
-3、支持 IPv6 下载测速；
-4、IO 测试三次，并显示平均值。
 
+<details>
+<summary>🔻谷歌云、甲骨云开启root用户SSH连接🔻</summary>
+<br>
 
-配合 unixbench.sh 脚本测试，即可全面测试 VPS 的性能。
+第一步：进入服务器后,切换到root用户,下面命令一般都能切入root用户,如果不行请自行百度
+```sh
+sudo -i   或者   sudo su
+```
+
+第二步：进入root用户后，把下面命令里的中文改成您要设置的服务器密码,然后执行命令
+```sh
+echo root:你想要设置的密码 |chpasswd root
+```
+
+第三步：一键开启root用户SSH连接
+```sh
+bash -c  "$(curl -fsSL https://raw.githubusercontent.com/waynesg/scripts/main/ssh.sh)"
+```
+
+<br />
+</details>
+
+---
+#
+---
+<details>
+<summary>🔻TG代理安装🔻</summary>
+<br>
+
+TG代理安装,下面两个一键安装二选一即可
+```yaml
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/waynesg/scripts/main/erlang_tg.sh)"
+```
+
+```yaml
+bash <(wget -qO- https://git.io/mtg.sh)
+```
+<br />
+</details>
+
+---
+#
+---
+<details>
+<summary>🔻bench.sh VPS测试🔻：</summary>
+<br>
+
+- 显示当前测试的各种系统信息；
+- 取自世界多处的知名数据中心的测试点，下载测试比较全面；
+- 支持 IPv6 下载测速；
+- IO 测试三次，并显示平均值。
+
+<br>配合 unixbench.sh 脚本测试，即可全面测试 VPS 的性能。
 
 使用方法：
-命令1：
 
-wget -qO- bench.sh | bash
+```yaml
+wget -qO- https://raw.githubusercontent.com/waynesg/scripts/main/bench.sh | bash
+```
+
 或者
 
-curl -Lso- bench.sh | bash
+```yaml
+curl -Lso- https://raw.githubusercontent.com/waynesg/scripts/main/bench.sh | bash
+```
+<br />
+</details>
 
 # 各种常用代理一键搭建
 #
