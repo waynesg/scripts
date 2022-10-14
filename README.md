@@ -11,17 +11,17 @@ yum install -y curl wget || apt update && apt install -y curl wget
 <summary>🔻谷歌云、甲骨云开启root用户SSH连接🔻</summary>
 <br>
 
-第一步：进入服务器后,切换到root用户,下面命令一般都能切入root用户,如果不行请自行百度
+- 第一步：进入服务器后,切换到root用户,下面命令一般都能切入root用户,如果不行请自行百度
 ```sh
 sudo -i   或者   sudo su
 ```
 
-第二步：进入root用户后，把下面命令里的中文改成您要设置的服务器密码,然后执行命令
+- 第二步：进入root用户后，把下面命令里的中文改成您要设置的服务器密码,然后执行命令
 ```sh
 echo root:你想要设置的密码 |chpasswd root
 ```
 
-第三步：一键开启root用户SSH连接
+- 第三步：一键开启root用户SSH连接
 ```sh
 bash -c  "$(curl -fsSL https://raw.githubusercontent.com/waynesg/scripts/main/ssh.sh)"
 ```
@@ -51,7 +51,48 @@ bash <(wget -qO- https://git.io/mtg.sh)
 #
 ---
 <details>
-<summary>🔻bench.sh VPS测试🔻：</summary>
+<summary>🔻服务器检查🔻</summary>
+
+- Lemonbench 综合测试
+- 三网Speedtest测速
+- 内存压力测试
+- 回程路由追踪
+- Speedtest测速
+- 获取本机IP
+- 流媒体解锁测试
+- 检测/诊断Youtube地域
+- 服务器功能
+- Linux换源脚本
+- ipv4/6优先级调整
+- 虚拟内存SWAP一键安装
+- 一键安装BBR
+- 系统网络配置优化
+- 宝塔中文官方一键安装
+- 宝塔英文官方一键安装（无需验证）
+- 宝塔破解纯净版
+- Cloudflare WARP 一键配置脚本
+- 科学上网工具
+- iptables一键中转
+- gost一键中转
+- MTP&TLS 一键脚本
+- xray一键安装8合一脚本
+- v2-ui一键安装
+- wulabing一键xray脚本
+
+  
+```yaml
+wget -O server-tools.sh https://raw.githubusercontent.com/waynesg/scripts/main/server-tools.sh && chmod +x server-tools.sh && clear && ./server-tools.sh
+```
+  
+<br />
+</details>
+
+
+---
+#
+---
+<details>
+<summary>🔻服务器性能测试🔻</summary>
 <br>
 
 - 显示当前测试的各种系统信息；
@@ -75,9 +116,12 @@ curl -Lso- https://raw.githubusercontent.com/waynesg/scripts/main/bench.sh | bas
 <br />
 </details>
 
-# 各种常用代理一键搭建
+---
 #
 ---
+<details>
+<summary>🔻各种常用代理一键搭建🔻</summary>
+<br>
 
 - 首先您要有一个外网的服务器，一般来说线路用香港、日本、新加坡的应该比较好
 
@@ -106,26 +150,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/waynesg/scripts/main/xra
 ```yaml
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/waynesg/scripts/main/x-ui.sh)"
 ```
-#
----
-#
----
-- [TG代理一键搭建](https://github.com/seriyps/mtproto_proxy)
-```yaml
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/281677160/agent/main/erlang_tg.sh)"
-```
-#
----
-#
----
-- [TG代理一键搭建](https://github.com/cutelua/mtg-dist)
-- 输入命令后显示：`> Input service PORT, or press Enter to use a random port` 这个是输入您要设置端口，不设置的话回车默认端口
-- 然后显示：`> Input a domain for FakeTLS, or press Enter to use "hostupdate.vmware.com"` 回车默认hostupdate.vmware.com，可以输入 FakeTLS 改协议
-- 搭建好以后要查看TG代理链接，输入：mtg access /etc/mtg.toml
-```yaml
-bash <(wget -qO- https://git.io/mtg.sh)
-```
-#
+
 ---
 #
 ---
@@ -185,7 +210,7 @@ Caddy 配置文件路径：/etc/caddy/Caddyfile
 
 脚本配置文件路径: /etc/v2ray/233blog_v2ray_backup.conf
 ```
-#
+
 ---
 #
 ---
@@ -201,53 +226,20 @@ wget -N --no-check-certificate "https://raw.githubusercontent.com/ylx2016/Linux-
 ```yaml
 wget --no-check-certificate -q -O bbr2.sh "https://github.com/yeyingorg/bbr2.sh/raw/master/bbr2.sh" && chmod +x bbr2.sh && bash bbr2.sh auto
 ```
-#
+<br />
+</details>
+
 ---
 #
 ---
-- [测试解锁流媒体情况](https://github.com/lmc999/RegionRestrictionCheck)
+<details>
+<summary>🔻测试解锁流媒体情况🔻</summary>
+<br>
+  
 ```yaml
 bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionCheck/main/check.sh)
 ```
-#
----
-#
----
-- [一键DD更换服务器系统教程](https://www.moeelf.com/archives/293.html)
-#
----
-#
----
-```yaml
-wget -O server-tools.sh https://raw.githubusercontent.com/waynesg/scripts/main/server-tools.sh && chmod +x server-tools.sh && clear && ./server-tools.sh
-```
-服务器检查：
-- Lemonbench 综合测试
-- 三网Speedtest测速
-- 内存压力测试
-- 回程路由追踪
-- Speedtest测速
-- 获取本机IP
-- 流媒体解锁测试
-- 检测/诊断Youtube地域
-- 服务器功能
-- Linux换源脚本
-- ipv4/6优先级调整
-- 虚拟内存SWAP一键安装
-- 一键安装BBR
-- 系统网络配置优化
-- 宝塔中文官方一键安装
-- 宝塔英文官方一键安装（无需验证）
-- 宝塔破解纯净版
-- Cloudflare WARP 一键配置脚本
-- 科学上网工具
-- iptables一键中转
-- gost一键中转
-- MTP&TLS 一键脚本
-- xray一键安装8合一脚本
-- v2-ui一键安装
-- wulabing一键xray脚本
-#
----
-#
----
+<br />
+</details>
+
+
