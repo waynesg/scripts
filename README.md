@@ -7,10 +7,10 @@ yum install -y curl wget || apt update && apt install -y curl wget
 <details>
 <summary>🔻Linux 一键网络重装系统傻瓜版🔻</summary>
 <br>
+  
 ```sh
 wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/installNET/master/Install.sh"
-chmod +x Install.sh
-./Install.sh
+chmod +x Install.sh && ./Install.sh
 ```
 <br />
 </details>
