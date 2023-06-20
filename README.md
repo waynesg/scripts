@@ -3,10 +3,19 @@
 yum install -y curl wget || apt update && apt install -y curl wget
 ```
 
----
 #
----
+<details>
+<summary>🔻Linux 一键网络重装系统傻瓜版🔻</summary>
+<br>
+```sh
+wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/installNET/master/Install.sh"
+chmod +x Install.sh
+./Install.sh
+```
+<br />
+</details>
 
+#
 <details>
 <summary>🔻谷歌云、甲骨云开启root用户SSH连接🔻</summary>
 <br>
@@ -29,9 +38,8 @@ bash -c  "$(curl -fsSL https://raw.githubusercontent.com/waynesg/scripts/main/ss
 <br />
 </details>
 
----
+
 #
----
 <details>
 <summary>🔻TG代理安装🔻</summary>
 <br>
@@ -47,9 +55,8 @@ bash <(wget -qO- https://git.io/mtg.sh)
 <br />
 </details>
 
----
+
 #
----
 <details>
 <summary>🔻服务器检查🔻</summary>
 
@@ -87,10 +94,7 @@ wget -O server-tools.sh https://raw.githubusercontent.com/waynesg/scripts/main/s
 <br />
 </details>
 
-
----
 #
----
 <details>
 <summary>🔻服务器性能测试🔻</summary>
 <br>
@@ -116,9 +120,7 @@ curl -Lso- https://raw.githubusercontent.com/waynesg/scripts/main/bench.sh | bas
 <br />
 </details>
 
----
 #
----
 <details>
 <summary>🔻各种常用代理一键搭建🔻</summary>
 <br>
@@ -142,26 +144,16 @@ yum install -y wget curl git socat ca-certificates && update-ca-trust force-enab
 ```yaml
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/waynesg/scripts/main/xray_install.sh)"
 ```
-#
----
-#
----
+
 - [一键安装带x-ui面版的xray](https://github.com/vaxilu/x-ui)
 ```yaml
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/waynesg/scripts/main/x-ui.sh)"
 ```
 
----
-#
----
 - [八合一的一键搭建(V2ray/Xray/Trojan)](https://github.com/mack-a/v2ray-agent)，需要域名，后期管理命令：vasma
 ```yaml
 wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
 ```
-#
----
-#
----
 - [v2ray一键搭建](https://github.com/gms1979/v2ray)，后期管理看下面的命令
 ```yaml
 bash <(curl -s -L https://git.io/v2ray.sh)
@@ -210,18 +202,10 @@ Caddy 配置文件路径：/etc/caddy/Caddyfile
 
 脚本配置文件路径: /etc/v2ray/233blog_v2ray_backup.conf
 ```
-
----
-#
----
 - [一键安装BBR](https://github.com/ylx2016/Linux-NetSpeed)，使用BBR+CAKE加速方案，后期管理再次输入命令
 ```yaml
 wget -N --no-check-certificate "https://raw.githubusercontent.com/ylx2016/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 ```
-#
----
-#
----
 - [一键安装BBR2](https://github.com/yeyingorg/bbr2.sh),不支持CentOS
 ```yaml
 wget --no-check-certificate -q -O bbr2.sh "https://github.com/yeyingorg/bbr2.sh/raw/master/bbr2.sh" && chmod +x bbr2.sh && bash bbr2.sh auto
@@ -229,9 +213,7 @@ wget --no-check-certificate -q -O bbr2.sh "https://github.com/yeyingorg/bbr2.sh/
 <br />
 </details>
 
----
 #
----
 <details>
 <summary>🔻测试解锁流媒体情况🔻</summary>
 <br>
