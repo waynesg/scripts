@@ -34,6 +34,7 @@ payload:
   - DOMAIN,mozilla.cloudflare-dns.com
   - DOMAIN,security-filter-dns.cleanbrowsing.org
   - DOMAIN,security.cloudflare-dns.com
+  - DOMAIN,docker.com
   - DOMAIN-SUFFIX,msftconnecttest.com
   - DOMAIN-SUFFIX,pstatp.com
   - IP-CIDR,1.1.1.1/32
