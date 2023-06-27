@@ -18,4 +18,4 @@ sed "s/^full://g;s/^regexp:.*$//g;s/^/nameserver \//g;s/$/\/cn/g" -i /etc/smartd
 sed "s/^full://g;s/^regexp:.*$//g;s/^/nameserver \//g;s/$/\/passwall_proxy/g" -i /etc/smartdns/proxy.conf
 sed "s/^full://g;s/^regexp:.*$//g;s/^/address \//g;s/$/\/#/g" -i /etc/smartdns/block.conf
 
-systemctl restart smartdns
+/etc/init.d/smartdns restart
