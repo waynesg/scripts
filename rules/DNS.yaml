@@ -27,6 +27,7 @@ payload:
   - DOMAIN,doh.opendns.com
   - DOMAIN,doh.tiar.app
   - DOMAIN,doh.tiarap.org
+  - DOMAIN,doh.sb
   - DOMAIN,jp.tiar.app
   - DOMAIN,jp.tiarap.org
   - DOMAIN,odvr.nic.cz
