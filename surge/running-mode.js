@@ -1,3 +1,6 @@
+/**
+ * Surge & Loon 的运行模式，根据当前网络自动切换模式，此脚本思路来自于Quantumult X。
+ * @author: Peng-YM
  * 更新地址: https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tools/RunningMode/running-mode.js
  *
  *************** Surge配置 ***********************
