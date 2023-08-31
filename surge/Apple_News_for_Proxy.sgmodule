@@ -3,7 +3,7 @@
 
 [Rule]
 # > Apple News
-RULE-SET,https://raw.githubusercontent.com/VirgilClyne/iRingo/main/archive/RuleSet/Apple_News.list,𝐏𝐫𝐨𝐱𝐲
+RULE-SET,https://raw.githubusercontent.com/VirgilClyne/iRingo/main/Archive/ruleset/Apple_News.list,𝐏𝐫𝐨𝐱𝐲
 
 [Script]
 Apple News = type=http-request, pattern=^https?:\/\/news-(edge|events)\.apple\.com\/(v1\/configs|analyticseventsv2\/async).*, requires-body=1, script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/archive/js/Apple_News.js
