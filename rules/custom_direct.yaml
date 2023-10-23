@@ -1,0 +1,8 @@
+payload:
+  - DOMAIN-KEYWORD,testflight
+  - DOMAIN-SUFFIX,zhongxianyu.tk
+  - DOMAIN-SUFFIX,asusucloud.com
+#公益服
+  - DOMAIN-SUFFIX,123456.al
+  - DOMAIN-SUFFIX,logi.com
+  - DOMAIN-KEYWORD,logitech
