@@ -19,10 +19,12 @@ chmod +x Install.sh && ./Install.sh
 <details>
 <summary>🔻Hysteria2一键脚本🔻</summary>
 <br>
+  
 ```sh
 wget -N --no-check-certificate "https://raw.githubusercontent.com/waynesg/scripts/main/hysteria.sh"
 chmod +x hysteria.sh && ./hysteria.sh
 ```
+
 <br />
 </details>
 
