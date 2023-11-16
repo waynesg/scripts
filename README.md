@@ -5,6 +5,17 @@ yum install -y curl wget || apt update && apt install -y curl wget
 
 #
 <details>
+<summary>🔻Portainer安装脚本🔻</summary>
+<br>
+
+```sh
+docker run -d --name=portainer -p 9900:9000 --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v /share/docker_conf/portainer/data:/data 6053537/portainer-ce:latest
+```
+<br />
+</details>
+
+#
+<details>
 <summary>🔻Linux 一键网络重装系统傻瓜版🔻</summary>
 <br>
   
