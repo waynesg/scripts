@@ -16,7 +16,7 @@ yum install -y curl wget || apt update && apt install -y curl wget
 <br>
 
 ```sh
-wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/installNET/master/Install.sh"
+wget -N --no-check-certificate "https://raw.githubusercontent.com/waynesg/scripts/main/Install.sh"
 chmod +x Install.sh
 ./Install.sh
 ```
