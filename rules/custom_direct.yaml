@@ -4,6 +4,7 @@
 payload:
   - DOMAIN-SUFFIX,asusucloud.com
   - DOMAIN-SUFFIX,logi.com
+  - DOMAIN-SUFFIX,waynesg.cc
   - DOMAIN-KEYWORD,logitech
 #公益服
   - DOMAIN-SUFFIX,123456.al
