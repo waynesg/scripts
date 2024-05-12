@@ -1,0 +1,16 @@
+# NAME: custom_proxy
+# AUTHOR: waynesg
+# UPDATED: 2024-05-012
+payload:
+  - DOMAIN-SUFFIX,bet365.com
+  - DOMAIN-SUFFIX,365sb.com
+  - DOMAIN-KEYWORD,stream-link
+  - DOMAIN-KEYWORD,mudvod
+  - DOMAIN-KEYWORD,nivod.com
+  - GEOSITE,category-porn
+  - DOMAIN-KEYWORD,stripchat
+  - DOMAIN-KEYWORD,strpst
+  - SRC-IP-CIDR,192.168.1.125/32
+  - DOMAIN-SUFFIX,brews.app
+  - DOMAIN-SUFFIX,pixelshop.tk
+  - DOMAIN-SUFFIX,rotf.lol
