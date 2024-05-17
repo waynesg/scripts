@@ -1,9 +1,16 @@
-name: Update YAML Files
+name: Update OpenClash Rules
 
 on:
   schedule:
-    # 设置定时任务，这里以每天凌晨0点为例
+    # 定时任务，这里以每天凌晨0点为例
     - cron: '0 0 * * *'
+  workflow_dispatch:
+    # 允许手动触发
+    inputs:
+      reason:
+        description: 'Reason for manual dispatch'
+        required: false
+        default: 'Manual update'
 
 jobs:
   update-yaml-files:
