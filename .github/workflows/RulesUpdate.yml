@@ -1,0 +1,27 @@
+name: Update YAML Files
+
+on:
+  schedule:
+    # 设置定时任务，这里以每天凌晨0点为例
+    - cron: '0 0 * * *'
+
+jobs:
+  update-yaml-files:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Fetch Updates for ai.yaml
+      run: |
+        wget -O rules/ai.yaml https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/ai.yaml
+
+    - name: Fetch Updates for apple-cn.yaml
+      run: |
+        wget -O rules/apple-cn.yaml https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/apple-cn.yaml
+
+    - name: Commit and Push
+      uses: EndBug/add-and-commit@v7
+      with:
+        message: "Update YAML files from source"
+        add: "rules/ai.yaml rules/apple-cn.yaml"
+        branch: main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
