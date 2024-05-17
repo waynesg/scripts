@@ -18,11 +18,11 @@ jobs:
     steps:
     - name: Fetch Updates for ai.yaml
       run: |
-        wget -O rules/ai.yaml https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/ai.yaml
+        wget -O https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/ai.yaml /rules/ai.yaml
 
     - name: Fetch Updates for apple-cn.yaml
       run: |
-        wget -O rules/apple-cn.yaml https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/apple-cn.yaml
+        wget -O https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/apple-cn.yaml /rules/apple-cn.yaml
 
     - name: Commit and Push
       uses: EndBug/add-and-commit@v7
