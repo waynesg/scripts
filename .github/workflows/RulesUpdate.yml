@@ -18,22 +18,29 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@main
       
-    - name: Fetch Updates for ai.yaml
+    - name: Fetch Updates for Rules
       run: |
-        curl -o rules/ai.yaml https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/ai.yaml
+        declare -A files
+        files["ai.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/ai.yaml"
+        files["apple-cn.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/apple-cn.yaml.yaml"
+        files["appletv.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/appletv.yaml"
+        files["games-cn.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/games-cn.yaml"
+        files["google-cn.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/google-cn.yaml"
+        files["microsoft-cn.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/microsoft-cn.yaml"
+        files["networktest.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/networktest.yaml"
 
-    - name: Fetch Updates for apple-cn.yaml
-      run: |
-        curl -o rules/apple-cn.yaml https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/apple-cn.yaml
+        for file in "${!files[@]}"; do
+          curl -o rules/$file ${files[$file]}
+        done
 
     - name: Commit and push changes
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git add rules/ai.yaml
-        git commit -m 'Update ai.yaml'
+        git add rules/*.yaml
+        git commit -m 'Update Rules files'
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
