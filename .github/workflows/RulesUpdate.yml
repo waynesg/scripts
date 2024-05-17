@@ -22,11 +22,11 @@ jobs:
       
     - name: Fetch Updates for ai.yaml
       run: |
-        curl -o scripts/rules/ai.yaml https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/ai.yaml
+        curl -o rules/ai.yaml https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/ai.yaml
 
     - name: Fetch Updates for apple-cn.yaml
       run: |
-        curl -o scripts/rules/apple-cn.yaml https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/apple-cn.yaml
+        curl -o rules/apple-cn.yaml https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/apple-cn.yaml
 
     - name: Commit and push changes
       run: |
