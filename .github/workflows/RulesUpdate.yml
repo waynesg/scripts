@@ -25,3 +25,7 @@ jobs:
     - name: Fetch Updates for apple-cn.yaml
       run: |
         wget -O rules/apple-cn.yaml https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/apple-cn.yaml
+
+    - name: Check file date
+      run: |
+        ls -l rules/
