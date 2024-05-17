@@ -20,7 +20,7 @@ jobs:
       uses: actions/checkout@v3
     - name: Fetch Updates for ai.yaml
       run: |
-        rm -f ai.yaml && wget -O rules/ai.yaml https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/ai.yaml
+        rm -f rules/ai.yaml && wget -O rules/ai.yaml https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/ai.yaml
 
     - name: Fetch Updates for apple-cn.yaml
       run: |
