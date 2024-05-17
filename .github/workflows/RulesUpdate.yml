@@ -13,19 +13,27 @@ on:
         default: 'Manual update'
 
 jobs:
-  update-yaml-files:
+  update-file:
     runs-on: ubuntu-latest
+
     steps:
-    - name: Checkout code
+    - name: Checkout repository
       uses: actions/checkout@v3
+      
     - name: Fetch Updates for ai.yaml
       run: |
-        rm -f rules/ai.yaml && wget -O rules/ai.yaml https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/ai.yaml
+        curl -o scripts/rules/ai.yaml https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/ai.yaml
 
     - name: Fetch Updates for apple-cn.yaml
       run: |
-        wget -O rules/apple-cn.yaml https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/apple-cn.yaml
+        curl -o scripts/rules/apple-cn.yaml https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/apple-cn.yaml
 
-    - name: Check file date
+    - name: Commit and push changes
       run: |
-        ls -l rules/
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add scripts/rules/ai.yaml
+        git commit -m 'Update ai.yaml'
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
