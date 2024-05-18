@@ -5,8 +5,8 @@ payload:
   - DOMAIN-SUFFIX,bet365.com
   - DOMAIN-SUFFIX,365sb.com
   - DOMAIN-KEYWORD,stream-link
-  - DOMAIN-KEYWORD,mudvod
-  - DOMAIN-KEYWORD,nivod.com
+  - GEOSITE,mudvod
+  - DOMAIN-KEYWORD,nivod*
   - GEOSITE,category-porn
   - DOMAIN-KEYWORD,stripchat
   - DOMAIN-KEYWORD,strpst
