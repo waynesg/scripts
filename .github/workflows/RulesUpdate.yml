@@ -40,6 +40,8 @@ jobs:
         files["unbreak-classical.yaml"]="https://raw.githubusercontent.com/qoli/SyncnextClash/main/Unbreak-classical.yaml"
         files["proxy-classical.yaml"]="https://raw.githubusercontent.com/qoli/SyncnextClash/main/proxy-classical.yaml"
         files["applications.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/applications.yaml"
+        files["privateip.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/privateip.yaml"
+        files["cn.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/cn.yaml"
         
         for file in "${!files[@]}"; do
           curl -o rules/$file ${files[$file]}
