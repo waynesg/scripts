@@ -4,8 +4,8 @@
 payload:
   - DOMAIN-SUFFIX,bet365.com
   - DOMAIN-SUFFIX,365sb.com
+  - DOMAIN-SUFFIX,nivod5.tv
   - DOMAIN-KEYWORD,stream-link
-  - DOMAIN-KEYWORD,nivod*
   - DOMAIN-KEYWORD,stripchat
   - DOMAIN-KEYWORD,strpst
   - SRC-IP-CIDR,192.168.1.125/32
