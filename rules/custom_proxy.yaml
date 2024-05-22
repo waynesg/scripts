@@ -8,7 +8,6 @@ payload:
   - DOMAIN-KEYWORD,stream-link
   - DOMAIN-KEYWORD,stripchat
   - DOMAIN-KEYWORD,strpst
-  - SRC-IP-CIDR,192.168.1.125/32
   - DOMAIN-SUFFIX,brews.app
   - DOMAIN-SUFFIX,pixelshop.tk
   - DOMAIN-SUFFIX,rotf.lol
