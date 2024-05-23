@@ -8,6 +8,7 @@ payload:
   - DOMAIN-KEYWORD,logitech
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
   - DOMAIN-SUFFIX,jsdelivr.net
+  - DOMAIN-SUFFIX,mysub.cc
 #公益服
   - DOMAIN-SUFFIX,123456.al
 
