@@ -1,3 +1,6 @@
+#!name = proxy-classical
+#!date = 2024-05-24 07:47:36
+#!
 payload:
   - DOMAIN-SUFFIX,v1.mk
   - DOMAIN-SUFFIX,notion-api.splitbee.io

@@ -1,3 +1,6 @@
+#!name = microsoft-cn
+#!date = 2024-05-24 07:47:35
+#!
 payload:
   - 'b.c2r.ts.cdn.office.net'
   - 'bg.v4.a.dl.ws.microsoft.com'

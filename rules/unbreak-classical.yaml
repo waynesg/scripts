@@ -1,3 +1,6 @@
+#!name = unbreak-classical
+#!date = 2024-05-24 07:47:36
+#!
 payload:
   - DOMAIN-SUFFIX,movie.douban.com
   - DOMAIN-SUFFIX,mddcloud.com.cn
