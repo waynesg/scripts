@@ -1,6 +1,5 @@
 # NAME: custom_proxy
 # AUTHOR: waynesg
-# UPDATED: 2024-05-21
 payload:
   - DOMAIN-SUFFIX,bet365.com
   - DOMAIN-SUFFIX,365sb.com
