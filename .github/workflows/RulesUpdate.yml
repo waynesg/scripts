@@ -23,6 +23,7 @@ jobs:
     - name: Fetch Updates for Rules
       run: |
         declare -A files
+        files["ads.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/ads.yaml"
         files["ai.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/ai.yaml"
         files["apple-cn.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/apple-cn.yaml"
         files["appletv.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/appletv.yaml"
