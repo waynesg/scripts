@@ -25,7 +25,10 @@ jobs:
         declare -A files
         files["ai.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/ai.yaml"
         files["apple-cn.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/apple-cn.yaml"
-        #files["appleproxy.yaml"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleProxy/AppleProxy.yaml"
+        files["netflix.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/netflix.yaml"
+        files["disney.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/disney.yaml"
+        files["github.yaml"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml"
+        files["youtube.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/youtube.yaml"
         files["appletv.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/appletv.yaml"
         files["games-cn.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/games-cn.yaml"
         files["google-cn.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/google-cn.yaml"
@@ -35,16 +38,27 @@ jobs:
         files["private.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/private.yaml"
         files["direct.yaml"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Direct/Direct.yaml"
         files["download.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/applications.yaml"
-        #files["tiktok.yaml"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml"
-        files["pt.yaml"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PrivateTracker/PrivateTracker.yaml"
+        files["tiktok.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/tiktok.yaml"
         files["unbreak-classical.yaml"]="https://raw.githubusercontent.com/qoli/SyncnextClash/main/Unbreak-classical.yaml"
         files["proxy-classical.yaml"]="https://raw.githubusercontent.com/qoli/SyncnextClash/main/proxy-classical.yaml"
-        #files["applications.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/applications.yaml"
+        files["google.yaml"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml"
         files["privateip.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/privateip.yaml"
+        files["telegramip.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/telegramip.yaml"
+        files["cnip.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/cnip.yaml"
         files["cn.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/cn.yaml"
+        files["proxy.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/proxy.yaml"
         
         for file in "${!files[@]}"; do
           curl -o rules/$file ${files[$file]}
+          if [[ -s rules/$file ]]; then
+            # Add comments to the top of the file
+            sed -i "1i#!name = ${file%.yaml}" rules/$file
+            sed -i "2i#!date = $(date +'%Y-%m-%d %H:%M:%S')" rules/$file
+            sed -i "3i#!" rules/$file
+          else
+            echo "Failed to download ${file}. Keeping the existing version."
+            rm -f rules/$file
+          fi
         done
 
     - name: Commit and push changes
@@ -52,7 +66,11 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git add rules/*.yaml
-        git commit -m 'Update Rules files'
-        git push
+        if git diff-index --quiet HEAD; then
+          echo "No changes to commit"
+        else
+          git commit -m 'Update Rules files'
+          git push
+        fi
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
