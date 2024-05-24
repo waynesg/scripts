@@ -2,13 +2,10 @@
 # AUTHOR: waynesg
 # UPDATED: 2024-03-08 09:05:41
 payload:
+  - DOMAIN,cdn.jsdelivr.net
   - DOMAIN-SUFFIX,asusucloud.com
-  - DOMAIN-SUFFIX,logi.com
   - DOMAIN-SUFFIX,waynesg.cc
-  - DOMAIN-KEYWORD,logitech
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
-  - DOMAIN-SUFFIX,jsdelivr.net
-  - DOMAIN-SUFFIX,mysub.cc
 #公益服
   - DOMAIN-SUFFIX,123456.al
 
