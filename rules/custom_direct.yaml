@@ -1,6 +1,5 @@
 # NAME: custom_direct
 # AUTHOR: waynesg
-# UPDATED: 2024-03-08 09:05:41
 payload:
   - DOMAIN,cdn.jsdelivr.net
   - DOMAIN-SUFFIX,asusucloud.com
