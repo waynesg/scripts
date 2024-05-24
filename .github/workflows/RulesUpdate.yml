@@ -24,6 +24,7 @@ jobs:
       run: |
         declare -A files
         files["ai.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/ai.yaml"
+        files["bilibili.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/bilibili.yaml"
         files["apple-cn.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/apple-cn.yaml"
         files["netflix.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/netflix.yaml"
         files["disney.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/disney.yaml"
