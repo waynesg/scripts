@@ -1,5 +1,5 @@
 #!name = proxy
-#!date = 2024-05-29 01:05:55
+#!date = 2024-05-30 01:03:14
 #!
 payload:
   - '3dns-1.adobe.com'
@@ -181,6 +181,7 @@ payload:
   - 'lm.licenses.adobe.com'
   - 'lmlicenses.wip4.adobe.com'
   - 'location.microsoft.com'
+  - 'login.microsoftonline.com'
   - 'lolstatic-a.akamaihd.net'
   - 'm1.ppy.sh'
   - 'mdn.mozillademos.org'
@@ -309,6 +310,7 @@ payload:
   - 'scholar.google.sk'
   - 'scholar.googleusercontent.com'
   - 'scholar.l.google.com'
+  - 'self.events.data.microsoft.com'
   - 'sentry.ppy.sh'
   - 'sni1dcb6gl.wpc.edgecastcdn.net'
   - 'spectator.ppy.sh'
