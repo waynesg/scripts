@@ -1,5 +1,5 @@
 #!name = networktest
-#!date = 2024-05-30 01:03:11
+#!date = 2024-05-31 01:03:45
 #!
 payload:
   - DOMAIN-KEYWORD,ipv6-test

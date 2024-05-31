@@ -1,5 +1,5 @@
 #!name = cn
-#!date = 2024-05-30 01:03:16
+#!date = 2024-05-31 01:03:48
 #!
 payload:
   - '1-fss24-s0.streamhoster.com'
@@ -30810,6 +30810,7 @@ payload:
   - '+.haluoha.com'
   - '+.hamedal.com'
   - '+.hamir.net'
+  - '+.hamu.site'
   - '+.han-ju.cc'
   - '+.hanamichi.wiki'
   - '+.hanboshi.com'
@@ -40631,6 +40632,7 @@ payload:
   - '+.kd9000.com'
   - '+.kdadj.com'
   - '+.kdatacenter.com'
+  - '+.kdatu.com'
   - '+.kdclub.net'
   - '+.kdige.com'
   - '+.kdmedic.com'
@@ -43476,6 +43478,7 @@ payload:
   - '+.lingwh.com'
   - '+.lingwu66.com'
   - '+.lingxi360.com'
+  - '+.lingxianfund.com'
   - '+.lingxicloud.com'
   - '+.lingxigames.com'
   - '+.lingxmall.com'
@@ -57871,6 +57874,7 @@ payload:
   - '+.shuajizhijia.net'
   - '+.shuame.com'
   - '+.shuanghui.net'
+  - '+.shuangken.com'
   - '+.shuangkou.net'
   - '+.shuangkuai.co'
   - '+.shuangle888.com'
@@ -65755,6 +65759,8 @@ payload:
   - '+.vstart.net'
   - '+.vstecs.com'
   - '+.vstmv.com'
+  - '+.vstonefund.com'
+  - '+.vstonewealth.com'
   - '+.vstou.com'
   - '+.vsuch.com'
   - '+.vsun.com'
@@ -73273,6 +73279,7 @@ payload:
   - '+.yiqisou.net'
   - '+.yiqistore.com'
   - '+.yiqitp.com'
+  - '+.yiqituodan.com'
   - '+.yiqiu.org'
   - '+.yiqiuu.com'
   - '+.yiqiwang.net'
