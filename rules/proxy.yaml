@@ -1,5 +1,5 @@
 #!name = proxy
-#!date = 2024-06-03 01:04:33
+#!date = 2024-06-04 01:03:55
 #!
 payload:
   - '3dns-1.adobe.com'
@@ -5478,6 +5478,7 @@ payload:
   - '+.charlotte-anime.jp'
   - '+.charmescorts.com'
   - '+.charticulator.com'
+  - '+.chat.lmsys.org'
   - '+.chatango.com'
   - '+.chatgpt.com'
   - '+.chatgptvideo.xyz'
@@ -19088,6 +19089,7 @@ payload:
   - '+.radian6.com'
   - '+.radicalparty.org'
   - '+.radiko.jp'
+  - '+.radio-canada.ca'
   - '+.radio.garden'
   - '+.radioaustralia.net.au'
   - '+.radiofarda.com'
@@ -21470,6 +21472,7 @@ payload:
   - '+.taipei.gov.tw'
   - '+.taipeisociety.org'
   - '+.taipeitimes.com'
+  - '+.taisounds.com'
   - '+.taiwan-sex.com'
   - '+.taiwanadultexpo.com'
   - '+.taiwanbible.com'
