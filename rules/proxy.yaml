@@ -1,5 +1,5 @@
 #!name = proxy
-#!date = 2024-06-04 01:03:55
+#!date = 2024-06-05 01:03:32
 #!
 payload:
   - '3dns-1.adobe.com'
@@ -9785,6 +9785,7 @@ payload:
   - '+.gandi.net'
   - '+.ganges.com'
   - '+.ganjing.com'
+  - '+.ganjing.world'
   - '+.ganjingworld.com'
   - '+.gannett-cdn.com'
   - '+.gannett.com'
@@ -18835,6 +18836,7 @@ payload:
   - '+.pttvan.org'
   - '+.ptzwx.com'
   - '+.pu82.vip'
+  - '+.pub.dev'
   - '+.public-sex-porn.com'
   - '+.public-trust.com'
   - '+.publicagentxxx.com'
