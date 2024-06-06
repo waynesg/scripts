@@ -1,5 +1,5 @@
 #!name = proxy
-#!date = 2024-06-05 01:03:32
+#!date = 2024-06-06 01:03:20
 #!
 payload:
   - '3dns-1.adobe.com'
@@ -6756,6 +6756,7 @@ payload:
   - '+.devpn.com'
   - '+.devsitetest.how'
   - '+.devtools-paypal.com'
+  - '+.devv.ai'
   - '+.dewitwithdurex.com'
   - '+.dexterhorn.com'
   - '+.dezyred.com'
