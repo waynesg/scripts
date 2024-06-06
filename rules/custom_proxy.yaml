@@ -3,6 +3,7 @@
 payload:
   - DOMAIN-SUFFIX,bet365.com
   - DOMAIN-SUFFIX,365sb.com
+  - DOMAIN-SUFFIX,ipify.org
   - DOMAIN-SUFFIX,nivod5.tv
   - DOMAIN-KEYWORD,stream-link
   - DOMAIN-KEYWORD,stripchat
@@ -10,4 +11,3 @@ payload:
   - DOMAIN-SUFFIX,brews.app
   - DOMAIN-SUFFIX,pixelshop.tk
   - DOMAIN-SUFFIX,rotf.lol
-  - GEOSITE,mudvod
