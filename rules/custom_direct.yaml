@@ -1,7 +1,6 @@
 # NAME: custom_direct
 # AUTHOR: waynesg
 payload:
-  - DOMAIN,cdn.jsdelivr.net
   - DOMAIN-SUFFIX,asusucloud.com
   - DOMAIN-SUFFIX,waynesg.cc
   - DOMAIN-SUFFIX,mysub.cc
