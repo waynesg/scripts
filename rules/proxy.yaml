@@ -1,5 +1,5 @@
 #!name = proxy
-#!date = 2024-06-07 01:05:55
+#!date = 2024-06-08 01:03:39
 #!
 payload:
   - '3dns-1.adobe.com'
@@ -13986,6 +13986,7 @@ payload:
   - '+.liberal.org.hk'
   - '+.liberapay.com'
   - '+.liberapay.org'
+  - '+.libertysculpturepark.com'
   - '+.libertytimes.com.tw'
   - '+.libgen.fun'
   - '+.libgen.is'
@@ -24497,6 +24498,7 @@ payload:
   - '+.wrenchead.com'
   - '+.wretch.cc'
   - '+.writer.zoho.com'
+  - '+.writesonic.com'
   - '+.wsj.com'
   - '+.wsj.jobs'
   - '+.wsj.net'
