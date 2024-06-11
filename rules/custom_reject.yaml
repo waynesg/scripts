@@ -1,5 +1,5 @@
 # NAME: custom_proxy
 # AUTHOR: waynesg
 payload:
-    - DOMAIN,events.data.microsoft.com
-    - GEOSITE,adobe
+  - DOMAIN,events.data.microsoft.com
+  - GEOSITE,adobe
