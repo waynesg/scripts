@@ -3,6 +3,9 @@
 payload:
   - DOMAIN-SUFFIX,bet365.com
   - DOMAIN-SUFFIX,365sb.com
+  - DOMAIN,xn--ngstr-lra8j.com
+  - DOMAIN,mtalk.google.com
+  - DOMAIN,services.googleapis.cn
   - DOMAIN-SUFFIX,ipify.org
   - DOMAIN-SUFFIX,nivod5.tv
   - DOMAIN-KEYWORD,stream-link
@@ -11,3 +14,5 @@ payload:
   - DOMAIN-SUFFIX,brews.app
   - DOMAIN-SUFFIX,pixelshop.tk
   - DOMAIN-SUFFIX,rotf.lol
+  - DOMAIN-SUFFIX,browserleaks.com
+  - DOMAIN-SUFFIX,ipleak.net
