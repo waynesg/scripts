@@ -1,5 +1,5 @@
 #!name = ads
-#!date = 2024-06-12 01:04:49
+#!date = 2024-06-13 01:04:20
 #!
 payload:
   - '+.0.net.easyjet.com'
@@ -56301,7 +56301,6 @@ payload:
   - '+.milteept.xyz'
   - '+.miltlametta.com'
   - '+.miluwo.com'
-  - '+.mime.baidu.com'
   - '+.mimeihui.com'
   - '+.mimg.126.net'
   - '+.mimicbeeralb.com'
@@ -81364,7 +81363,6 @@ payload:
   - '+.statics.3987.com'
   - '+.statics.woozooo.com'
   - '+.staticsfs.host'
-  - '+.staticsns.cdn.bcebos.com'
   - '+.statictapcdn-a.akamaihd.net'
   - '+.staticxx.facebook.com'
   - '+.staticxz.com'

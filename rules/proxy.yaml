@@ -1,5 +1,5 @@
 #!name = proxy
-#!date = 2024-06-12 01:04:51
+#!date = 2024-06-13 01:04:21
 #!
 payload:
   - '3dns-1.adobe.com'
@@ -4850,6 +4850,9 @@ payload:
   - '+.bs-adreview.com'
   - '+.bs-awh.ne.jp'
   - '+.bsersd.xyz'
+  - '+.bsky.app'
+  - '+.bsky.network'
+  - '+.bsky.social'
   - '+.bstatic.com'
   - '+.bsw.co.jp'
   - '+.bsw.jp'
