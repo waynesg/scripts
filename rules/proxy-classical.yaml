@@ -1,5 +1,5 @@
 #!name = proxy-classical
-#!date = 2024-06-13 01:04:22
+#!date = 2024-06-14 01:04:18
 #!
 payload:
   - DOMAIN-SUFFIX,v1.mk
@@ -16,8 +16,6 @@ payload:
   - DOMAIN-SUFFIX,cdn.venus7202.com
   - DOMAIN-SUFFIX,cdn.ceres9350.com
   - DOMAIN-SUFFIX,cdn.efhie.com
-  - DOMAIN-SUFFIX,czzy.site
-  - DOMAIN-SUFFIX,cz01.vip
   - DOMAIN-SUFFIX,picsum.photos
   - DOMAIN-SUFFIX,ibb.co
   - DOMAIN-SUFFIX,kin6c1.com
