@@ -1,5 +1,5 @@
 #!name = games-cn
-#!date = 2024-06-14 01:04:18
+#!date = 2024-06-15 01:04:20
 #!
 payload:
   - 'assets1.xboxlive.cn'
@@ -32,6 +32,7 @@ payload:
   - 'www4-static.gog-statics.com'
   - 'xz.pphimalayanrt.com'
   - '+.17roco.com'
+  - '+.aki-game.com'
   - '+.anticheatexpert.com'
   - '+.battlecare.net'
   - '+.bcfmglobal.com'
@@ -76,6 +77,7 @@ payload:
   - '+.ihappystudio.cn'
   - '+.ihappystudio.com'
   - '+.in.th'
+  - '+.kurogames.com'
   - '+.labycore.cn'
   - '+.leagueoflegends.cn'
   - '+.legendofzelda.cn'

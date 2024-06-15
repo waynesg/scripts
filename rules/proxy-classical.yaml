@@ -1,5 +1,5 @@
 #!name = proxy-classical
-#!date = 2024-06-14 01:04:18
+#!date = 2024-06-15 01:04:21
 #!
 payload:
   - DOMAIN-SUFFIX,v1.mk
@@ -23,3 +23,6 @@ payload:
   - DOMAIN-SUFFIX,v82u1l.com
   - DOMAIN-SUFFIX,ikzybf.com
   - DOMAIN-SUFFIX,scrapingbee.com
+  - DOMAIN-SUFFIX,nivod.tv
+  - DOMAIN-SUFFIX,nivodi.tv
+  - DOMAIN-SUFFIX,nivodz.com
