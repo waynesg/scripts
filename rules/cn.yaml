@@ -1,5 +1,5 @@
 #!name = cn
-#!date = 2024-06-21 01:03:56
+#!date = 2024-06-22 01:03:28
 #!
 payload:
   - '1-fss24-s0.streamhoster.com'
@@ -41718,6 +41718,7 @@ payload:
   - '+.kschuangku.com'
   - '+.kscloudapi.com'
   - '+.ksco.cc'
+  - '+.kscord.com'
   - '+.ksdedu.com'
   - '+.ksdhgy.com'
   - '+.ksdq0514.com'
