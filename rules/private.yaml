@@ -1,5 +1,5 @@
 #!name = private
-#!date = 2024-06-23 01:08:41
+#!date = 2024-06-24 01:06:00
 #!
 payload:
   - '1337.abcvg.info'
@@ -26,7 +26,6 @@ payload:
   - 'evan.im'
   - 'exodus.desync.com'
   - 'fh2.cmp-gaming.com'
-  - 'free.publictracker.xyz'
   - 'inferno.demonoid.is'
   - 'instant.arubanetworks.com'
   - 'ipv4.rer.lol'
@@ -34,13 +33,11 @@ payload:
   - 'ipv6.rer.lol'
   - 'isk.richardsw.club'
   - 'jutone.com'
-  - 'leet-tracker.moe'
   - 'martin-gebhardt.eu'
   - 'metacubex.github.io'
   - 'metacubexd.pages.dev'
   - 'miwifi.com'
   - 'moonburrow.club'
-  - 'new-line.net'
   - 'nyaa.tracker.wf'
   - 'odd-hd.fr'
   - 'oh.fuuuuuck.com'
@@ -59,6 +56,7 @@ payload:
   - 'p2p.publictracker.xyz'
   - 'p4p.arenabg.com'
   - 'public.publictracker.xyz'
+  - 'public.tracker.vraphim.com'
   - 'pybittrack.retiolus.net'
   - 'retracker.hotplug.ru'
   - 'retracker.lanta.me'
@@ -69,7 +67,6 @@ payload:
   - 'ryjer.com'
   - 'seedpeer.net'
   - 'setmeup.arubanetworks.com'
-  - 't.overflow.biz'
   - 't.peer-exchange.download'
   - 't1.aag.moe'
   - 'tamas3.ynh.fr'
@@ -81,6 +78,7 @@ payload:
   - 'torrentsmd.com'
   - 'tplogin.cn'
   - 'tr.burnabyhighstar.com'
+  - 'tr.kxmp.cf'
   - 'tracker-udp.gbitt.info'
   - 'tracker-us.silksa.co.za'
   - 'tracker.0x7c0.com'
@@ -88,6 +86,7 @@ payload:
   - 'tracker.bittor.pw'
   - 'tracker.breizh.pm'
   - 'tracker.bt4g.com'
+  - 'tracker.ccp.ovh'
   - 'tracker.cloudit.top'
   - 'tracker.cyberia.is'
   - 'tracker.darkness.services'
