@@ -1,5 +1,5 @@
 #!name = proxy
-#!date = 2024-06-24 01:06:04
+#!date = 2024-06-25 01:04:38
 #!
 payload:
   - '3dns-1.adobe.com'
@@ -222,10 +222,12 @@ payload:
   - 'practivate.adobe.newoa'
   - 'practivate.adobe.ntp'
   - 'prd-priconne-redive.akamaized.net'
+  - 'preprod-publicca.googleapis.com'
   - 'production-openaicom-storage.azureedge.net'
   - 'psg-int-centralus.cloudapp.net'
   - 'psg-int-eastus.cloudapp.net'
   - 'public-us-pingsx.api.clonoth.com'
+  - 'publicca.googleapis.com'
   - 'push-apple.com.akadns.net'
   - 'pvr-hamivideo.cdn.hinet.net'
   - 'qualcomm.sc.omtrdc.net'

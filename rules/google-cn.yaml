@@ -1,5 +1,5 @@
 #!name = google-cn
-#!date = 2024-06-24 01:06:04
+#!date = 2024-06-25 01:04:38
 #!
 payload:
   - '265.com'
@@ -20,6 +20,7 @@ payload:
   - 'borgmon.adz.google.com'
   - 'c.admob.com'
   - 'c.android.clients.google.com'
+  - 'c.pki.goog'
   - 'cache-management-prod.google.com'
   - 'cache.pack.google.com'
   - 'checkin.gstatic.com'
@@ -96,6 +97,7 @@ payload:
   - 'gtm.oasisfeng.com'
   - 'gvt1-cn.com'
   - 'gvt2-cn.com'
+  - 'i.pki.goog'
   - 'imasdk.googleapis.com'
   - 'l2-uberproxy.corp.google.com'
   - 'logger-dev.corp.google.com'
@@ -104,6 +106,7 @@ payload:
   - 'monitoring.qatp1.net'
   - 'monitoring.qcpp1.net'
   - 'monitoring.qpdp1.net'
+  - 'o.pki.goog'
   - 'ocsp.pki.goog'
   - 'ocsp.pki.goog'
   - 'pagead-googlehosted.l.google.com'
