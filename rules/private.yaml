@@ -1,5 +1,5 @@
 #!name = private
-#!date = 2024-06-25 01:04:35
+#!date = 2024-06-26 01:04:51
 #!
 payload:
   - '1337.abcvg.info'
@@ -13,6 +13,7 @@ payload:
   - 'bt2.archive.org'
   - 'bubu.mapfactor.com'
   - 'bvarf.tracker.sh'
+  - 'ch3oh.ru'
   - 'clash.metacubex.one'
   - 'clash.razord.top'
   - 'concen.org'
@@ -47,6 +48,7 @@ payload:
   - 'open.demonii.com'
   - 'open.demonoid.ch'
   - 'open.dstud.io'
+  - 'open.free-tracker.ga'
   - 'open.publictracker.xyz'
   - 'open.stealth.si'
   - 'open.tracker.ink'
@@ -56,6 +58,7 @@ payload:
   - 'p2p.publictracker.xyz'
   - 'p4p.arenabg.com'
   - 'public.publictracker.xyz'
+  - 'public.tracker.vraphim.com'
   - 'pybittrack.retiolus.net'
   - 'retracker.hotplug.ru'
   - 'retracker.lanta.me'
@@ -70,7 +73,6 @@ payload:
   - 't1.aag.moe'
   - 'tamas3.ynh.fr'
   - 'tk.greedland.net'
-  - 'tk1.trackerservers.com'
   - 'tk2.trackerservers.com'
   - 'tk2v6.trackerservers.com'
   - 'torrents.artixlinux.org'
@@ -78,9 +80,12 @@ payload:
   - 'tplogin.cn'
   - 'tr.abir.ga'
   - 'tr.burnabyhighstar.com'
+  - 'tr.kxmp.cf'
   - 'tracker-udp.gbitt.info'
   - 'tracker-us.silksa.co.za'
+  - 'tracker-zhuqiy.dgj055.icu'
   - 'tracker.0x7c0.com'
+  - 'tracker.auctor.tv'
   - 'tracker.birkenwald.de'
   - 'tracker.bittor.pw'
   - 'tracker.breizh.pm'
@@ -122,7 +127,6 @@ payload:
   - 'tracker.skyts.net'
   - 'tracker.srv00.com'
   - 'tracker.tamersunion.org'
-  - 'tracker.theoks.net'
   - 'tracker.tiny-vps.com'
   - 'tracker.torrent.eu.org'
   - 'tracker.tryhackx.org'
@@ -149,6 +153,7 @@ payload:
   - 'www.wareztorrent.com'
   - 'yacd.haishan.me'
   - 'yacd.metacubex.one'
+  - 'z.mercax.com'
   - '+.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa'
   - '+.0.in-addr.arpa'
   - '+.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa'
