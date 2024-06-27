@@ -1,5 +1,5 @@
 #!name = private
-#!date = 2024-06-26 01:04:51
+#!date = 2024-06-27 01:04:56
 #!
 payload:
   - '1337.abcvg.info'
@@ -13,7 +13,6 @@ payload:
   - 'bt2.archive.org'
   - 'bubu.mapfactor.com'
   - 'bvarf.tracker.sh'
-  - 'ch3oh.ru'
   - 'clash.metacubex.one'
   - 'clash.razord.top'
   - 'concen.org'
@@ -58,7 +57,6 @@ payload:
   - 'p2p.publictracker.xyz'
   - 'p4p.arenabg.com'
   - 'public.publictracker.xyz'
-  - 'public.tracker.vraphim.com'
   - 'pybittrack.retiolus.net'
   - 'retracker.hotplug.ru'
   - 'retracker.lanta.me'
@@ -83,9 +81,7 @@ payload:
   - 'tr.kxmp.cf'
   - 'tracker-udp.gbitt.info'
   - 'tracker-us.silksa.co.za'
-  - 'tracker-zhuqiy.dgj055.icu'
   - 'tracker.0x7c0.com'
-  - 'tracker.auctor.tv'
   - 'tracker.birkenwald.de'
   - 'tracker.bittor.pw'
   - 'tracker.breizh.pm'
@@ -104,7 +100,6 @@ payload:
   - 'tracker.farted.net'
   - 'tracker.filemail.com'
   - 'tracker.files.fm'
-  - 'tracker.fnix.net'
   - 'tracker.gbitt.info'
   - 'tracker.gcrenwp.top'
   - 'tracker.gmi.gd'
@@ -116,7 +111,6 @@ payload:
   - 'tracker.kuroy.me'
   - 'tracker.lilithraws.org'
   - 'tracker.loligirl.cn'
-  - 'tracker.moeking.me'
   - 'tracker.mywaifu.best'
   - 'tracker.opentrackr.org'
   - 'tracker.openwebtorrent.com'
@@ -127,6 +121,7 @@ payload:
   - 'tracker.skyts.net'
   - 'tracker.srv00.com'
   - 'tracker.tamersunion.org'
+  - 'tracker.theoks.net'
   - 'tracker.tiny-vps.com'
   - 'tracker.torrent.eu.org'
   - 'tracker.tryhackx.org'
