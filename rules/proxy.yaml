@@ -1,5 +1,5 @@
 #!name = proxy
-#!date = 2024-06-30 01:10:22
+#!date = 2024-07-01 01:12:28
 #!
 payload:
   - '3dns-1.adobe.com'
@@ -5956,7 +5956,6 @@ payload:
   - '+.cmule.org'
   - '+.cmx.im'
   - '+.cn-proxy.com'
-  - '+.cn.com'
   - '+.cn.dayabook.com'
   - '+.cn.fmnnow.com'
   - '+.cn.freeones.com'
@@ -14264,6 +14263,7 @@ payload:
   - '+.llwht88.xyz'
   - '+.lmm167.shop'
   - '+.lmmbtc.com'
+  - '+.lmsys.org'
   - '+.lncn.org'
   - '+.lnkd.in'
   - '+.lnstagram-help.com'
