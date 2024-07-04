@@ -1,5 +1,5 @@
 #!name = proxy
-#!date = 2024-07-03 01:05:08
+#!date = 2024-07-04 01:05:24
 #!
 payload:
   - '3dns-1.adobe.com'
@@ -339,6 +339,7 @@ payload:
   - 't21ipau.nikkei.co.jp'
   - 'teamviewer.com.cdn.cloudflare.net'
   - 'tesla-cdn.thron.com'
+  - 'translomatic.foxfortmobile.com'
   - 'tvcastlive-hamivideo.cdn.hinet.net'
   - 'ubisoft-orbit-savegames.s3.amazonaws.com'
   - 'ubisoft-uplay-savegames.s3.amazonaws.com'
