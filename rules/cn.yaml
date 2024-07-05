@@ -1,5 +1,5 @@
 #!name = cn
-#!date = 2024-07-04 01:05:25
+#!date = 2024-07-05 01:05:14
 #!
 payload:
   - '1-fss24-s0.streamhoster.com'
@@ -2275,7 +2275,6 @@ payload:
   - '+.165123.com'
   - '+.16587.com'
   - '+.165image.vip'
-  - '+.165tchuang.com'
   - '+.165zhuji.com'
   - '+.166.com'
   - '+.166.net'
