@@ -1,5 +1,5 @@
 #!name = games-cn
-#!date = 2024-07-07 01:11:04
+#!date = 2024-07-08 01:07:25
 #!
 payload:
   - 'assets1.xboxlive.cn'
@@ -77,6 +77,7 @@ payload:
   - '+.ihappystudio.cn'
   - '+.ihappystudio.com'
   - '+.in.th'
+  - '+.juequling.com'
   - '+.kurogames.com'
   - '+.labycore.cn'
   - '+.leagueoflegends.cn'
