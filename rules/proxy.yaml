@@ -1,5 +1,5 @@
 #!name = proxy
-#!date = 2024-07-09 01:06:15
+#!date = 2024-07-10 01:06:44
 #!
 payload:
   - '3dns-1.adobe.com'
@@ -8407,6 +8407,7 @@ payload:
   - '+.faasbook.com'
   - '+.fabhairypussy.com'
   - '+.fabric.io'
+  - '+.fabricmc.net'
   - '+.fabuye.top'
   - '+.fabuyemian.com'
   - '+.facbebook.com'
@@ -18911,6 +18912,7 @@ payload:
   - '+.printspots.com'
   - '+.printspots.net'
   - '+.prism-break.org'
+  - '+.prismlauncher.org'
   - '+.prismlive.com'
   - '+.prisoneralert.com'
   - '+.pritunl.com'
@@ -19222,6 +19224,7 @@ payload:
   - '+.quicktime.net'
   - '+.quicktime.tv'
   - '+.quiksee.com'
+  - '+.quiltmc.org'
   - '+.quip-cdn.com'
   - '+.quip.com'
   - '+.quipelements.com'
