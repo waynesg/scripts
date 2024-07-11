@@ -1,5 +1,5 @@
 #!name = networktest
-#!date = 2024-07-10 01:06:43
+#!date = 2024-07-11 01:07:00
 #!
 payload:
   - DOMAIN-KEYWORD,ipv6-test
@@ -7,17 +7,7 @@ payload:
   - DOMAIN-KEYWORD,speedtest
   - DOMAIN-KEYWORD,test-ipv6
   - DOMAIN-KEYWORD,testipv6
-  - DOMAIN-SUFFIX,cdnst.net
-  - DOMAIN-SUFFIX,cellmaps.com
-  - DOMAIN-SUFFIX,ekahau.cloud
-  - DOMAIN-SUFFIX,ekahau.com
   - DOMAIN-SUFFIX,fast.com
-  - DOMAIN-SUFFIX,ookla.com
   - DOMAIN-SUFFIX,ooklaserver.net
-  - DOMAIN-SUFFIX,pingtest.net
   - DOMAIN-SUFFIX,speed.cloudflare.com
   - DOMAIN-SUFFIX,speed.dler.io
-  - DOMAIN-SUFFIX,speedtest.co
-  - DOMAIN-SUFFIX,speedtest.net
-  - DOMAIN-SUFFIX,speedtestcustom.com
-  - DOMAIN-SUFFIX,webtest.net
