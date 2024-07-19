@@ -1,5 +1,5 @@
 #!name = ads
-#!date = 2024-07-18 01:05:42
+#!date = 2024-07-19 01:08:03
 #!
 payload:
   - '+.0.net.easyjet.com'
@@ -1898,7 +1898,6 @@ payload:
   - '+.7me0ssd6.de'
   - '+.7mediaxx-ai.com'
   - '+.7mnpeh.com1.z0.glb.clouddn.com'
-  - '+.7moor-fs1.com'
   - '+.7mvmjg.www.emanualonline.com'
   - '+.7mx.eider.com'
   - '+.7mx.eidershop.com'
@@ -2558,7 +2557,6 @@ payload:
   - '+.a.youdao.com'
   - '+.a.zleep.com'
   - '+.a.zuowenxuan.cn'
-  - '+.a0.app.xiaomi.com'
   - '+.a00s.net'
   - '+.a013.com'
   - '+.a06bbd98194c252.com'
@@ -14979,6 +14977,9 @@ payload:
   - '+.booster.monster'
   - '+.booster3d.com'
   - '+.boostog.net'
+  - '+.bootcdn.cn'
+  - '+.bootcdn.net'
+  - '+.bootcss.com'
   - '+.bootharchie.com'
   - '+.bootstrap-framework.org'
   - '+.bootstrap-js.com'
@@ -32545,7 +32546,6 @@ payload:
   - '+.fire.solutions.jci.com'
   - '+.firearminvoluntary.com'
   - '+.firearmtire.com'
-  - '+.firebaseinstallations.googleapis.com'
   - '+.firebaselogging-pa.googleapis.com'
   - '+.firebaselogging.googleapis.com'
   - '+.fireboxarborer.com'
@@ -39777,7 +39777,6 @@ payload:
   - '+.httpdns.push.oppomobile.com'
   - '+.httpool.com'
   - '+.httpp.gdn'
-  - '+.https-filtering-check.adtidy.org'
   - '+.httpsecurity.org'
   - '+.httr.redskins.com'
   - '+.htubzpb.cn'
@@ -61006,7 +61005,6 @@ payload:
   - '+.oatmealstickyflax.com'
   - '+.oatscheapen.com'
   - '+.oatsouje.net'
-  - '+.oauth-login-drcn.platform.dbankcloud.com'
   - '+.oawhaursaith.com'
   - '+.oawvsm.xyz'
   - '+.oaxoulro.com'
@@ -81908,6 +81906,8 @@ payload:
   - '+.static1.searchbox.baidu.com'
   - '+.staticadm.leju.com'
   - '+.staticcdn.ecootec.com'
+  - '+.staticfile.net'
+  - '+.staticfile.org'
   - '+.staticiv.com'
   - '+.staticjs.cn'
   - '+.statics.3987.com'
