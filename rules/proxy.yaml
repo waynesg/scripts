@@ -1,5 +1,5 @@
 #!name = proxy
-#!date = 2024-07-21 01:11:54
+#!date = 2024-07-22 01:09:11
 #!
 payload:
   - '3dns-1.adobe.com'
@@ -17154,7 +17154,6 @@ payload:
   - '+.openleaks.org'
   - '+.openlibrary.org'
   - '+.openmaps.org'
-  - '+.openmidas.com'
   - '+.openreality.com'
   - '+.openresty.org'
   - '+.opensea.io'
@@ -18824,10 +18823,8 @@ payload:
   - '+.qprize.com'
   - '+.qpx.googleflights.net'
   - '+.qq.co.za'
-  - '+.qq.design'
   - '+.qqbs.asia'
   - '+.qqbs.work'
-  - '+.qqgamedesign.com'
   - '+.qr.ae'
   - '+.qstatus.com'
   - '+.qt-project.org'
@@ -21465,12 +21462,8 @@ payload:
   - '+.temetube.xyz'
   - '+.tenacy.com'
   - '+.tenbyfotolia.com'
-  - '+.tencent-cloud.cn'
-  - '+.tencent-cloud.com'
   - '+.tencent.co.id'
   - '+.tencent.com.hk'
-  - '+.tencent.design'
-  - '+.tencentcloud.com'
   - '+.tenor.com'
   - '+.tensorflow.org'
   - '+.tenzinpalmo.com'
@@ -21942,7 +21935,6 @@ payload:
   - '+.titsintops.com'
   - '+.tittykings.com'
   - '+.tjsbfj.com'
-  - '+.tjstats.com'
   - '+.tkb008.xyz'
   - '+.tkb2233.life'
   - '+.tkbqf2.life'
@@ -23893,7 +23885,6 @@ payload:
   - '+.weekmag.info'
   - '+.wefightcensorship.org'
   - '+.wefong.com'
-  - '+.wegamedeveloper.com'
   - '+.weiboleak.com'
   - '+.weihuo.org'
   - '+.weijingsheng.org'
@@ -23902,7 +23893,6 @@ payload:
   - '+.weinvoiceit.com'
   - '+.weiquanwang.org'
   - '+.weisuo.ws'
-  - '+.weixinbridge.com'
   - '+.weiyuksj.com'
   - '+.weknowporn.com'
   - '+.welcometobestbuy.ca'
