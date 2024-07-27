@@ -1,5 +1,5 @@
 #!name = cn
-#!date = 2024-07-26 01:06:22
+#!date = 2024-07-27 01:05:54
 #!
 payload:
   - '1-fss24-s0.streamhoster.com'
@@ -33769,6 +33769,8 @@ payload:
   - '+.gvlocalization.com'
   - '+.gvmocpc.com'
   - '+.gvoiceplat.com'
+  - '+.gvt1-cn.com'
+  - '+.gvt2-cn.com'
   - '+.gvwyuik.com'
   - '+.gvzen.com'
   - '+.gw-ec.com'
@@ -41707,6 +41709,7 @@ payload:
   - '+.ifanrusercontent.com'
   - '+.ifanrx.com'
   - '+.ifareast.com'
+  - '+.ifastps.com.cn'
   - '+.ifatrabbit.com'
   - '+.ifaxin.com'
   - '+.ifaxin.org'
@@ -49461,6 +49464,7 @@ payload:
   - '+.lao.si'
   - '+.laobaicai.net'
   - '+.laobaigan-hs.com'
+  - '+.laoban100.com'
   - '+.laobandq.com'
   - '+.laobanfa.com'
   - '+.laobangban.com'
@@ -67156,8 +67160,10 @@ payload:
   - '+.shengyan985.com'
   - '+.shengyasd.com'
   - '+.shengyeji.com'
+  - '+.shengyi.ai'
   - '+.shengyi.biz'
   - '+.shengyidi.com'
+  - '+.shengyizhuanjia.com'
   - '+.shengyuancc.com'
   - '+.shengzehr.com'
   - '+.shengzhaoli.com'
@@ -86969,6 +86975,7 @@ payload:
   - '+.yuanbaohui.com'
   - '+.yuanbaokc.com'
   - '+.yuanbaotaoche.com'
+  - '+.yuanbei.biz'
   - '+.yuanbin.me'
   - '+.yuancangipr.com'
   - '+.yuancdn.com'
