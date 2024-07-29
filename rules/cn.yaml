@@ -1,5 +1,5 @@
 #!name = cn
-#!date = 2024-07-28 01:12:14
+#!date = 2024-07-29 01:08:55
 #!
 payload:
   - '1-fss24-s0.streamhoster.com'
@@ -276,8 +276,6 @@ payload:
   - 'guzzoni-apple-com.v.aaplimg.com'
   - 'guzzoni.apple.com'
   - 'guzzoni.smoot.apple.com'
-  - 'gvt1-cn.com'
-  - 'gvt2-cn.com'
   - 'hellofontpreview.oss-cn-beijing.aliyuncs.com'
   - 'hellowebfonts.oss-cn-beijing.aliyuncs.com'
   - 'hindiabp-lh.akamaihd.net'
