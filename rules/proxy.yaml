@@ -1,5 +1,5 @@
 #!name = proxy
-#!date = 2024-07-31 00:56:04
+#!date = 2024-08-01 01:13:02
 #!
 payload:
   - '3dns-1.adobe.com'
@@ -3036,6 +3036,7 @@ payload:
   - '+.azerbaycan.tv'
   - '+.azerimix.com'
   - '+.aziani.com'
+  - '+.azirevpn.com'
   - '+.aznude.com'
   - '+.azubu.tv'
   - '+.azure'
@@ -5844,6 +5845,7 @@ payload:
   - '+.cmbi.com.hk'
   - '+.cmbwinglungbank.com'
   - '+.cmcn.org'
+  - '+.cmegroup.com'
   - '+.cmhalq.com'
   - '+.cmi.org.tw'
   - '+.cmmedia.com.tw'
