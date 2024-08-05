@@ -7,6 +7,8 @@ payload:
   - DOMAIN-SUFFIX,banans.eu.org
   - DOMAIN-SUFFIX,880031.xyz
   - DOMAIN,closeai.one
+  - DOMAIN-SUFFIX,cmvideo.cn
+  - DOMAIN-SUFFIX,fanmingming.com
 #公益服
   - DOMAIN-SUFFIX,123456.al
 # Emby 小雅全家桶 相关
