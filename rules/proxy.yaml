@@ -1,5 +1,5 @@
 #!name = proxy
-#!date = 2024-08-05 01:09:21
+#!date = 2024-08-06 01:07:38
 #!
 payload:
   - '3dns-1.adobe.com'
@@ -21983,6 +21983,7 @@ payload:
   - '+.tibetswiss.ch'
   - '+.tibettelegraph.com'
   - '+.tibettimes.net'
+  - '+.tibettruth.com'
   - '+.tibetwrites.org'
   - '+.tiburon.com'
   - '+.tickdata.com'
