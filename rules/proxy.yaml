@@ -1,5 +1,5 @@
 #!name = proxy
-#!date = 2024-08-08 01:07:59
+#!date = 2024-08-09 01:09:04
 #!
 payload:
   - '3dns-1.adobe.com'
@@ -5757,7 +5757,6 @@ payload:
   - '+.clickserver.googleads.com'
   - '+.clien.net'
   - '+.climate-server.com'
-  - '+.clincha.cn'
   - '+.clinica-tibet.ru'
   - '+.clinical-videos.com'
   - '+.clinicalkey.com'
@@ -12169,7 +12168,6 @@ payload:
   - '+.illusionas.com'
   - '+.illusionchn.com'
   - '+.illusionfactory.com'
-  - '+.illusionfb.cn'
   - '+.illusiongw.com'
   - '+.illusionh.com'
   - '+.illusionl.com'
@@ -25271,7 +25269,6 @@ payload:
   - '+.yinya.shop'
   - '+.yipub.com'
   - '+.yiqiedoushiganggangkaishi.org'
-  - '+.yiqilai99.cn'
   - '+.yiyechat.com'
   - '+.yizhihongxing.com'
   - '+.yjcontentdelivery.com'
