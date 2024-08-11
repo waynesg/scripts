@@ -1,5 +1,5 @@
 #!name = cn
-#!date = 2024-08-10 01:08:41
+#!date = 2024-08-11 01:13:42
 #!
 payload:
   - '1-fss24-s0.streamhoster.com'
@@ -53969,7 +53969,9 @@ payload:
   - '+.mcchina.com'
   - '+.mcchou.com'
   - '+.mcd.cc'
+  - '+.mcd.cn'
   - '+.mcdchina.net'
+  - '+.mcdonalds.com.cn'
   - '+.mcdsusan.com'
   - '+.mcdusiv.com'
   - '+.mcdvisa.com'
