@@ -1,5 +1,5 @@
 #!name = proxy
-#!date = 2024-08-14 01:08:40
+#!date = 2024-08-15 01:05:19
 #!
 payload:
   - '3dns-1.adobe.com'
@@ -1992,8 +1992,10 @@ payload:
   - '+.andfaraway.net'
   - '+.android-x86.org'
   - '+.android.com'
+  - '+.androidauthority.com'
   - '+.androidify.com'
   - '+.androidplus.co'
+  - '+.androidpolice.com'
   - '+.androidtv.com'
   - '+.andygod.com'
   - '+.andysparis.com'
@@ -21531,6 +21533,7 @@ payload:
   - '+.technics.com'
   - '+.technologyandsociety.org'
   - '+.technorati.com'
+  - '+.techradar.com'
   - '+.techsmith.com'
   - '+.techspot.com'
   - '+.techstreet.com'
@@ -22116,6 +22119,7 @@ payload:
   - '+.tomatespodres.com'
   - '+.tomonews.net'
   - '+.tomovie.net'
+  - '+.tomsguide.com'
   - '+.tomshardware.com'
   - '+.tonec.com'
   - '+.tongil.or.kr'
@@ -25684,7 +25688,9 @@ payload:
   - '+.zbporn.com'
   - '+.zctb.buzz'
   - '+.zdassets.com'
+  - '+.zdnet.com'
   - '+.zdnet.com.tw'
+  - '+.zdnet.redvideo.io'
   - '+.zdusercontent.com'
   - '+.zee.com'
   - '+.zee5.com'
