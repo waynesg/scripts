@@ -1,30 +1,5 @@
-/**
- * Surge & Loon 的运行模式，根据当前网络自动切换模式，此脚本思路来自于Quantumult X。
- * @author: Peng-YM
- * 更新地址: https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tools/RunningMode/running-mode.js
- *
- *************** Surge配置 ***********************
- * 推荐使用模块：
- * https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tools/RunningMode/running-mode.sgmodule
- * 手动配置：
- * [Script]
- * event network-changed script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tools/RunningMode/running-mode.js
- *
- *************** Loon配置 ***********************
- * 推荐使用插件：
- * https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tools/RunningMode/running-mode.plugin
- * 手动配置：
- * [Script]
- * network-changed script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tools/RunningMode/running-mode.js
- *
- *************** 脚本配置 ***********************
- * 推荐使用BoxJS配置。
- * BoxJS订阅：https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/box.js.json
- * (不推荐！)手动配置项为config, 请看注释
- */
-
 let config = {
-  silence: false, // 是否静默运行，默认false
+  silence: true, // 是否静默运行，默认false
   cellular: "RULE", // 蜂窝数据下的模式，RULE代表规则模式，PROXY代表全局代理，DIRECT代表全局直连
   wifi: "RULE", // wifi下默认的模式
   all_direct: ["WAYNE@NETGEAR_5G", "WiFi@1803@5G"], // 指定全局直连的wifi名字
@@ -43,9 +18,9 @@ if (boxConfig) {
 const isLoon = typeof $loon !== "undefined";
 const isSurge = typeof $httpClient !== "undefined" && !isLoon;
 const MODE_NAMES = {
-  RULE: "规则模式",
-  PROXY: "全局代理",
-  DIRECT: "全局直连",
+  RULE: "🚦规则模式",
+  PROXY: "🚀全局代理模式",
+  DIRECT: "🎯全局直连模式",
 };
 
 manager();
