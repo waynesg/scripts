@@ -1,5 +1,5 @@
 #!name = proxy
-#!date = 2024-08-15 01:05:19
+#!date = 2024-08-16 01:07:56
 #!
 payload:
   - '3dns-1.adobe.com'
@@ -21102,6 +21102,7 @@ payload:
   - '+.storesense.com'
   - '+.storiesonline.net'
   - '+.storify.com'
+  - '+.storj.io'
   - '+.storm.mg'
   - '+.stormmediagroup.com'
   - '+.storyful.com'
@@ -22841,6 +22842,7 @@ payload:
   - '+.usatoday.com'
   - '+.usatodaynetworkservice.com'
   - '+.usc.edu'
+  - '+.uscardforum.com'
   - '+.uscnpm.org'
   - '+.uselessjunk.com'
   - '+.usembassy.gov'
