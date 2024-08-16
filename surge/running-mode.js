@@ -5,14 +5,14 @@
 
 
 let config = {
-  global_direct: "♲ 𝐃𝐢𝐫𝐞𝐜𝐭",
-  global_proxy: "𝑷𝒓𝒐𝒙𝒚",
+  global_direct: "Direct",
+  global_proxy: "Proxy",
   silence: false, // 是否静默运行，默认false
   cellular: "RULE", // 蜂窝数据下的模式，RULE代表规则模式，PROXY代表全局代理，DIRECT代表全局直连
   wifi: "RULE", // wifi下默认的模式
   all_direct: ["WAYNE@NETGEAR_5G", "WiFi@1803@5G"], // 指定全局直连的wifi名字
   all_proxy: [], // 指定全局代理的wifi名字
-  whitelist: ["𝑵𝒆𝒕𝒆𝒂𝒔𝒆 𝑴𝒖𝒔𝒊𝒄", "𝑨𝒅𝑮𝒖𝒂𝒓𝒅"],
+  whitelist: ["Neteasr Music", "AdGuard"],
 };
 
 const isLoon = typeof $loon !== "undefined";
@@ -142,9 +142,9 @@ function getSSIDMode(ssid) {
 
 function lookupOutbound(mode) {
   return {
-    RULE: "🚦规则模式",
-    PROXY: "🚀全局代理",
-    DIRECT: "🎯全局直连",
+    RULE: "规则模式",
+    PROXY: "全局代理",
+    DIRECT: "全局直连",
   }[mode];
 }
 
