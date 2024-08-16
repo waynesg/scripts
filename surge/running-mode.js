@@ -1,7 +1,7 @@
 let config = {
-  silence: true, // 是否静默运行，默认false
+  silence: false, // 是否静默运行，默认false
   cellular: "RULE", // 蜂窝数据下的模式，RULE代表规则模式，PROXY代表全局代理，DIRECT代表全局直连
-  wifi: "RULE", // wifi下默认的模式
+  wifi: "DIRECT", // wifi下默认的模式
   all_direct: ["WAYNE@NETGEAR_5G", "WiFi@1803@5G"], // 指定全局直连的wifi名字
   all_proxy: [], // 指定全局代理的wifi名字
 };
@@ -32,33 +32,28 @@ function manager() {
 
   if (isSurge) {
     const v4_ip = $network.v4.primaryAddress;
+    // no network connection
     if (!config.silence && !v4_ip) {
       notify("🤖 Surge 运行模式", "❌ 当前无网络", "");
       return;
     }
     ssid = $network.wifi.ssid;
-    console.log(`Current SSID: ${ssid}`); // 调试输出
     mode = ssid ? lookupSSID(ssid) : config.cellular;
-    console.log(`Matched mode: ${mode}`); // 调试输出
     const target = {
       RULE: "rule",
       PROXY: "global-proxy",
       DIRECT: "direct",
     }[mode];
-    console.log(`Setting outbound mode to: ${target}`); // 调试输出
     $surge.setOutboundMode(target);
   } else if (isLoon) {
     const conf = JSON.parse($config.getConfig());
     ssid = conf.ssid;
-    console.log(`Current SSID: ${ssid}`); // 调试输出
     mode = ssid ? lookupSSID(ssid) : config.cellular;
-    console.log(`Matched mode: ${mode}`); // 调试输出
     const target = {
       DIRECT: 0,
       RULE: 1,
       PROXY: 2,
     }[mode];
-    console.log(`Setting running model to: ${target}`); // 调试输出
     $config.setRunningModel(target);
   }
   if (!config.silence) {
@@ -76,7 +71,6 @@ function lookupSSID(ssid) {
   config.all_proxy.map((id) => (map[id] = "PROXY"));
 
   const matched = map[ssid];
-  console.log(`Lookup SSID: ${ssid}, Matched mode: ${matched || config.wifi}`); // 调试输出
   return matched ? matched : config.wifi;
 }
 
