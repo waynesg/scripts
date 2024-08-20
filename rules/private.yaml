@@ -1,5 +1,5 @@
 #!name = private
-#!date = 2024-08-19 01:09:30
+#!date = 2024-08-20 01:07:59
 #!
 payload:
   - '1337.abcvg.info'
@@ -8,7 +8,6 @@ payload:
   - 'amigacity.xyz'
   - 'asusrouter.com'
   - 'bandito.byterunner.io'
-  - 'bittorrent.service.gongt.me'
   - 'bt.ktrackers.com'
   - 'bt.okmp3.ru'
   - 'bt.rer.lol'
@@ -25,6 +24,7 @@ payload:
   - 'epider.me'
   - 'evan.im'
   - 'exodus.desync.com'
+  - 'free.publictracker.xyz'
   - 'instant.arubanetworks.com'
   - 'ipv4.rer.lol'
   - 'ipv6.rer.lol'
@@ -53,7 +53,6 @@ payload:
   - 'opentracker.io'
   - 'p2p.publictracker.xyz'
   - 'p4p.arenabg.com'
-  - 'public.tracker.vraphim.com'
   - 'pybittrack.retiolus.net'
   - 'retracker.hotplug.ru'
   - 'retracker.x2k.ru'
@@ -72,10 +71,11 @@ payload:
   - 'torrent.tracker.durukanbal.com'
   - 'torrents.artixlinux.org'
   - 'torrentsmd.com'
+  - 'tr.abir.ga'
   - 'tr.burnabyhighstar.com'
+  - 'tr.kxmp.cf'
   - 'tracker-zhuqiy.dgj055.icu'
   - 'tracker.0x7c0.com'
-  - 'tracker.auctor.tv'
   - 'tracker.birkenwald.de'
   - 'tracker.breizh.pm'
   - 'tracker.bt4g.com'
@@ -96,6 +96,7 @@ payload:
   - 'tracker.gcrenwp.top'
   - 'tracker.gmi.gd'
   - 'tracker.ipfsscan.io'
+  - 'tracker.ipv6tracker.org'
   - 'tracker.jamesthebard.net'
   - 'tracker.kuroy.me'
   - 'tracker.lilithraws.org'
