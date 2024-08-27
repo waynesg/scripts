@@ -1,5 +1,5 @@
 #!name = microsoft-cn
-#!date = 2024-08-26 01:09:29
+#!date = 2024-08-27 01:10:00
 #!
 payload:
   - 'b.c2r.ts.cdn.office.net'
