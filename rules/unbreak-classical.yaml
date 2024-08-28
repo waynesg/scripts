@@ -1,5 +1,5 @@
 #!name = unbreak-classical
-#!date = 2024-08-27 01:10:00
+#!date = 2024-08-28 01:10:31
 #!
 payload:
   - DOMAIN-SUFFIX,movie.douban.com
@@ -36,7 +36,6 @@ payload:
   - DOMAIN-SUFFIX,czzy.top
   - DOMAIN-SUFFIX,czys.top
   - DOMAIN-SUFFIX,czzy77.com
-  - DOMAIN-SUFFIX,v1.ax
   - IP-CIDR,216.180.0.0/16
   - IP-CIDR,103.160.204.120/32
   - IP-CIDR,138.199.9.104/32

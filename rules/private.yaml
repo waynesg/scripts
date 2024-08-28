@@ -1,5 +1,5 @@
 #!name = private
-#!date = 2024-08-27 01:09:56
+#!date = 2024-08-28 01:10:26
 #!
 payload:
   - '1337.abcvg.info'
@@ -8,7 +8,6 @@ payload:
   - 'asusrouter.com'
   - 'bandito.byterunner.io'
   - 'bittorrent.service.gongt.me'
-  - 'bt.ktrackers.com'
   - 'bt.okmp3.ru'
   - 'bt1.archive.org'
   - 'bt2.archive.org'
@@ -39,6 +38,7 @@ payload:
   - 'odd-hd.fr'
   - 'open.demonii.com'
   - 'open.dstud.io'
+  - 'open.free-tracker.ga'
   - 'open.publictracker.xyz'
   - 'open.stealth.si'
   - 'open.tracker.ink'
@@ -72,6 +72,7 @@ payload:
   - 'tracker-zhuqiy.dgj055.icu'
   - 'tracker.0x7c0.com'
   - 'tracker.birkenwald.de'
+  - 'tracker.bittor.pw'
   - 'tracker.breizh.pm'
   - 'tracker.bt4g.com'
   - 'tracker.ccp.ovh'
@@ -81,6 +82,7 @@ payload:
   - 'tracker.deadorbit.nl'
   - 'tracker.dler.com'
   - 'tracker.dler.org'
+  - 'tracker.dump.cl'
   - 'tracker.edkj.club'
   - 'tracker.electro-torrent.pl'
   - 'tracker.farted.net'
@@ -89,11 +91,13 @@ payload:
   - 'tracker.fnix.net'
   - 'tracker.gcrenwp.top'
   - 'tracker.gmi.gd'
+  - 'tracker.imgoingto.icu'
   - 'tracker.ipfsscan.io'
   - 'tracker.ipv6tracker.org'
   - 'tracker.jamesthebard.net'
   - 'tracker.kuroy.me'
   - 'tracker.lilithraws.org'
+  - 'tracker.mywaifu.best'
   - 'tracker.opentrackr.org'
   - 'tracker.openwebtorrent.com'
   - 'tracker.pmman.tech'
@@ -110,6 +114,7 @@ payload:
   - 'tracker.xor.st'
   - 'tracker.yemekyedim.com'
   - 'tracker1.520.jp'
+  - 'tracker1.bt.moack.co.kr'
   - 'tracker2.dler.org'
   - 'tracker2.itzmx.com'
   - 'tracker3.itzmx.com'
