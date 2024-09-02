@@ -1,5 +1,5 @@
 #!name = proxy
-#!date = 2024-09-01 01:22:13
+#!date = 2024-09-02 01:12:45
 #!
 payload:
   - '3dns-1.adobe.com'
@@ -17273,6 +17273,7 @@ payload:
   - '+.openamt.com'
   - '+.openapiplatform.com'
   - '+.openapiservice.com'
+  - '+.openart.ai'
   - '+.opencollective.com'
   - '+.opencreate.org'
   - '+.opendemocracy.net'
