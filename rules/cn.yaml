@@ -1,5 +1,5 @@
 #!name = cn
-#!date = 2024-09-03 01:10:39
+#!date = 2024-09-04 01:11:41
 #!
 payload:
   - '1-fss24-s0.streamhoster.com'
@@ -42250,6 +42250,7 @@ payload:
   - '+.ibmhz.com'
   - '+.ibmwclub.com'
   - '+.ibodao.com'
+  - '+.iboohee.com'
   - '+.ibook8.com'
   - '+.ibooker.cc'
   - '+.ibookstar.com'
@@ -44512,6 +44513,7 @@ payload:
   - '+.ivywing.me'
   - '+.iwala.net'
   - '+.iwan4399.com'
+  - '+.iwan78.com'
   - '+.iwanbei.com'
   - '+.iwanboy.com'
   - '+.iwangding.com'
@@ -53428,6 +53430,7 @@ payload:
   - '+.luoqiu.com'
   - '+.luoqiuzw.com'
   - '+.luoshendao.com'
+  - '+.luoshu.com'
   - '+.luoshuanchangjia.com'
   - '+.luosi.com'
   - '+.luosifen888.com'
@@ -88441,6 +88444,7 @@ payload:
   - '+.yqwyx.xyz'
   - '+.yqxiuyoung.com'
   - '+.yqxs.cc'
+  - '+.yqxsg.cc'
   - '+.yqxsge.cc'
   - '+.yqxxjy.com'
   - '+.yqy021.com'
