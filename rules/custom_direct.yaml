@@ -9,6 +9,8 @@ payload:
   - DOMAIN,closeai.one
   - DOMAIN-SUFFIX,cmvideo.cn
   - DOMAIN-SUFFIX,fanmingming.com
+  - DOMAIN,jk.wufangedu.com
+  - DOMAIN,oa.wufangedu.com
   - DOMAIN-SUFFIX,wufangedu.com
 #公益服
   - DOMAIN-SUFFIX,123456.al
