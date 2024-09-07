@@ -1,5 +1,5 @@
 #!name = private
-#!date = 2024-09-06 01:11:49
+#!date = 2024-09-07 01:10:21
 #!
 payload:
   - '1337.abcvg.info'
@@ -31,6 +31,7 @@ payload:
   - 'jutone.com'
   - 'leet-tracker.moe'
   - 'martin-gebhardt.eu'
+  - 'mc.itscraftsoftware.my.id'
   - 'metacubex.github.io'
   - 'metacubexd.pages.dev'
   - 'moonburrow.club'
@@ -51,7 +52,6 @@ payload:
   - 'opentracker.io'
   - 'p2p.publictracker.xyz'
   - 'p4p.arenabg.com'
-  - 'public.tracker.vraphim.com'
   - 'pybittrack.retiolus.net'
   - 'retracker.hotplug.ru'
   - 'retracker.x2k.ru'
@@ -63,7 +63,6 @@ payload:
   - 'seedpeer.net'
   - 'serpb.vpsburti.com'
   - 'setmeup.arubanetworks.com'
-  - 't.overflow.biz'
   - 't1.aag.moe'
   - 'tamas3.ynh.fr'
   - 'tk.greedland.net'
@@ -79,6 +78,7 @@ payload:
   - 'tracker-us.silksa.co.za'
   - 'tracker-zhuqiy.dgj055.icu'
   - 'tracker.0x7c0.com'
+  - 'tracker.auctor.tv'
   - 'tracker.birkenwald.de'
   - 'tracker.bittor.pw'
   - 'tracker.breizh.pm'
@@ -99,8 +99,8 @@ payload:
   - 'tracker.fnix.net'
   - 'tracker.gcrenwp.top'
   - 'tracker.gmi.gd'
-  - 'tracker.ipfsscan.io'
   - 'tracker.ipv6tracker.org'
+  - 'tracker.itscraftsoftware.my.id'
   - 'tracker.jamesthebard.net'
   - 'tracker.k.vu'
   - 'tracker.kuroy.me'
@@ -123,6 +123,7 @@ payload:
   - 'tracker.xor.st'
   - 'tracker.yemekyedim.com'
   - 'tracker1.520.jp'
+  - 'tracker1.bt.moack.co.kr'
   - 'tracker1.myporn.club'
   - 'tracker2.dler.org'
   - 'tracker2.itzmx.com'

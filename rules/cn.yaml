@@ -1,5 +1,5 @@
 #!name = cn
-#!date = 2024-09-06 01:11:52
+#!date = 2024-09-07 01:10:25
 #!
 payload:
   - '1-fss24-s0.streamhoster.com'
@@ -66261,7 +66261,6 @@ payload:
   - '+.rnhy.net'
   - '+.rnmtb.com'
   - '+.rnpagoc.site'
-  - '+.ro.com'
   - '+.ro50.com'
   - '+.ro8qwpaikd4kx.com'
   - '+.road-group.com'
@@ -73788,14 +73787,12 @@ payload:
   - '+.tapdata.net'
   - '+.tapenjoy.com'
   - '+.tapimg.com'
-  - '+.tapimg.net'
   - '+.tapotiexie.com'
   - '+.tappile.com'
   - '+.tapque.com'
   - '+.tapsvc.com'
   - '+.taptap-api.com'
   - '+.taptap.com'
-  - '+.taptap.io'
   - '+.taptapcode.com'
   - '+.taptapdada.com'
   - '+.taraniss.com'
