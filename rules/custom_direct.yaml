@@ -9,6 +9,7 @@ payload:
   - DOMAIN,closeai.one
   - DOMAIN-SUFFIX,cmvideo.cn
   - DOMAIN-SUFFIX,fanmingming.com
+  - DOMAIN-SUFFIX,wufangedu.com
 #公益服
   - DOMAIN-SUFFIX,123456.al
 # Emby 小雅全家桶 相关
