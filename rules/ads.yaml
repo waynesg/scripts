@@ -1,5 +1,5 @@
 #!name = ads
-#!date = 2024-09-07 01:10:23
+#!date = 2024-09-08 01:17:23
 #!
 payload:
   - '+.0.myikas.com'
@@ -42519,9 +42519,7 @@ payload:
   - '+.ipv4-c024-mia006-ix.1.oca.nflxvideo.net.iberostar.com'
   - '+.ipv4-cs.intsig.net.iberostar.com'
   - '+.ipv4.kkmh.com'
-  - '+.ipv4.music.163.com'
   - '+.ipv6.kg.qq.com'
-  - '+.ipv6.music.163.com'
   - '+.ipv6monitoring.eu'
   - '+.ipyjxs.chowsangsang.com'
   - '+.ipzolkgn.com'
@@ -55345,7 +55343,6 @@ payload:
   - '+.mieru-ca.com'
   - '+.miexgq.forevernew.co.nz'
   - '+.mifun.mobi'
-  - '+.migc.g.mi.com'
   - '+.migcreport.g.mi.com'
   - '+.miggslxuqlowz.com'
   - '+.mighbest.host'

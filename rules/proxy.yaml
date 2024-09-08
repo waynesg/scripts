@@ -1,5 +1,5 @@
 #!name = proxy
-#!date = 2024-09-07 01:10:24
+#!date = 2024-09-08 01:17:25
 #!
 payload:
   - '3dns-1.adobe.com'
@@ -350,6 +350,7 @@ payload:
   - 'ubisoft-uplay-savegames.s3.amazonaws.com'
   - 'ubistatic3-a.akamaihd.net'
   - 'ulrichsweb.serialssolutions.com'
+  - 'upos-hz-mirrorakam.akamaized.net'
   - 've-dash-uk-live.akamaized.net'
   - 've-uhd-push-uk-live.akamaized.net'
   - 'venmo.s3.amazonaws.com'
@@ -3797,6 +3798,8 @@ payload:
   - '+.bili2.cc'
   - '+.bili888.com'
   - '+.bili999.com'
+  - '+.bilibili.tv'
+  - '+.biliintl.com'
   - '+.biliplus.com'
   - '+.biliworld.com'
   - '+.bill-safe.com'
@@ -7182,6 +7185,7 @@ payload:
   - '+.drdreprobeatssale.com'
   - '+.dreamamateurs.com'
   - '+.dreambmw.ca'
+  - '+.dreamcast.hk'
   - '+.dreamforce.com'
   - '+.dreammovies.com'
   - '+.dreamteamfc.com'
@@ -11050,6 +11054,7 @@ payload:
   - '+.herringnetwork.com'
   - '+.hetzner.cloud'
   - '+.hetzner.com'
+  - '+.hetzner.company'
   - '+.hetzner.de'
   - '+.heungkongdiscuss.com'
   - '+.hex.pm'
@@ -12822,6 +12827,7 @@ payload:
   - '+.iptv.com.tw'
   - '+.iptvbin.com'
   - '+.ipvanish.com'
+  - '+.iq.com'
   - '+.iqiyiavlive.buzz'
   - '+.iqq2.cc'
   - '+.iqq3.cc'

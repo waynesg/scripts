@@ -1,5 +1,5 @@
 #!name = private
-#!date = 2024-09-07 01:10:21
+#!date = 2024-09-08 01:17:22
 #!
 payload:
   - '1337.abcvg.info'
@@ -14,7 +14,6 @@ payload:
   - 'bt1.archive.org'
   - 'bt2.archive.org'
   - 'bvarf.tracker.sh'
-  - 'ch3oh.ru'
   - 'clash.metacubex.one'
   - 'clash.razord.top'
   - 'concen.org'
@@ -47,11 +46,11 @@ payload:
   - 'open.stealth.si'
   - 'open.tracker.cl'
   - 'open.tracker.ink'
-  - 'open.u-p.pw'
   - 'opentor.org'
   - 'opentracker.io'
   - 'p2p.publictracker.xyz'
   - 'p4p.arenabg.com'
+  - 'public.tracker.vraphim.com'
   - 'pybittrack.retiolus.net'
   - 'retracker.hotplug.ru'
   - 'retracker.x2k.ru'
@@ -99,6 +98,7 @@ payload:
   - 'tracker.fnix.net'
   - 'tracker.gcrenwp.top'
   - 'tracker.gmi.gd'
+  - 'tracker.ipfsscan.io'
   - 'tracker.ipv6tracker.org'
   - 'tracker.itscraftsoftware.my.id'
   - 'tracker.jamesthebard.net'
