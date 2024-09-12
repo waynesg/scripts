@@ -1,5 +1,5 @@
 #!name = cn
-#!date = 2024-09-11 01:12:04
+#!date = 2024-09-12 01:12:07
 #!
 payload:
   - '1-fss24-s0.streamhoster.com'
@@ -24398,7 +24398,6 @@ payload:
   - '+.dfpost.com'
   - '+.dfpz.net'
   - '+.dfqcmy.com'
-  - '+.dfqzah.xyz'
   - '+.dfrcb.com'
   - '+.dfrlyy.com'
   - '+.dfs168.com'
@@ -50478,7 +50477,6 @@ payload:
   - '+.ladyol.com'
   - '+.ladystr.com'
   - '+.laf.run'
-  - '+.lafacw.xyz'
   - '+.lafaso.com'
   - '+.lafayettewines.com'
   - '+.lafy.org'
@@ -84864,7 +84862,6 @@ payload:
   - '+.xn--mnqs00c24c2pw0ii.com'
   - '+.xn--mts196b.net'
   - '+.xn--mts47c3w9b1qr.cn'
-  - '+.xn--mts60is5y5uk.com'
   - '+.xn--n5q75cia631gba51vx4ag2a008o08l1t0adzay2skp4b.com'
   - '+.xn--ntsp37j.net'
   - '+.xn--nyqx17d.com'
