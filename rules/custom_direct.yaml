@@ -11,6 +11,7 @@ payload:
   - DOMAIN-SUFFIX,fanmingming.com
   - DOMAIN-SUFFIX,wufangedu.com
   - DOMAIN-SUFFIX,logitech.io
+  - DOMAIN-SUFFIX,asuscloud.com
 #公益服
   - DOMAIN-SUFFIX,123456.al
 # Emby 小雅全家桶 相关
