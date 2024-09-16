@@ -1,5 +1,5 @@
 #!name = appletv
-#!date = 2024-09-15 01:20:00
+#!date = 2024-09-16 01:16:42
 #!
 payload:
   - 'hls-amt.itunes.apple.com'
