@@ -1,5 +1,5 @@
 #!name = ads
-#!date = 2024-09-18 01:12:26
+#!date = 2024-09-19 01:13:43
 #!
 payload:
   - '+.0.myikas.com'
@@ -6850,6 +6850,7 @@ payload:
   - '+.adx-drcn.op.dbankcloud.cn'
   - '+.adx-exchange.toast.com'
   - '+.adx-open-service.youku.com'
+  - '+.adx-os.anythinktech.com'
   - '+.adx-static.ksosoft.com'
   - '+.adx.36kr.com'
   - '+.adx.adxglobal.com'
