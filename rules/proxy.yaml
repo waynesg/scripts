@@ -1,5 +1,5 @@
 #!name = proxy
-#!date = 2024-09-21 01:12:29
+#!date = 2024-09-22 01:20:21
 #!
 payload:
   - '3dns-1.adobe.com'
@@ -6141,7 +6141,6 @@ payload:
   - '+.cccr.ac.uk'
   - '+.cccu.ac.uk'
   - '+.ccdc.ac.uk'
-  - '+.ccdc.cam.ac.uk'
   - '+.ccdtr.org'
   - '+.ccesd.ac.uk'
   - '+.ccfe.ac.uk'
