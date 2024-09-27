@@ -1,5 +1,5 @@
 #!name = private
-#!date = 2024-09-26 01:15:14
+#!date = 2024-09-27 01:15:59
 #!
 payload:
   - '1337.abcvg.info'
@@ -25,7 +25,6 @@ payload:
   - 'exodus.desync.com'
   - 'instant.arubanetworks.com'
   - 'ipv4.rer.lol'
-  - 'ipv4announce.sktorrent.eu'
   - 'ipv6.rer.lol'
   - 'jutone.com'
   - 'jvavav.com'
@@ -41,6 +40,7 @@ payload:
   - 'oasisauth.h3c.com'
   - 'odd-hd.fr'
   - 'open.demonii.com'
+  - 'open.dstud.io'
   - 'open.stealth.si'
   - 'open.tracker.ink'
   - 'opentor.org'
@@ -48,7 +48,9 @@ payload:
   - 'p2p.publictracker.xyz'
   - 'p4p.arenabg.com'
   - 'public.tracker.vraphim.com'
+  - 'pybittrack.retiolus.net'
   - 'retracker.hotplug.ru'
+  - 'retracker.lanta.me'
   - 'retracker.x2k.ru'
   - 'retracker01-msk-virt.corbina.net'
   - 'retracker2.x2k.ru'
@@ -57,7 +59,6 @@ payload:
   - 'seedpeer.net'
   - 'serpb.vpsburti.com'
   - 'setmeup.arubanetworks.com'
-  - 't.overflow.biz'
   - 'taciturn-shadow.spb.ru'
   - 'threads.canofsocks.com'
   - 'tk.greedland.net'
@@ -91,7 +92,6 @@ payload:
   - 'tracker.fnix.net'
   - 'tracker.gcrenwp.top'
   - 'tracker.gmi.gd'
-  - 'tracker.imgoingto.icu'
   - 'tracker.ipfsscan.io'
   - 'tracker.itscraftsoftware.my.id'
   - 'tracker.jamesthebard.net'
@@ -107,7 +107,6 @@ payload:
   - 'tracker.skyts.net'
   - 'tracker.srv00.com'
   - 'tracker.tamersunion.org'
-  - 'tracker.theoks.net'
   - 'tracker.tiny-vps.com'
   - 'tracker.torrent.eu.org'
   - 'tracker.torrust-demo.com'
@@ -116,7 +115,6 @@ payload:
   - 'tracker.yemekyedim.com'
   - 'tracker1.520.jp'
   - 'tracker1.bt.moack.co.kr'
-  - 'tracker1.myporn.club'
   - 'tracker2.dler.org'
   - 'tracker2.itzmx.com'
   - 'tracker3.itzmx.com'
@@ -128,7 +126,6 @@ payload:
   - 'wepzone.net'
   - 'www.all4nothin.net'
   - 'www.asusrouter.com'
-  - 'www.peckservers.com'
   - 'www.torrent.eu.org'
   - 'www.wareztorrent.com'
   - 'yacd.haishan.me'
