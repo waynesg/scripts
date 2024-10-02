@@ -1,5 +1,5 @@
 #!name = ads
-#!date = 2024-10-01 01:22:38
+#!date = 2024-10-02 01:15:44
 #!
 payload:
   - '+.0.myikas.com'
@@ -16064,7 +16064,6 @@ payload:
   - '+.c.originz.cn'
   - '+.c.panqis.cn'
   - '+.c.panqishu.com'
-  - '+.c.paypal.com'
   - '+.c.pcswtw.cn'
   - '+.c.ptffw.net'
   - '+.c.qhruixin.cn'
