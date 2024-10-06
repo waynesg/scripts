@@ -1,5 +1,5 @@
 #!name = unbreak-classical
-#!date = 2024-10-05 01:14:46
+#!date = 2024-10-06 01:21:03
 #!
 payload:
   - DOMAIN-SUFFIX,movie.douban.com
@@ -46,3 +46,4 @@ payload:
   - DOMAIN-KEYWORD,tt.cuc.myqcloud.com.cn
   - DOMAIN-SUFFIX,ikzybf.com
   - DOMAIN-SUFFIX,bfikuncdn.com
+  - DOMAIN-SUFFIX,yanetflix.one

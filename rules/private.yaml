@@ -1,5 +1,5 @@
 #!name = private
-#!date = 2024-10-05 01:14:42
+#!date = 2024-10-06 01:20:58
 #!
 payload:
   - '1337.abcvg.info'
@@ -12,6 +12,7 @@ payload:
   - 'bt1.archive.org'
   - 'bt2.archive.org'
   - 'bvarf.tracker.sh'
+  - 'ch3oh.ru'
   - 'clash.metacubex.one'
   - 'clash.razord.top'
   - 'concen.org'
@@ -60,8 +61,6 @@ payload:
   - 'torrentsmd.com'
   - 'tr.burnabyhighstar.com'
   - 'tr1.aag.moe'
-  - 'tr2.trkb.ru'
-  - 'tr4ck3r.duckdns.org'
   - 'trackarr.org'
   - 'tracker-zhuqiy.dgj055.icu'
   - 'tracker.0x7c0.com'
@@ -70,9 +69,11 @@ payload:
   - 'tracker.bt4g.com'
   - 'tracker.ccp.ovh'
   - 'tracker.cloaka.xyz'
+  - 'tracker.cloudit.top'
   - 'tracker.cyberia.is'
   - 'tracker.darkness.services'
   - 'tracker.ddunlimited.net'
+  - 'tracker.deadorbit.nl'
   - 'tracker.dler.com'
   - 'tracker.dler.org'
   - 'tracker.edkj.club'
@@ -96,6 +97,7 @@ payload:
   - 'tracker.openwebtorrent.com'
   - 'tracker.peckservers.com'
   - 'tracker.pmman.tech'
+  - 'tracker.qu.ax'
   - 'tracker.renfei.net'
   - 'tracker.skynetcloud.site'
   - 'tracker.skyts.net'
@@ -109,7 +111,6 @@ payload:
   - 'tracker.waaa.moe'
   - 'tracker.yemekyedim.com'
   - 'tracker1.520.jp'
-  - 'tracker1.bt.moack.co.kr'
   - 'tracker1.myporn.club'
   - 'tracker2.dler.org'
   - 'tracker2.itzmx.com'
