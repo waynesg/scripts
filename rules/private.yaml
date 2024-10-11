@@ -1,10 +1,11 @@
 #!name = private
-#!date = 2024-10-10 01:15:11
+#!date = 2024-10-11 01:15:22
 #!
 payload:
   - '1337.abcvg.info'
   - '1c.premierzal.ru'
   - 'aegir.sexy'
+  - 'api.clasificadosrapidos.com'
   - 'asusrouter.com'
   - 'bandito.byterunner.io'
   - 'bt.ktrackers.com'
@@ -40,7 +41,6 @@ payload:
   - 'open.stealth.si'
   - 'open.tracker.ink'
   - 'open.u-p.pw'
-  - 'open.xxtor.com'
   - 'opentor.org'
   - 'opentracker.io'
   - 'p2p.publictracker.xyz'
@@ -56,10 +56,10 @@ payload:
   - 'seedpeer.net'
   - 'serpb.vpsburti.com'
   - 'setmeup.arubanetworks.com'
+  - 'sparkle.ghostchu-services.top'
   - 'taciturn-shadow.spb.ru'
   - 'tk.greedland.net'
   - 'tk2.trackerservers.com'
-  - 'torrent.tracker.durukanbal.com'
   - 'torrents.artixlinux.org'
   - 'torrentsmd.com'
   - 'tr.abir.ga'
@@ -67,6 +67,7 @@ payload:
   - 'tr.kxmp.cf'
   - 'tr1.aag.moe'
   - 'tr2.trkb.ru'
+  - 'tr4ck3r.duckdns.org'
   - 'trackarr.org'
   - 'tracker-zhuqiy.dgj055.icu'
   - 'tracker.0x7c0.com'
@@ -95,6 +96,7 @@ payload:
   - 'tracker.ipv6tracker.org'
   - 'tracker.itscraftsoftware.my.id'
   - 'tracker.jamesthebard.net'
+  - 'tracker.kmzs123.cf'
   - 'tracker.kuroy.me'
   - 'tracker.lilithraws.org'
   - 'tracker.mywaifu.best'
@@ -108,6 +110,7 @@ payload:
   - 'tracker.skyts.net'
   - 'tracker.srv00.com'
   - 'tracker.tamersunion.org'
+  - 'tracker.theoks.net'
   - 'tracker.tiny-vps.com'
   - 'tracker.torrent.eu.org'
   - 'tracker.torrust-demo.com'
