@@ -1,5 +1,5 @@
 #!name = private
-#!date = 2024-10-12 01:13:40
+#!date = 2024-10-13 01:20:40
 #!
 payload:
   - '1337.abcvg.info'
@@ -8,7 +8,6 @@ payload:
   - 'api.clasificadosrapidos.com'
   - 'asusrouter.com'
   - 'bandito.byterunner.io'
-  - 'bt.ktrackers.com'
   - 'bt.okmp3.ru'
   - 'bt.rer.lol'
   - 'bvarf.tracker.sh'
@@ -36,12 +35,13 @@ payload:
   - 'open.dstud.io'
   - 'open.free-tracker.ga'
   - 'open.stealth.si'
+  - 'open.tracker.cl'
   - 'open.tracker.ink'
+  - 'open.u-p.pw'
   - 'opentor.org'
   - 'opentracker.io'
   - 'p2p.publictracker.xyz'
   - 'p4p.arenabg.com'
-  - 'public.tracker.vraphim.com'
   - 'pybittrack.retiolus.net'
   - 'retracker.hotplug.ru'
   - 'retracker.lanta.me'
@@ -53,7 +53,6 @@ payload:
   - 'serpb.vpsburti.com'
   - 'setmeup.arubanetworks.com'
   - 'sparkle.ghostchu-services.top'
-  - 't.overflow.biz'
   - 'taciturn-shadow.spb.ru'
   - 'tk.greedland.net'
   - 'tk2.trackerservers.com'
@@ -64,6 +63,7 @@ payload:
   - 'tr.kxmp.cf'
   - 'tr1.aag.moe'
   - 'tr2.trkb.ru'
+  - 'tr4ck3r.duckdns.org'
   - 'trackarr.org'
   - 'tracker-zhuqiy.dgj055.icu'
   - 'tracker.0x7c0.com'
@@ -84,7 +84,6 @@ payload:
   - 'tracker.edkj.club'
   - 'tracker.electro-torrent.pl'
   - 'tracker.filemail.com'
-  - 'tracker.files.fm'
   - 'tracker.fnix.net'
   - 'tracker.gcrenwp.top'
   - 'tracker.gigantino.net'
@@ -116,8 +115,6 @@ payload:
   - 'tracker.waaa.moe'
   - 'tracker.yemekyedim.com'
   - 'tracker1.520.jp'
-  - 'tracker1.bt.moack.co.kr'
-  - 'tracker1.myporn.club'
   - 'tracker2.dler.org'
   - 'tracker2.itzmx.com'
   - 'tracker3.itzmx.com'
