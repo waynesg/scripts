@@ -1,5 +1,5 @@
 #!name = cn
-#!date = 2024-10-13 01:20:43
+#!date = 2024-10-14 01:17:49
 #!
 payload:
   - '1-fss24-s0.streamhoster.com'
@@ -17905,6 +17905,7 @@ payload:
   - '+.centrostuditaliani.com'
   - '+.century21cn.com'
   - '+.centurycreation.com'
+  - '+.centuryenglish.com'
   - '+.centurytrip.com'
   - '+.cenvan.net'
   - '+.cenvandns.com'
