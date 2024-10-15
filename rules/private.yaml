@@ -1,5 +1,5 @@
 #!name = private
-#!date = 2024-10-14 01:17:46
+#!date = 2024-10-15 01:16:37
 #!
 payload:
   - '1337.abcvg.info'
@@ -12,7 +12,6 @@ payload:
   - 'bt.okmp3.ru'
   - 'bt.rer.lol'
   - 'bvarf.tracker.sh'
-  - 'ch3oh.ru'
   - 'clash.metacubex.one'
   - 'concen.org'
   - 'd40969.acod.regrucolo.ru'
@@ -63,7 +62,6 @@ payload:
   - 'tr.kxmp.cf'
   - 'tr1.aag.moe'
   - 'tr2.trkb.ru'
-  - 'tr4ck3r.duckdns.org'
   - 'trackarr.org'
   - 'tracker-zhuqiy.dgj055.icu'
   - 'tracker.0x7c0.com'
@@ -105,6 +103,7 @@ payload:
   - 'tracker.skyts.net'
   - 'tracker.srv00.com'
   - 'tracker.tamersunion.org'
+  - 'tracker.theoks.net'
   - 'tracker.tiny-vps.com'
   - 'tracker.torrent.eu.org'
   - 'tracker.torrust-demo.com'
