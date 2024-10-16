@@ -65,3 +65,4 @@ payload:
   - '+.sentry.io'
   - '+.stripe.com'
   - '+.turn.livekit.cloud'
+  - '+.meta.ai'
