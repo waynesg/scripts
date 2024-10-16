@@ -20,6 +20,16 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@main
 
+    - name: Download unbreak-classical.yaml
+      run: |
+        curl -o rules/unbreak-classical.yaml https://raw.githubusercontent.com/qoli/SyncnextClash/main/Unbreak-classical.yaml
+        echo "Downloaded unbreak-classical.yaml"
+
+    - name: Download proxy-classical.yaml
+      run: |
+        curl -o rules/proxy-classical.yaml https://raw.githubusercontent.com/qoli/SyncnextClash/main/proxy-classical.yaml
+        echo "Downloaded proxy-classical.yaml"
+
     - name: Clean and merge unbreak-classical.yaml into custom_direct.yaml
       run: |
         echo "# Cleaning and merging unbreak-classical.yaml into custom_direct.yaml"
@@ -50,8 +60,8 @@ jobs:
         declare -A files
         files["ai.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/ai.yaml"
         files["networktest.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/networktest.yaml"
-        files["unbreak-classical.yaml"]="https://raw.githubusercontent.com/qoli/SyncnextClash/main/Unbreak-classical.yaml"
-        files["proxy-classical.yaml"]="https://raw.githubusercontent.com/qoli/SyncnextClash/main/proxy-classical.yaml"
+        #files["unbreak-classical.yaml"]="https://raw.githubusercontent.com/qoli/SyncnextClash/main/Unbreak-classical.yaml"
+        #files["proxy-classical.yaml"]="https://raw.githubusercontent.com/qoli/SyncnextClash/main/proxy-classical.yaml"
         
         for file in "${!files[@]}"; do
           curl -o rules/$file ${files[$file]}
