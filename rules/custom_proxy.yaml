@@ -1,6 +1,3 @@
-# AUTHOR: waynesg
-# NAME: custom_proxy
-payload:
   - DOMAIN,mtalk.google.com
   - DOMAIN,services.googleapis.cn
   - DOMAIN,xn--ngstr-lra8j.com
@@ -41,3 +38,6 @@ payload:
   - DOMAIN-SUFFIX,tmdb.org
   - DOMAIN-SUFFIX,v1.ax
   - DOMAIN-SUFFIX,v82u1l.com
+# AUTHOR: waynesg
+# NAME: custom_proxy
+payload:

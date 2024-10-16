@@ -1,6 +1,3 @@
-# AUTHOR: waynesg
-# NAME: custom_direct
-payload:
   - DOMAIN,api.gugudata.com
   - DOMAIN-KEYWORD,bfzycdn.com
   - DOMAIN-KEYWORD,default.akamaized.net
@@ -62,3 +59,6 @@ payload:
   - IP-CIDR,138.199.9.104/32
   - IP-CIDR,216.180.0.0/16
   - IP-CIDR6,2606:4700:4700::1111/128,DIRECT,no-resolve
+# AUTHOR: waynesg
+# NAME: custom_direct
+payload:
