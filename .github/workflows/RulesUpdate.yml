@@ -34,6 +34,8 @@ jobs:
       run: |
         echo "# Cleaning and merging unbreak-classical.yaml into custom_direct.yaml"
         cleaned_rules=$(sed '/^#!.*$/d; /^payload:/d' rules/unbreak-classical.yaml)
+        echo "Cleaned rules:"
+        echo "$cleaned_rules"  # 输出清理后的规则
         echo "$cleaned_rules" | grep -Fxv -f rules/custom_direct.yaml > temp_rules.txt
         if [ -s temp_rules.txt ]; then
           echo "$cleaned_rules" >> rules/custom_direct.yaml
@@ -53,6 +55,8 @@ jobs:
       run: |
         echo "# Cleaning and merging proxy-classical.yaml into custom_proxy.yaml"
         cleaned_rules=$(sed '/^#!.*$/d; /^payload:/d' rules/proxy-classical.yaml)
+        echo "Cleaned rules:"
+        echo "$cleaned_rules"  # 输出清理后的规则
         echo "$cleaned_rules" | grep -Fxv -f rules/custom_proxy.yaml > temp_rules.txt
         if [ -s temp_rules.txt ]; then
           echo "$cleaned_rules" >> rules/custom_proxy.yaml
