@@ -20,96 +20,84 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@main
 
+    # 下载 Unbreak-classical.yaml 文件
     - name: Download unbreak-classical.yaml
       run: |
         curl -o rules/unbreak-classical.yaml https://raw.githubusercontent.com/qoli/SyncnextClash/main/Unbreak-classical.yaml
         echo "Downloaded unbreak-classical.yaml"
 
+    # 下载 proxy-classical.yaml 文件
     - name: Download proxy-classical.yaml
       run: |
         curl -o rules/proxy-classical.yaml https://raw.githubusercontent.com/qoli/SyncnextClash/main/proxy-classical.yaml
         echo "Downloaded proxy-classical.yaml"
 
-    - name: Clean and merge unbreak-classical.yaml into custom_direct.yaml
+    # 合并并清理 unbreak-classical.yaml 到 custom_direct.yaml
+    - name: Merge and clean unbreak-classical.yaml into custom_direct.yaml
       run: |
-        echo "# Cleaning and merging unbreak-classical.yaml into custom_direct.yaml"
-        # 清理规则，保留非空行和不以 # 开头的行
+        echo "# Merging unbreak-classical.yaml into custom_direct.yaml"
+        # 删除不需要的行，只保留规则部分
         cleaned_rules=$(sed '/^#!.*$/d; /^payload:/d; /^$/d' rules/unbreak-classical.yaml)
-        echo "Cleaned rules:"
-        echo "$cleaned_rules"  # 输出清理后的规则
+        echo "Cleaned rules from unbreak-classical.yaml:"
+        echo "$cleaned_rules"
 
+        # 如果有新的规则
         if [ -n "$cleaned_rules" ]; then
-          echo "Merging cleaned rules into custom_direct.yaml"
-          # 追加清理后的规则到 custom_direct.yaml
+          echo "Appending cleaned rules to custom_direct.yaml"
+          # 将新规则合并，防止重复
           echo "$cleaned_rules" | grep -Fxv -f rules/custom_direct.yaml >> rules/custom_direct.yaml
-          echo "Merged cleaned content from unbreak-classical.yaml into custom_direct.yaml"
+          echo "Merged rules into custom_direct.yaml"
         else
           echo "No new rules to add from unbreak-classical.yaml"
         fi
 
-    - name: Log current custom_direct.yaml content
+    # 合并并清理 proxy-classical.yaml 到 custom_proxy.yaml
+    - name: Merge and clean proxy-classical.yaml into custom_proxy.yaml
       run: |
-        echo "Current content of custom_direct.yaml:"
-        cat rules/custom_direct.yaml
-
-    - name: Remove duplicates from custom_direct.yaml
-      run: |
-        echo "# Removing duplicates from custom_direct.yaml"
-        if [ -f rules/custom_direct.yaml ]; then
-          sort -u rules/custom_direct.yaml -o rules/custom_direct.yaml
-          echo "Duplicates removed from custom_direct.yaml"
-        else
-          echo "custom_direct.yaml does not exist"
-        fi
-        echo "Content after removing duplicates:"
-        cat rules/custom_direct.yaml
-
-    - name: Clean and merge proxy-classical.yaml into custom_proxy.yaml
-      run: |
-        echo "# Cleaning and merging proxy-classical.yaml into custom_proxy.yaml"
-        # 清理规则，保留非空行和不以 # 开头的行
+        echo "# Merging proxy-classical.yaml into custom_proxy.yaml"
+        # 删除不需要的行，只保留规则部分
         cleaned_rules=$(sed '/^#!.*$/d; /^payload:/d; /^$/d' rules/proxy-classical.yaml)
-        echo "Cleaned rules:"
-        echo "$cleaned_rules"  # 输出清理后的规则
+        echo "Cleaned rules from proxy-classical.yaml:"
+        echo "$cleaned_rules"
 
+        # 如果有新的规则
         if [ -n "$cleaned_rules" ]; then
-          echo "Merging cleaned rules into custom_proxy.yaml"
-          # 追加清理后的规则到 custom_proxy.yaml
+          echo "Appending cleaned rules to custom_proxy.yaml"
+          # 将新规则合并，防止重复
           echo "$cleaned_rules" | grep -Fxv -f rules/custom_proxy.yaml >> rules/custom_proxy.yaml
-          echo "Merged cleaned content from proxy-classical.yaml into custom_proxy.yaml"
+          echo "Merged rules into custom_proxy.yaml"
         else
           echo "No new rules to add from proxy-classical.yaml"
         fi
 
-    - name: Log current custom_proxy.yaml content
+    # 移除 custom_direct.yaml 和 custom_proxy.yaml 中的重复项
+    - name: Remove duplicates from custom_direct.yaml and custom_proxy.yaml
       run: |
-        echo "Current content of custom_proxy.yaml:"
-        cat rules/custom_proxy.yaml
-
-    - name: Remove duplicates from custom_proxy.yaml
-      run: |
-        echo "# Removing duplicates from custom_proxy.yaml"
+        echo "Removing duplicates from custom_direct.yaml and custom_proxy.yaml"
+        if [ -f rules/custom_direct.yaml ]; then
+          sort -u rules/custom_direct.yaml -o rules/custom_direct.yaml
+          echo "Duplicates removed from custom_direct.yaml"
+        fi
         if [ -f rules/custom_proxy.yaml ]; then
           sort -u rules/custom_proxy.yaml -o rules/custom_proxy.yaml
           echo "Duplicates removed from custom_proxy.yaml"
-        else
-          echo "custom_proxy.yaml does not exist"
         fi
-        echo "Content after removing duplicates:"
-        cat rules/custom_proxy.yaml
 
+    # 删除临时文件
     - name: Delete unbreak-classical.yaml and proxy-classical.yaml
       run: |
         echo "Deleting unbreak-classical.yaml and proxy-classical.yaml"
         rm rules/unbreak-classical.yaml rules/proxy-classical.yaml
 
+    # 提交更改并推送到 GitHub
     - name: Commit and push changes
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git add rules/custom_direct.yaml rules/custom_proxy.yaml
-        git commit -m "Merged and deleted unbreak-classical.yaml and proxy-classical.yaml" || echo "No changes to commit"
-        git push
+        # 使用 "|| echo 'No changes to commit'" 防止在没有更新时失败
+        git commit -m "Merged and cleaned rules from unbreak-classical.yaml and proxy-classical.yaml" || echo "No changes to commit"
+        git push || echo "Nothing to push"
       
     - name: Fetch Updates for Rules
       run: |
