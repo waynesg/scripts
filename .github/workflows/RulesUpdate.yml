@@ -19,93 +19,14 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@main
-
-    # 下载 Unbreak-classical.yaml 文件
-    - name: Download unbreak-classical.yaml
-      run: |
-        curl -o rules/unbreak-classical.yaml https://raw.githubusercontent.com/qoli/SyncnextClash/main/Unbreak-classical.yaml
-        echo "Downloaded unbreak-classical.yaml"
-
-    # 下载 proxy-classical.yaml 文件
-    - name: Download proxy-classical.yaml
-      run: |
-        curl -o rules/proxy-classical.yaml https://raw.githubusercontent.com/qoli/SyncnextClash/main/proxy-classical.yaml
-        echo "Downloaded proxy-classical.yaml"
-
-    # 合并并清理 unbreak-classical.yaml 到 custom_direct.yaml
-    - name: Merge and clean unbreak-classical.yaml into custom_direct.yaml
-      run: |
-        echo "# Merging unbreak-classical.yaml into custom_direct.yaml"
-        # 删除不需要的行，只保留规则部分
-        cleaned_rules=$(sed '/^#!.*$/d; /^payload:/d; /^$/d' rules/unbreak-classical.yaml)
-        echo "Cleaned rules from unbreak-classical.yaml:"
-        echo "$cleaned_rules"
-
-        # 如果有新的规则
-        if [ -n "$cleaned_rules" ]; then
-          echo "Appending cleaned rules to custom_direct.yaml"
-          # 将新规则合并，防止重复
-          echo "$cleaned_rules" | grep -Fxv -f rules/custom_direct.yaml >> rules/custom_direct.yaml
-          echo "Merged rules into custom_direct.yaml"
-        else
-          echo "No new rules to add from unbreak-classical.yaml"
-        fi
-
-    # 合并并清理 proxy-classical.yaml 到 custom_proxy.yaml
-    - name: Merge and clean proxy-classical.yaml into custom_proxy.yaml
-      run: |
-        echo "# Merging proxy-classical.yaml into custom_proxy.yaml"
-        # 删除不需要的行，只保留规则部分
-        cleaned_rules=$(sed '/^#!.*$/d; /^payload:/d; /^$/d' rules/proxy-classical.yaml)
-        echo "Cleaned rules from proxy-classical.yaml:"
-        echo "$cleaned_rules"
-
-        # 如果有新的规则
-        if [ -n "$cleaned_rules" ]; then
-          echo "Appending cleaned rules to custom_proxy.yaml"
-          # 将新规则合并，防止重复
-          echo "$cleaned_rules" | grep -Fxv -f rules/custom_proxy.yaml >> rules/custom_proxy.yaml
-          echo "Merged rules into custom_proxy.yaml"
-        else
-          echo "No new rules to add from proxy-classical.yaml"
-        fi
-
-    # 移除 custom_direct.yaml 和 custom_proxy.yaml 中的重复项
-    - name: Remove duplicates from custom_direct.yaml and custom_proxy.yaml
-      run: |
-        echo "Removing duplicates from custom_direct.yaml and custom_proxy.yaml"
-        if [ -f rules/custom_direct.yaml ]; then
-          sort -u rules/custom_direct.yaml -o rules/custom_direct.yaml
-          echo "Duplicates removed from custom_direct.yaml"
-        fi
-        if [ -f rules/custom_proxy.yaml ]; then
-          sort -u rules/custom_proxy.yaml -o rules/custom_proxy.yaml
-          echo "Duplicates removed from custom_proxy.yaml"
-        fi
-
-    # 删除临时文件
-    - name: Delete unbreak-classical.yaml and proxy-classical.yaml
-      run: |
-        echo "Deleting unbreak-classical.yaml and proxy-classical.yaml"
-        rm rules/unbreak-classical.yaml rules/proxy-classical.yaml
-
-    # 提交更改并推送到 GitHub
-    - name: Commit and push changes
-      run: |
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        git add rules/custom_direct.yaml rules/custom_proxy.yaml
-        # 使用 "|| echo 'No changes to commit'" 防止在没有更新时失败
-        git commit -m "Merged and cleaned rules from unbreak-classical.yaml and proxy-classical.yaml" || echo "No changes to commit"
-        git push || echo "Nothing to push"
       
     - name: Fetch Updates for Rules
       run: |
         declare -A files
         files["ai.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/ai.yaml"
         files["networktest.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/networktest.yaml"
-        #files["unbreak-classical.yaml"]="https://raw.githubusercontent.com/qoli/SyncnextClash/main/Unbreak-classical.yaml"
-        #files["proxy-classical.yaml"]="https://raw.githubusercontent.com/qoli/SyncnextClash/main/proxy-classical.yaml"
+        files["unbreak-classical.yaml"]="https://raw.githubusercontent.com/qoli/SyncnextClash/main/Unbreak-classical.yaml"
+        files["proxy-classical.yaml"]="https://raw.githubusercontent.com/qoli/SyncnextClash/main/proxy-classical.yaml"
         
         for file in "${!files[@]}"; do
           curl -o rules/$file ${files[$file]}
