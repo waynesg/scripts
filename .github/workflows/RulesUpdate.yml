@@ -36,9 +36,11 @@ jobs:
         cleaned_rules=$(sed '/^#!.*$/d; /^payload:/d' rules/unbreak-classical.yaml | grep -v '^$')
         echo "Cleaned rules:"
         echo "$cleaned_rules"  # 输出清理后的规则
+
         if [ -n "$cleaned_rules" ]; then
+          echo "Merging cleaned rules into custom_direct.yaml"
           # 追加清理后的规则到 custom_direct.yaml
-          echo "$cleaned_rules" | grep -Fxv -f rules/custom_direct.yaml >> rules/custom_direct.yaml
+          echo "$cleaned_rules" | grep -Fxv -f rules/custom_direct.yaml >> rules/custom_direct.yaml || echo "Error appending cleaned rules"
           echo "Merged cleaned content from unbreak-classical.yaml into custom_direct.yaml"
         else
           echo "No new rules to add from unbreak-classical.yaml"
@@ -52,8 +54,12 @@ jobs:
     - name: Remove duplicates from custom_direct.yaml
       run: |
         echo "# Removing duplicates from custom_direct.yaml"
-        sort -u rules/custom_direct.yaml -o rules/custom_direct.yaml
-        echo "Duplicates removed from custom_direct.yaml"
+        if [ -f rules/custom_direct.yaml ]; then
+          sort -u rules/custom_direct.yaml -o rules/custom_direct.yaml
+          echo "Duplicates removed from custom_direct.yaml"
+        else
+          echo "custom_direct.yaml does not exist"
+        fi
         echo "Content after removing duplicates:"
         cat rules/custom_direct.yaml
 
@@ -63,9 +69,11 @@ jobs:
         cleaned_rules=$(sed '/^#!.*$/d; /^payload:/d' rules/proxy-classical.yaml | grep -v '^$')
         echo "Cleaned rules:"
         echo "$cleaned_rules"  # 输出清理后的规则
+
         if [ -n "$cleaned_rules" ]; then
+          echo "Merging cleaned rules into custom_proxy.yaml"
           # 追加清理后的规则到 custom_proxy.yaml
-          echo "$cleaned_rules" | grep -Fxv -f rules/custom_proxy.yaml >> rules/custom_proxy.yaml
+          echo "$cleaned_rules" | grep -Fxv -f rules/custom_proxy.yaml >> rules/custom_proxy.yaml || echo "Error appending cleaned rules"
           echo "Merged cleaned content from proxy-classical.yaml into custom_proxy.yaml"
         else
           echo "No new rules to add from proxy-classical.yaml"
@@ -79,8 +87,12 @@ jobs:
     - name: Remove duplicates from custom_proxy.yaml
       run: |
         echo "# Removing duplicates from custom_proxy.yaml"
-        sort -u rules/custom_proxy.yaml -o rules/custom_proxy.yaml
-        echo "Duplicates removed from custom_proxy.yaml"
+        if [ -f rules/custom_proxy.yaml ]; then
+          sort -u rules/custom_proxy.yaml -o rules/custom_proxy.yaml
+          echo "Duplicates removed from custom_proxy.yaml"
+        else
+          echo "custom_proxy.yaml does not exist"
+        fi
         echo "Content after removing duplicates:"
         cat rules/custom_proxy.yaml
 
