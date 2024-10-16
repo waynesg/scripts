@@ -1,68 +1,68 @@
-# NAME: custom_direct
-# AUTHOR: waynesg
-payload:
-  - DOMAIN-SUFFIX,asusucloud.com
-  - DOMAIN-SUFFIX,waynesg.cc
-  - DOMAIN-SUFFIX,mysub.cc
-  - DOMAIN-SUFFIX,banans.eu.org
-  - DOMAIN-SUFFIX,880031.xyz
-  - DOMAIN-SUFFIX,cmvideo.cn
-  - DOMAIN-SUFFIX,fanmingming.com
-  - DOMAIN-SUFFIX,wufangedu.com
-  - DOMAIN-SUFFIX,logitech.io
   - DOMAIN,api.gugudata.com
-#公益服
-  - DOMAIN-SUFFIX,123456.al
-#小雅全家桶
-  - DOMAIN-SUFFIX,ddsrem.com
-  - DOMAIN-SUFFIX,resilio.com
-  - DOMAIN-SUFFIX,ipinfo.io
-# IP Testing(ipcheck)
-  - IP-CIDR,1.0.0.1/32,DIRECT,no-resolve
-  - IP-CIDR6,2606:4700:4700::1111/128,DIRECT,no-resolve
-# syncnext
-  - DOMAIN-SUFFIX,movie.douban.com
-  - DOMAIN-SUFFIX,mddcloud.com.cn
-  - DOMAIN-SUFFIX,aliyundrive.asia
-  - DOMAIN-SUFFIX,ddys.info
-  - DOMAIN-SUFFIX,ddys.wiki
-  - DOMAIN-SUFFIX,ddys.pro
-  - DOMAIN-SUFFIX,ddys.mov
-  - DOMAIN-SUFFIX,ddys.art
-  - DOMAIN-SUFFIX,zh188.net
-  - DOMAIN-SUFFIX,kczybf.com
-  - DOMAIN-SUFFIX,mixpanel.com
-  - DOMAIN-SUFFIX,appsflyer.com
-  - DOMAIN-SUFFIX,tv.apple.com
-  - DOMAIN-SUFFIX,ctyunxs.cn
-  - DOMAIN-SUFFIX,hls.aoxtv.com
-  - DOMAIN-KEYWORD,ffzy-play
   - DOMAIN-KEYWORD,bfzycdn.com
-  - DOMAIN-KEYWORD,lzcdn
-  - DOMAIN-KEYWORD,v.cdnlz
-  - DOMAIN-KEYWORD,lz-cdn
   - DOMAIN-KEYWORD,default.akamaized.net
+  - DOMAIN-KEYWORD,ffzy-play
+  - DOMAIN-KEYWORD,ffzyread
+  - DOMAIN-KEYWORD,lz-cdn
+  - DOMAIN-KEYWORD,lzcdn
+  - DOMAIN-KEYWORD,tt.cuc.myqcloud.com.cn
+  - DOMAIN-KEYWORD,v.cdnlz
   - DOMAIN-KEYWORD,vip.ffzy-online
   - DOMAIN-KEYWORD,vip.ffzy-play
-  - DOMAIN-KEYWORD,ffzyread
-  - DOMAIN-SUFFIX,kuaikan-api.com
+  - DOMAIN-SUFFIX,123456.al
+  - DOMAIN-SUFFIX,880031.xyz
+  - DOMAIN-SUFFIX,CZZ9.COM
+  - DOMAIN-SUFFIX,aliyundrive.asia
+  - DOMAIN-SUFFIX,appsflyer.com
+  - DOMAIN-SUFFIX,asusucloud.com
+  - DOMAIN-SUFFIX,banans.eu.org
+  - DOMAIN-SUFFIX,bfikuncdn.com
+  - DOMAIN-SUFFIX,cmvideo.cn
+  - DOMAIN-SUFFIX,ctyunxs.cn
   - DOMAIN-SUFFIX,cz.cz01.site
-  - DOMAIN-SUFFIX,czzy88.com
+  - DOMAIN-SUFFIX,cz233.com
+  - DOMAIN-SUFFIX,czys.top
+  - DOMAIN-SUFFIX,czzy.top
   - DOMAIN-SUFFIX,czzy22.com
   - DOMAIN-SUFFIX,czzy66.com
-  - DOMAIN-SUFFIX,cz233.com
-  - DOMAIN-SUFFIX,CZZ9.COM
-  - DOMAIN-SUFFIX,czzy.top
-  - DOMAIN-SUFFIX,czys.top
   - DOMAIN-SUFFIX,czzy77.com
-  - IP-CIDR,216.180.0.0/16
+  - DOMAIN-SUFFIX,czzy88.com
+  - DOMAIN-SUFFIX,ddsrem.com
+  - DOMAIN-SUFFIX,ddys.art
+  - DOMAIN-SUFFIX,ddys.info
+  - DOMAIN-SUFFIX,ddys.mov
+  - DOMAIN-SUFFIX,ddys.pro
+  - DOMAIN-SUFFIX,ddys.wiki
+  - DOMAIN-SUFFIX,fanmingming.com
+  - DOMAIN-SUFFIX,hls.aoxtv.com
+  - DOMAIN-SUFFIX,ikzybf.com
+  - DOMAIN-SUFFIX,ipinfo.io
+  - DOMAIN-SUFFIX,kczybf.com
+  - DOMAIN-SUFFIX,kuaikan-api.com
+  - DOMAIN-SUFFIX,logitech.io
+  - DOMAIN-SUFFIX,mddcloud.com.cn
+  - DOMAIN-SUFFIX,mixpanel.com
+  - DOMAIN-SUFFIX,movie.douban.com
+  - DOMAIN-SUFFIX,mysub.cc
+  - DOMAIN-SUFFIX,pstatp.com
+  - DOMAIN-SUFFIX,resilio.com
+  - DOMAIN-SUFFIX,tv.apple.com
+  - DOMAIN-SUFFIX,waynesg.cc
+  - DOMAIN-SUFFIX,wogg.link
+  - DOMAIN-SUFFIX,wogg.xyz
+  - DOMAIN-SUFFIX,wufangedu.com
+  - DOMAIN-SUFFIX,xxooo.cf
+  - DOMAIN-SUFFIX,yanetflix.one
+  - DOMAIN-SUFFIX,zh188.net
+  - IP-CIDR,1.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,103.160.204.120/32
   - IP-CIDR,138.199.9.104/32
-  - DOMAIN-SUFFIX,wogg.link
-  - DOMAIN-SUFFIX,xxooo.cf
-  - DOMAIN-SUFFIX,wogg.xyz
-  - DOMAIN-SUFFIX,pstatp.com
-  - DOMAIN-KEYWORD,tt.cuc.myqcloud.com.cn
-  - DOMAIN-SUFFIX,ikzybf.com
-  - DOMAIN-SUFFIX,bfikuncdn.com
-  - DOMAIN-SUFFIX,yanetflix.one
+  - IP-CIDR,216.180.0.0/16
+  - IP-CIDR6,2606:4700:4700::1111/128,DIRECT,no-resolve
+# AUTHOR: waynesg
+# IP Testing(ipcheck)
+# NAME: custom_direct
+# syncnext
+#公益服
+#小雅全家桶
+payload:
