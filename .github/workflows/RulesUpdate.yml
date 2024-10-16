@@ -41,7 +41,7 @@ jobs:
         if [ -n "$cleaned_rules" ]; then
           echo "Merging cleaned rules into custom_direct.yaml"
           # 追加清理后的规则到 custom_direct.yaml
-          echo "$cleaned_rules" | grep -Fxv -f rules/custom_direct.yaml >> rules/custom_direct.yaml || echo "Error appending cleaned rules"
+          echo "$cleaned_rules" | grep -Fxv -f rules/custom_direct.yaml >> rules/custom_direct.yaml
           echo "Merged cleaned content from unbreak-classical.yaml into custom_direct.yaml"
         else
           echo "No new rules to add from unbreak-classical.yaml"
@@ -75,7 +75,7 @@ jobs:
         if [ -n "$cleaned_rules" ]; then
           echo "Merging cleaned rules into custom_proxy.yaml"
           # 追加清理后的规则到 custom_proxy.yaml
-          echo "$cleaned_rules" | grep -Fxv -f rules/custom_proxy.yaml >> rules/custom_proxy.yaml || echo "Error appending cleaned rules"
+          echo "$cleaned_rules" | grep -Fxv -f rules/custom_proxy.yaml >> rules/custom_proxy.yaml
           echo "Merged cleaned content from proxy-classical.yaml into custom_proxy.yaml"
         else
           echo "No new rules to add from proxy-classical.yaml"
