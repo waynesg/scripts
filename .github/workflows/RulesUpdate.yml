@@ -33,14 +33,40 @@ jobs:
     - name: Clean and merge unbreak-classical.yaml into custom_direct.yaml
       run: |
         echo "# Cleaning and merging unbreak-classical.yaml into custom_direct.yaml"
-        sed '/^#!.*$/d' rules/unbreak-classical.yaml | sed '/^payload:/d' >> rules/custom_direct.yaml
-        echo "Merged cleaned content from unbreak-classical.yaml into custom_direct.yaml"
+        cleaned_rules=$(sed '/^#!.*$/d; /^payload:/d' rules/unbreak-classical.yaml)
+        echo "$cleaned_rules" | grep -Fxv -f rules/custom_direct.yaml > temp_rules.txt
+        if [ -s temp_rules.txt ]; then
+          echo "$cleaned_rules" >> rules/custom_direct.yaml
+          echo "Merged cleaned content from unbreak-classical.yaml into custom_direct.yaml"
+        else
+          echo "No new rules to add from unbreak-classical.yaml"
+        fi
+        rm temp_rules.txt
+
+    - name: Remove duplicates from custom_direct.yaml
+      run: |
+        echo "# Removing duplicates from custom_direct.yaml"
+        sort -u rules/custom_direct.yaml -o rules/custom_direct.yaml
+        echo "Duplicates removed from custom_direct.yaml"
 
     - name: Clean and merge proxy-classical.yaml into custom_proxy.yaml
       run: |
         echo "# Cleaning and merging proxy-classical.yaml into custom_proxy.yaml"
-        sed '/^#!.*$/d' rules/proxy-classical.yaml | sed '/^payload:/d' >> rules/custom_proxy.yaml
-        echo "Merged cleaned content from proxy-classical.yaml into custom_proxy.yaml"
+        cleaned_rules=$(sed '/^#!.*$/d; /^payload:/d' rules/proxy-classical.yaml)
+        echo "$cleaned_rules" | grep -Fxv -f rules/custom_proxy.yaml > temp_rules.txt
+        if [ -s temp_rules.txt ]; then
+          echo "$cleaned_rules" >> rules/custom_proxy.yaml
+          echo "Merged cleaned content from proxy-classical.yaml into custom_proxy.yaml"
+        else
+          echo "No new rules to add from proxy-classical.yaml"
+        fi
+        rm temp_rules.txt
+
+    - name: Remove duplicates from custom_proxy.yaml
+      run: |
+        echo "# Removing duplicates from custom_proxy.yaml"
+        sort -u rules/custom_proxy.yaml -o rules/custom_proxy.yaml
+        echo "Duplicates removed from custom_proxy.yaml"
 
     - name: Delete unbreak-classical.yaml and proxy-classical.yaml
       run: |
@@ -52,7 +78,7 @@ jobs:
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git add rules/custom_direct.yaml rules/custom_proxy.yaml
-        git commit -m "Merged and deleted unbreak-classical.yaml and proxy-classical.yaml"
+        git commit -m "Merged and deleted unbreak-classical.yaml and proxy-classical.yaml" || echo "No changes to commit"
         git push
       
     - name: Fetch Updates for Rules
