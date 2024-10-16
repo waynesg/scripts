@@ -33,7 +33,8 @@ jobs:
     - name: Clean and merge unbreak-classical.yaml into custom_direct.yaml
       run: |
         echo "# Cleaning and merging unbreak-classical.yaml into custom_direct.yaml"
-        cleaned_rules=$(sed '/^#!.*$/d; /^payload:/d' rules/unbreak-classical.yaml | grep -v '^$')
+        # 清理规则，保留非空行和不以 # 开头的行
+        cleaned_rules=$(sed '/^#!.*$/d; /^payload:/d; /^$/d' rules/unbreak-classical.yaml)
         echo "Cleaned rules:"
         echo "$cleaned_rules"  # 输出清理后的规则
 
@@ -66,7 +67,8 @@ jobs:
     - name: Clean and merge proxy-classical.yaml into custom_proxy.yaml
       run: |
         echo "# Cleaning and merging proxy-classical.yaml into custom_proxy.yaml"
-        cleaned_rules=$(sed '/^#!.*$/d; /^payload:/d' rules/proxy-classical.yaml | grep -v '^$')
+        # 清理规则，保留非空行和不以 # 开头的行
+        cleaned_rules=$(sed '/^#!.*$/d; /^payload:/d; /^$/d' rules/proxy-classical.yaml)
         echo "Cleaned rules:"
         echo "$cleaned_rules"  # 输出清理后的规则
 
