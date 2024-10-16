@@ -33,17 +33,16 @@ jobs:
     - name: Clean and merge unbreak-classical.yaml into custom_direct.yaml
       run: |
         echo "# Cleaning and merging unbreak-classical.yaml into custom_direct.yaml"
-        cleaned_rules=$(sed '/^#!.*$/d; /^payload:/d' rules/unbreak-classical.yaml)
+        cleaned_rules=$(sed '/^#!.*$/d; /^payload:/d' rules/unbreak-classical.yaml | grep -v '^$')
         echo "Cleaned rules:"
         echo "$cleaned_rules"  # 输出清理后的规则
-        echo "$cleaned_rules" | grep -Fxv -f rules/custom_direct.yaml > temp_rules.txt
-        if [ -s temp_rules.txt ]; then
-          echo "$cleaned_rules" >> rules/custom_direct.yaml
+        if [ -n "$cleaned_rules" ]; then
+          # 追加清理后的规则到 custom_direct.yaml
+          echo "$cleaned_rules" | grep -Fxv -f rules/custom_direct.yaml >> rules/custom_direct.yaml
           echo "Merged cleaned content from unbreak-classical.yaml into custom_direct.yaml"
         else
           echo "No new rules to add from unbreak-classical.yaml"
         fi
-        rm temp_rules.txt
 
     - name: Remove duplicates from custom_direct.yaml
       run: |
@@ -54,17 +53,16 @@ jobs:
     - name: Clean and merge proxy-classical.yaml into custom_proxy.yaml
       run: |
         echo "# Cleaning and merging proxy-classical.yaml into custom_proxy.yaml"
-        cleaned_rules=$(sed '/^#!.*$/d; /^payload:/d' rules/proxy-classical.yaml)
+        cleaned_rules=$(sed '/^#!.*$/d; /^payload:/d' rules/proxy-classical.yaml | grep -v '^$')
         echo "Cleaned rules:"
         echo "$cleaned_rules"  # 输出清理后的规则
-        echo "$cleaned_rules" | grep -Fxv -f rules/custom_proxy.yaml > temp_rules.txt
-        if [ -s temp_rules.txt ]; then
-          echo "$cleaned_rules" >> rules/custom_proxy.yaml
+        if [ -n "$cleaned_rules" ]; then
+          # 追加清理后的规则到 custom_proxy.yaml
+          echo "$cleaned_rules" | grep -Fxv -f rules/custom_proxy.yaml >> rules/custom_proxy.yaml
           echo "Merged cleaned content from proxy-classical.yaml into custom_proxy.yaml"
         else
           echo "No new rules to add from proxy-classical.yaml"
         fi
-        rm temp_rules.txt
 
     - name: Remove duplicates from custom_proxy.yaml
       run: |
