@@ -20,18 +20,24 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@main
 
-    - name: Merge unbreak-classical.yaml into custom_direct.yaml
+    - name: Clean and merge unbreak-classical.yaml into custom_direct.yaml
       run: |
-        echo "# Merging unbreak-classical.yaml into custom_direct.yaml"
-        cat rules/unbreak-classical.yaml >> rules/custom_direct.yaml
-        echo "Merged content from unbreak-classical.yaml into custom_direct.yaml"
+        echo "# Cleaning and merging unbreak-classical.yaml into custom_direct.yaml"
+        sed '/^#!.*$/d' rules/unbreak-classical.yaml | sed '/^payload:/d' >> rules/custom_direct.yaml
+        echo "Merged cleaned content from unbreak-classical.yaml into custom_direct.yaml"
+
+    - name: Clean and merge proxy-classical.yaml into custom_proxy.yaml
+      run: |
+        echo "# Cleaning and merging proxy-classical.yaml into custom_proxy.yaml"
+        sed '/^#!.*$/d' rules/proxy-classical.yaml | sed '/^payload:/d' >> rules/custom_proxy.yaml
+        echo "Merged cleaned content from proxy-classical.yaml into custom_proxy.yaml"
 
     - name: Commit and push changes
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add rules/custom_direct.yaml
-        git commit -m "Merged unbreak-classical.yaml into custom_direct.yaml"
+        git add rules/custom_direct.yaml rules/custom_proxy.yaml
+        git commit -m "Merged cleaned unbreak-classical.yaml and proxy-classical.yaml into custom_direct.yaml and custom_proxy.yaml"
         git push
       
     - name: Fetch Updates for Rules
