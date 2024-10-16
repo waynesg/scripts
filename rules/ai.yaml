@@ -1,5 +1,5 @@
 #!name = ai
-#!date = 2024-10-16 06:49:44
+#!date = 2024-10-16 07:16:46
 #!
 payload:
   - 'ai.google.dev'
@@ -65,4 +65,3 @@ payload:
   - '+.sentry.io'
   - '+.stripe.com'
   - '+.turn.livekit.cloud'
-  - '+.meta.ai'
