@@ -32,42 +32,26 @@ jobs:
         sed '/^#!.*$/d' rules/proxy-classical.yaml | sed '/^payload:/d' >> rules/custom_proxy.yaml
         echo "Merged cleaned content from proxy-classical.yaml into custom_proxy.yaml"
 
+    - name: Delete unbreak-classical.yaml and proxy-classical.yaml
+      run: |
+        echo "Deleting unbreak-classical.yaml and proxy-classical.yaml"
+        rm rules/unbreak-classical.yaml rules/proxy-classical.yaml
+
     - name: Commit and push changes
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git add rules/custom_direct.yaml rules/custom_proxy.yaml
-        git commit -m "Merged cleaned unbreak-classical.yaml and proxy-classical.yaml into custom_direct.yaml and custom_proxy.yaml"
+        git commit -m "Merged and deleted unbreak-classical.yaml and proxy-classical.yaml"
         git push
       
     - name: Fetch Updates for Rules
       run: |
         declare -A files
-        #files["ads.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/ads.yaml"
         files["ai.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/ai.yaml"
-        #files["apple-cn.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/apple-cn.yaml"
-        #files["appletv.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/appletv.yaml"
-        #files["blockhttpdns.yaml"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BlockHttpDNS/BlockHttpDNS.yaml"
-        #files["bilibili.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/bilibili.yaml"
-        #files["cn.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/cn.yaml"
-        #files["cnip.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/cnip.yaml"
-        #files["netflix.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/netflix.yaml"
-        #files["disney.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/disney.yaml"
-        #files["github.yaml"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml"
-        #files["youtube.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/youtube.yaml"
-        #files["games-cn.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/games-cn.yaml"
-        #files["google-cn.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/google-cn.yaml"
-        #files["microsoft-cn.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/microsoft-cn.yaml"
         files["networktest.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/networktest.yaml"
-        #files["private.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/private.yaml"
-        #files["direct.yaml"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Direct/Direct.yaml"
-        #files["tiktok.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/tiktok.yaml"
         files["unbreak-classical.yaml"]="https://raw.githubusercontent.com/qoli/SyncnextClash/main/Unbreak-classical.yaml"
         files["proxy-classical.yaml"]="https://raw.githubusercontent.com/qoli/SyncnextClash/main/proxy-classical.yaml"
-        #files["google.yaml"]="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml"
-        #files["privateip.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/privateip.yaml"
-        #files["telegramip.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/telegramip.yaml"
-        #files["proxy.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/proxy.yaml"
         
         for file in "${!files[@]}"; do
           curl -o rules/$file ${files[$file]}
