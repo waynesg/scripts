@@ -11,7 +11,7 @@ payload:
   - DOMAIN-SUFFIX,wufangedu.com
   - DOMAIN-SUFFIX,logitech.io
   - DOMAIN,api.gugudata.com
-  - DOMAIN-KEYWORD,hongxingdl
+  - DOMAIN-SUFFIX,hongxingdl.vip
 #公益服
   - DOMAIN-SUFFIX,123456.al
 # Emby 小雅全家桶 相关
@@ -19,5 +19,5 @@ payload:
   - DOMAIN-SUFFIX,resilio.com
   - DOMAIN-SUFFIX,ipinfo.io
 # IP Testing(ipcheck)
-  - IP-CIDR,1.0.0.1/32,DIRECT,no-resolve
+  - IP-CIDR,1.0.0.1/32,DIRECT,no-resolve　
   - IP-CIDR6,2606:4700:4700::1111/128,DIRECT,no-resolve
