@@ -8,7 +8,8 @@ payload:
   - DOMAIN-SUFFIX,880031.xyz
   - DOMAIN-SUFFIX,cmvideo.cn
   - DOMAIN-SUFFIX,fanmingming.com
-  - DOMAIN-SUFFIX,wufangedu.com
+  - DOMAIN-KETWORD,hongxingdl
+  #- DOMAIN-SUFFIX,wufangedu.com
   - DOMAIN-SUFFIX,logitech.io
   - DOMAIN,api.gugudata.com    
 #公益服
