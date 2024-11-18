@@ -1,5 +1,5 @@
 #!name = unbreak-classical
-#!date = 2024-11-17 01:24:06
+#!date = 2024-11-18 01:21:32
 #!
 payload:
   - DOMAIN-SUFFIX,movie.douban.com
@@ -20,7 +20,8 @@ payload:
   - DOMAIN-KEYWORD,ffzy-play
   - DOMAIN-KEYWORD,bfzycdn.com
   - DOMAIN-KEYWORD,lzcdn
-  - DOMAIN-KEYWORD,v.cdnlz
+  - DOMAIN-SUFFIX,v.cdnlz
+  - DOMAIN-SUFFIX,v1.cdnlz
   - DOMAIN-KEYWORD,lz-cdn
   - DOMAIN-KEYWORD,default.akamaized.net
   - DOMAIN-KEYWORD,vip.ffzy-online
