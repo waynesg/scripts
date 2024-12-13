@@ -1,5 +1,5 @@
 #!name = proxy-classical
-#!date = 2024-12-12 01:22:28
+#!date = 2024-12-13 01:23:52
 #!
 payload:
   - DOMAIN-SUFFIX,v1.ax
@@ -27,3 +27,4 @@ payload:
   - DOMAIN-SUFFIX,nivodi.tv
   - DOMAIN-SUFFIX,nivodz.com
   - DOMAIN-SUFFIX,histar.tv
+  - DOMAIN-SUFFIX,youtubekit-remote.losjet.com
