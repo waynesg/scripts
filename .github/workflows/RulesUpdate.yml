@@ -23,8 +23,8 @@ jobs:
     - name: Fetch Updates for Rules
       run: |
         declare -A files
-        files["ai.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/ai.yaml"
-        files["networktest.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash-ruleset/networktest.yaml"
+        files["ai.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/refs/heads/mihomo-ruleset/ai.yaml"
+        files["networktest.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/refs/heads/mihomo-ruleset/networktest.yaml"
         files["unbreak-classical.yaml"]="https://raw.githubusercontent.com/qoli/SyncnextClash/main/Unbreak-classical.yaml"
         files["proxy-classical.yaml"]="https://raw.githubusercontent.com/qoli/SyncnextClash/main/proxy-classical.yaml"
         
