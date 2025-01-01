@@ -1,4 +1,13 @@
 #!name = networktest
-#!date = 2025-01-01 01:22:17
+#!date = 2025-01-01 07:53:16
 #!
-404: Not Found
+payload:
+  - DOMAIN-KEYWORD,ipv6-test
+  - DOMAIN-KEYWORD,ipv6test
+  - DOMAIN-KEYWORD,speedtest
+  - DOMAIN-KEYWORD,test-ipv6
+  - DOMAIN-KEYWORD,testipv6
+  - DOMAIN-SUFFIX,fast.com
+  - DOMAIN-SUFFIX,ooklaserver.net
+  - DOMAIN-SUFFIX,speed.cloudflare.com
+  - DOMAIN-SUFFIX,speed.dler.io
