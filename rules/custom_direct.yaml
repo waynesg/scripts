@@ -21,3 +21,4 @@ payload:
 # IP Testing(ipcheck)
   - IP-CIDR,1.0.0.1/32,DIRECT,no-resolve　
   - IP-CIDR6,2606:4700:4700::1111/128,DIRECT,no-resolve
+  - GEOSITE,alibaba
