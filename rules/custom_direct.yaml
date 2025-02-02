@@ -12,6 +12,14 @@ payload:
   - DOMAIN-SUFFIX,logitech.io
   - DOMAIN,api.gugudata.com
   - DOMAIN-KEYWORD,wufangedu
+#IPTV
+  - DOMAIN-SUFFIX,mobaibox.com
+  - IP-CIDR,183.207.0.0/16,DIRECT,no-resolve
+  - DOMAIN-SUFFIX,cctv.cn
+  - DOMAIN-SUFFIX,yangshipin.cn
+  - DOMAIN-SUFFIX,dnsany.com
+  - DOMAIN-SUFFIX,cmvideo.cn
+  - DOMAIN-SUFFIX,chinamobile.com
 #公益服
   - DOMAIN-SUFFIX,123456.al
 # Emby 小雅全家桶 相关
