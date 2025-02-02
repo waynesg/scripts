@@ -14,3 +14,13 @@ payload:
   - DOMAIN-SUFFIX,pixelshop.tk
   - DOMAIN-SUFFIX,rotf.lol
   - DOMAIN-SUFFIX,v2ex.com
+  #IPTV
+  - DOMAIN-SUFFIX,4gtv.tv
+  - DOMAIN-SUFFIX,hinet.net
+  - DOMAIN-SUFFIX,ofiii.com
+  ## MytvSuper
+  - DOMAIN-SUFFIX,mytvsuper.com
+  - DOMAIN-SUFFIX,tvb.com
+  - DOMAIN-SUFFIX,livednow.com
+  - DOMAIN-SUFFIX,livednow.org
+  - DOMAIN-SUFFIX,wx.sb
