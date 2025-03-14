@@ -12,6 +12,7 @@ payload:
   - DOMAIN-SUFFIX,logitech.io
   - DOMAIN,api.gugudata.com
   - DOMAIN-KEYWORD,wufangedu
+  - GEOSITE:tailscale
 #IPTV
   - DOMAIN-SUFFIX,mobaibox.com
   - IP-CIDR,183.207.0.0/16,DIRECT,no-resolve
