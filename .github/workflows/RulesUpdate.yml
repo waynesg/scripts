@@ -43,6 +43,11 @@ jobs:
           fi
         done
 
+    - name: Create 'rules' directory if it doesn't exist
+      run: |
+        mkdir -p rules
+        echo "Created 'rules' directory."
+
     - name: Download proxy_host to proxy-classical.list
       run: |
         curl -s -o rules/proxy-classical.list https://raw.githubusercontent.com/qoli/SyncnextClash/main/passwall/proxy_host
