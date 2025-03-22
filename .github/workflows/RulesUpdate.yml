@@ -51,6 +51,7 @@ jobs:
     - name: Download proxy_host to proxy-classical.list
       run: |
         curl -s -o rules/proxy-classical.list https://raw.githubusercontent.com/qoli/SyncnextClash/main/passwall/proxy_host
+        echo "Downloaded proxy_host to rules/proxy-classical.list"
         if [[ -s rules/proxy-classical.list ]]; then
           echo "Successfully downloaded proxy_host to proxy-classical.list"
         else
@@ -61,6 +62,7 @@ jobs:
     - name: Download direct_host to unbreak-classical.list
       run: |
         curl -s -o rules/unbreak-classical.list https://raw.githubusercontent.com/qoli/SyncnextClash/main/passwall/direct_host
+        echo "Downloaded direct_host to rules/unbreak-classical.list"
         if [[ -s rules/unbreak-classical.list ]]; then
           echo "Successfully downloaded direct_host to unbreak-classical.list"
         else
