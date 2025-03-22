@@ -1,5 +1,5 @@
 #!name = networktest
-#!date = 2025-03-22 02:26:53
+#!date = 2025-03-22 02:42:42
 #!
 payload:
   - DOMAIN,www.speedtest.net.cdn.cloudflare.net
