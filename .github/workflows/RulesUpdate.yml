@@ -29,7 +29,8 @@ jobs:
         files["proxy-classical.list"]="https://raw.githubusercontent.com/qoli/SyncnextClash/refs/heads/main/passwall/proxy_host"
 
         for file in "${!files[@]}"; do
-          rm -f "rules/$file"
+          echo "Downloading ${files[$file]} to rules/$file"
+          curl -v -L -o "rules/$file" "${files[$file]}"
 
           curl -L -o "rules/$file" "${files[$file]}"
 
