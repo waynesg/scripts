@@ -1,0 +1,21 @@
+# NAME: custom_proxy
+# AUTHOR: waynesg
+payload:
+  - DOMAIN-SUFFIX,bet365.com
+  - DOMAIN-SUFFIX,365sb.com
+  - DOMAIN-KEYWORD,stream-link
+  - DOMAIN-KEYWORD,stripchat
+  - DOMAIN-KEYWORD,strpst
+  - DOMAIN-SUFFIX,brews.app
+  - DOMAIN-SUFFIX,pixelshop.tk
+  - DOMAIN-SUFFIX,rotf.lol
+#IPTV
+  - DOMAIN-SUFFIX,4gtv.tv
+  - DOMAIN-SUFFIX,hinet.net
+  - DOMAIN-SUFFIX,ofiii.com
+# MytvSuper
+  - DOMAIN-SUFFIX,mytvsuper.com
+  - DOMAIN-SUFFIX,tvb.com
+  - DOMAIN-SUFFIX,livednow.com
+  - DOMAIN-SUFFIX,livednow.org
+  - DOMAIN-SUFFIX,wx.sb
