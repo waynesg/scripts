@@ -1,9 +1,8 @@
 #!name = networktest
-#!date = 2025-03-22 05:49:00
+#!date = 2025-03-22 06:16:30
 #!
 payload:
    - test-ipv6.com
-  - DOMAIN-KEYWORD,ipv6test
    - test-ipv6.com
    - +.cdnst.net
    - +.cellmaps.com
