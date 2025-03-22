@@ -21,7 +21,7 @@ jobs:
       uses: actions/checkout@main
       
     - name: Fetch Updates for Rules
-       run: |
+      run: |
         declare -A files
         files["ai.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/refs/heads/mihomo-ruleset/ai.yaml"
         files["networktest.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/refs/heads/mihomo-ruleset/networktest.yaml"
