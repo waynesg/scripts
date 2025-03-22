@@ -22,28 +22,24 @@ jobs:
       with:
         ref: main
 
-    - name: Create 'rules' directory if it doesn't exist
-      run: |
-        mkdir -p rules
-        echo "Created 'rules' directory."
-
     - name: Fetch Updates for Rules
       run: |
         declare -A files
+        files["ai.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/refs/heads/mihomo-ruleset/ai.yaml"
         files["networktest.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/refs/heads/mihomo-ruleset/networktest.yaml"
-
+        files["unbreak-classical.yaml"]="https://raw.githubusercontent.com/qoli/SyncnextClash/main/Unbreak-classical.yaml"
+        files["proxy-classical.yaml"]="https://raw.githubusercontent.com/qoli/SyncnextClash/main/proxy-classical.yaml"
+        
         for file in "${!files[@]}"; do
-          curl -L -o "rules/$file" "${files[$file]}"
-
-          if [[ -s "rules/$file" ]]; then
-            if [[ "$file" == *.yaml ]]; then
-              sed -i "1i#!name = ${file%.yaml}" "rules/$file"
-              sed -i "2i#!date = $(date +'%Y-%m-%d %H:%M:%S')" "rules/$file"
-              sed -i "3i#!" "rules/$file"
-            fi
+          curl -o rules/$file ${files[$file]}
+          if [[ -s rules/$file ]]; then
+            # Add comments to the top of the file
+            sed -i "1i#!name = ${file%.yaml}" rules/$file
+            sed -i "2i#!date = $(date +'%Y-%m-%d %H:%M:%S')" rules/$file
+            sed -i "3i#!" rules/$file
           else
             echo "Failed to download ${file}. Keeping the existing version."
-            rm -f "rules/$file"  # 删除下载失败的文件
+            rm -f rules/$file
           fi
         done
         
