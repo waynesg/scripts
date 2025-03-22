@@ -30,10 +30,7 @@ jobs:
     - name: Fetch Updates for Rules
       run: |
         declare -A files
-        files["ai.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/refs/heads/mihomo-ruleset/ai.yaml"
         files["networktest.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/refs/heads/mihomo-ruleset/networktest.yaml"
-        #files["unbreak-classical.list"]="https://raw.githubusercontent.com/qoli/SyncnextClash/refs/heads/main/passwall/direct_host"
-        #files["proxy-classical.list"]="https://raw.githubusercontent.com/qoli/SyncnextClash/refs/heads/main/passwall/proxy_host"
 
         for file in "${!files[@]}"; do
           curl -L -o "rules/$file" "${files[$file]}"
@@ -49,6 +46,17 @@ jobs:
             rm -f "rules/$file"  # 删除下载失败的文件
           fi
         done
+        
+    - name: Modify networktest.yaml
+      run: |
+        sed -e 's/- DOMAIN-SUFFIX,/ - +./g' \
+            -e '/- DOMAIN,www.speedtest.net.cdn.cloudflare.net/d' \
+            -e 's/- DOMAIN-KEYWORD,ipv6-test/ - test-ipv6.com/g' \
+            -e '/- DOMAIN-KEYWORD,speedtest/d' \
+            -e '/- DOMAIN-KEYWORD,testipv6/d' \
+            -e 's/- DOMAIN-KEYWORD,test-ipv6/ - test-ipv6.com/g' \
+            -i rules/networktest.yaml
+        echo "Modified networktest.yaml"
 
     - name: Download proxy_host to proxy-classical.list
       run: |
