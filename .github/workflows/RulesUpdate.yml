@@ -31,10 +31,11 @@ jobs:
         for file in "${!files[@]}"; do
           curl -o rules/$file ${files[$file]}
           if [[ -s rules/$file ]]; then
-            # Add comments to the top of the file
-            sed -i "1i#!name = ${file%.yaml}" rules/$file
-            sed -i "2i#!date = $(date +'%Y-%m-%d %H:%M:%S')" rules/$file
-            sed -i "3i#!" rules/$file
+              # 仅对 .yaml 文件添加 YAML 头部注释
+            if [[ $file == *.yaml ]]; then
+              sed -i "1i#!name = ${file%.yaml}" rules/$file
+              sed -i "2i#!date = $(date +'%Y-%m-%d %H:%M:%S')" rules/$file
+              sed -i "3i#!" rules/$file
 
           else
             echo "Failed to download ${file}. Keeping the existing version."
