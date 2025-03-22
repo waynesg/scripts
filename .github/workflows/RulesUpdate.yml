@@ -19,7 +19,7 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@main
-      
+
     - name: Fetch Updates for Rules
       run: |
         declare -A files
