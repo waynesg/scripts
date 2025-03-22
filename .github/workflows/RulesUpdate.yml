@@ -25,8 +25,8 @@ jobs:
         declare -A files
         files["ai.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/refs/heads/mihomo-ruleset/ai.yaml"
         files["networktest.yaml"]="https://raw.githubusercontent.com/DustinWin/ruleset_geodata/refs/heads/mihomo-ruleset/networktest.yaml"
-        files["unbreak-classical.list"]="https://raw.githubusercontent.com/qoli/SyncnextClash/refs/heads/main/passwall/direct_host"
-        files["proxy-classical.list"]="https://raw.githubusercontent.com/qoli/SyncnextClash/refs/heads/main/passwall/proxy_host"
+        #files["unbreak-classical.list"]="https://raw.githubusercontent.com/qoli/SyncnextClash/refs/heads/main/passwall/direct_host"
+        #files["proxy-classical.list"]="https://raw.githubusercontent.com/qoli/SyncnextClash/refs/heads/main/passwall/proxy_host"
 
         for file in "${!files[@]}"; do
           curl -L -o "rules/$file" "${files[$file]}"
@@ -42,6 +42,26 @@ jobs:
             rm -f "rules/$file"  # 删除下载失败的文件
           fi
         done
+
+    - name: Download proxy_host to proxy-classical.list
+      run: |
+        curl -s -o rules/proxy-classical.list https://raw.githubusercontent.com/qoli/SyncnextClash/main/passwall/proxy_host
+        if [[ -s rules/proxy-classical.list ]]; then
+          echo "Successfully downloaded proxy_host to proxy-classical.list"
+        else
+          echo "Failed to download proxy_host."
+          exit 1
+        fi
+
+    - name: Download direct_host to unbreak-classical.list
+      run: |
+        curl -s -o rules/unbreak-classical.list https://raw.githubusercontent.com/qoli/SyncnextClash/main/passwall/direct_host
+        if [[ -s rules/unbreak-classical.list ]]; then
+          echo "Successfully downloaded direct_host to unbreak-classical.list"
+        else
+          echo "Failed to download direct_host."
+          exit 1
+        fi
 
     - name: Commit and push changes
       run: |
