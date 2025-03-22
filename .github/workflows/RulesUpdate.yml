@@ -35,6 +35,10 @@ jobs:
             sed -i "1i#!name = ${file%.yaml}" rules/$file
             sed -i "2i#!date = $(date +'%Y-%m-%d %H:%M:%S')" rules/$file
             sed -i "3i#!" rules/$file
+            sed -i '/^- DOMAIN-SUFFIX,/d' rules/$file
+            sed -i '/^- DOMAIN-KEYWORD,/d' rules/$file
+            sed -i '/^- IP-CIDR,/d' rules/$file
+
           else
             echo "Failed to download ${file}. Keeping the existing version."
             rm -f rules/$file
