@@ -19,7 +19,7 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@main
-
+      
     - name: Fetch Updates for Rules
       run: |
         declare -A files
@@ -29,15 +29,11 @@ jobs:
         files["proxy-classical.list"]="https://raw.githubusercontent.com/qoli/SyncnextClash/refs/heads/main/passwall/proxy_host"
 
         for file in "${!files[@]}"; do
-      # 清除目标文件（如果已存在）
           rm -f "rules/$file"
 
-      # 下载文件并保存
           curl -L -o "rules/$file" "${files[$file]}"
 
-      # 检查文件是否成功下载并且非空
           if [[ -s "rules/$file" ]]; then
-        # 对于 .yaml 文件进行注释处理
             if [[ "$file" == *.yaml ]]; then
               sed -i "1i#!name = ${file%.yaml}" "rules/$file"
               sed -i "2i#!date = $(date +'%Y-%m-%d %H:%M:%S')" "rules/$file"
