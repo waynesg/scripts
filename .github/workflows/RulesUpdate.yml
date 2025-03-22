@@ -53,6 +53,7 @@ jobs:
             -e '/- DOMAIN,www.speedtest.net.cdn.cloudflare.net/d' \
             -e 's/- DOMAIN-KEYWORD,ipv6-test/ - test-ipv6.com/g' \
             -e '/- DOMAIN-KEYWORD,speedtest/d' \
+            -e '/- DOMAIN-KEYWORD,ipv6test/d' \
             -e '/- DOMAIN-KEYWORD,testipv6/d' \
             -e 's/- DOMAIN-KEYWORD,test-ipv6/ - test-ipv6.com/g' \
             -i rules/networktest.yaml
