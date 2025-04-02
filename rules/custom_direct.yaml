@@ -4,7 +4,6 @@ payload:
   - DOMAIN-SUFFIX,waynesg.cc
   - DOMAIN-SUFFIX,banans.eu.org
   - DOMAIN-SUFFIX,880031.xyz
-  - DOMAIN-SUFFIX,fanmingming.com
   - IP-CIDR,64.110.74.44/32,no-resolve
   - IP-CIDR,132.226.233.26/32,no-resolve
   - IP-CIDR,152.67.211.221/32,no-resolve
@@ -21,6 +20,7 @@ payload:
   - DOMAIN-SUFFIX,mobaibox.com
   - DOMAIN-SUFFIX,dnsany.com
   - DOMAIN-SUFFIX,chinamobile.com
+  - DOMAIN-SUFFIX,fanmingming.com
 #公益服
   - DOMAIN-SUFFIX,123456.al
   - DOMAIN-SUFFIX,mysub.cc
