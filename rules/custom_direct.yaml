@@ -5,6 +5,15 @@ payload:
   - DOMAIN-SUFFIX,banans.eu.org
   - DOMAIN-SUFFIX,880031.xyz
   - DOMAIN-SUFFIX,fanmingming.com
+  - IP-CIDR,64.110.74.44/32,no-resolve
+  - IP-CIDR,132.226.233.26/32,no-resolve
+  - IP-CIDR,152.67.211.221/32,no-resolve
+  - IP-CIDR,152.69.234.98/32,no-resolve
+  - IP-CIDR,138.2.121.168/32,no-resolve
+  - IP-CIDR,150.230.143.132/32,no-resolve
+  - IP-CIDR,144.24.159.28/32,no-resolve
+  - IP-CIDR,192.210.202.105/32,no-resolve
+  - IP-CIDR,47.79.22.185/32,no-resolve
 # EDU
   - DOMAIN-KEYWORD,wufangedu
   - DOMAIN,api.gugudata.com
