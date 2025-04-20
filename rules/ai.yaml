@@ -1,5 +1,5 @@
 #!name = ai
-#!date = 2025-04-19 01:51:24
+#!date = 2025-04-20 02:03:07
 #!
 payload:
   - 'ai.google.dev'
@@ -40,6 +40,7 @@ payload:
   - '+.featuregates.org'
   - '+.gateway.ai.cloudflare.com'
   - '+.geller-pa.googleapis.com'
+  - '+.gemini.google'
   - '+.gemini.google.com'
   - '+.generativeai.google'
   - '+.generativelanguage.googleapis.com'
