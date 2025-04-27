@@ -4,8 +4,6 @@ payload:
   - DOMAIN-SUFFIX,bet365.com
   - DOMAIN-SUFFIX,365sb.com
   - DOMAIN-KEYWORD,stream-link
-  - DOMAIN-KEYWORD,stripchat
-  - DOMAIN-KEYWORD,strpst
   - DOMAIN-SUFFIX,brews.app
   - DOMAIN-SUFFIX,pixelshop.tk
   - DOMAIN-SUFFIX,rotf.lol
@@ -19,3 +17,8 @@ payload:
   - DOMAIN-SUFFIX,livednow.com
   - DOMAIN-SUFFIX,livednow.org
   - DOMAIN-SUFFIX,wx.sb
+#Pron
+  - DOMAIN-KEYWORD,stripchat
+  - DOMAIN-KEYWORD,strpst
+  - DOMAIN-SUFFIX,jiuse710.com
+  - DOMAIN-SUFFIX,51cg1.com
