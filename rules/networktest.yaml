@@ -1,5 +1,5 @@
 #!name = networktest
-#!date = 2025-04-27 02:03:37
+#!date = 2025-04-28 02:01:35
 #!
 payload:
    - test-ipv6.com
