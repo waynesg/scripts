@@ -5,6 +5,8 @@ payload:
   - DOMAIN-SUFFIX,gw124.cc
   - DOMAIN-SUFFIX,banans.eu.org
   - DOMAIN-SUFFIX,880031.xyz
+  - DOMAIN-SUFFIX,makerworld.com
+  - DOMAIN-SUFFIX,bambulab.com
   - IP-CIDR,64.110.74.44/32,no-resolve
   - IP-CIDR,132.226.233.26/32,no-resolve
   - IP-CIDR,152.67.211.221/32,no-resolve
