@@ -8,6 +8,7 @@ payload:
   - DOMAIN-SUFFIX,pixelshop.tk
   - DOMAIN-SUFFIX,rotf.lol
   - DOMAIN-SUFFIX,git.to
+  - DOMAIN-SUFFIX,liberty.edu
 #IPTV
   - DOMAIN-SUFFIX,4gtv.tv
   - DOMAIN-SUFFIX,hinet.net
