@@ -9,6 +9,8 @@ payload:
   - DOMAIN-SUFFIX,rotf.lol
   - DOMAIN-SUFFIX,git.to
   - DOMAIN-SUFFIX,liberty.edu
+  - DOMAIN-SUFFIX,makerworld.com
+  - DOMAIN-SUFFIX,bblmw.com
 #IPTV
   - DOMAIN-SUFFIX,4gtv.tv
   - DOMAIN-SUFFIX,hinet.net
