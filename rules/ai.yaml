@@ -1,5 +1,5 @@
 #!name = ai
-#!date = 2025-08-10 02:27:44
+#!date = 2025-08-11 02:23:45
 #!
 payload:
   - 'ai.google.dev'
@@ -32,6 +32,8 @@ payload:
   - '+.coderabbit.gallery.vsassets.io'
   - '+.copilot.cloud.microsoft'
   - '+.copilot.microsoft.com'
+  - '+.curosr.com'
+  - '+.curosr.sh'
   - '+.cursor-cdn.com'
   - '+.cursor.com'
   - '+.cursor.sh'
