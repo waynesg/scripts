@@ -1,5 +1,5 @@
 #!name = networktest
-#!date = 2025-08-12 02:05:37
+#!date = 2025-08-13 02:07:17
 #!
 payload:
   - DOMAIN,hk-global-bgp.hkg.speedtest.yecaoyun.com
