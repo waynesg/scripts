@@ -19,6 +19,7 @@ payload:
   - IP-CIDR,192.210.202.105/32,no-resolve
   - IP-CIDR,47.79.22.185/32,no-resolve
   - DOMAIN-SUFFIX,pcbeta.com
+  - DOMAIN-SUFFIX,appstorrent.ru
 # EDU
   - DOMAIN-KEYWORD,wufangedu
   - DOMAIN,api.gugudata.com
