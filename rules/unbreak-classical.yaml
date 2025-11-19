@@ -1,5 +1,5 @@
 #!name = unbreak-classical
-#!date = 2025-11-18 02:01:29
+#!date = 2025-11-19 02:01:01
 #!
 payload:
   - DOMAIN-SUFFIX,movie.douban.com
@@ -62,3 +62,4 @@ payload:
   - DOMAIN-SUFFIX,libvio.vip
   - DOMAIN-SUFFIX,libvio.pw
   - DOMAIN-SUFFIX,libvio.link
+  - DOMAIN-SUFFIX,czzymovie.com
