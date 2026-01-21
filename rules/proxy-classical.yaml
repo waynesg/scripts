@@ -1,5 +1,5 @@
 #!name = proxy-classical
-#!date = 2026-01-20 02:20:20
+#!date = 2026-01-21 02:23:16
 #!
 payload:
   - DOMAIN-SUFFIX,v1.ax
@@ -29,3 +29,5 @@ payload:
   - DOMAIN-SUFFIX,histar.tv
   - DOMAIN-SUFFIX,youtubekit-remote.losjet.com
   - DOMAIN-SUFFIX,vercel.app
+  - DOMAIN-SUFFIX,cloudblank.vip
+  - DOMAIN-SUFFIX,etcbbf.xyz
