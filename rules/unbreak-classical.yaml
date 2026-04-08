@@ -1,5 +1,5 @@
 #!name = unbreak-classical
-#!date = 2026-04-07 03:17:39
+#!date = 2026-04-08 03:19:43
 #!
 payload:
   - DOMAIN-SUFFIX,movie.douban.com
@@ -66,3 +66,4 @@ payload:
   - DOMAIN-SUFFIX,ibvio.la
   - DOMAIN-SUFFIX,ibvio.site
   - DOMAIN-SUFFIX,czzymovie.com
+  - DOMAIN-SUFFIX,cz01.org
