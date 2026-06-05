@@ -1,5 +1,5 @@
 #!name = proxy-classical
-#!date = 2026-06-04 04:50:10
+#!date = 2026-06-05 04:25:09
 #!
 payload:
   - DOMAIN-SUFFIX,v1.ax
