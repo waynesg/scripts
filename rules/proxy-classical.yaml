@@ -1,5 +1,5 @@
 #!name = proxy-classical
-#!date = 2026-07-21 03:26:25
+#!date = 2026-07-22 03:25:17
 #!
 payload:
   - DOMAIN-SUFFIX,v1.ax
@@ -21,3 +21,4 @@ payload:
   - DOMAIN-SUFFIX,youtubekit-remote.losjet.com
   - DOMAIN-SUFFIX,vercel.app
   - DOMAIN-SUFFIX,thanju.com
+  - DOMAIN-SUFFIX,ddys.app
