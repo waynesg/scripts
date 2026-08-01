@@ -1,5 +1,5 @@
 #!name = proxy-classical
-#!date = 2026-07-31 03:35:52
+#!date = 2026-08-01 03:35:20
 #!
 payload:
   - DOMAIN-SUFFIX,v1.ax
@@ -22,3 +22,4 @@ payload:
   - DOMAIN-SUFFIX,vercel.app
   - DOMAIN-SUFFIX,thanju.com
   - DOMAIN-SUFFIX,ddys.app
+  - DOMAIN-SUFFIX,xlys02.com
