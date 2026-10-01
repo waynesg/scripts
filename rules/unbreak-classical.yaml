@@ -1,5 +1,5 @@
 #!name = unbreak-classical
-#!date = 2026-09-30 05:11:26
+#!date = 2026-10-01 05:26:27
 #!
 payload:
   - DOMAIN-SUFFIX,movie.douban.com
