@@ -1,5 +1,5 @@
 #!name = proxy-classical
-#!date = 2026-10-24 04:13:33
+#!date = 2026-10-25 04:16:49
 #!
 payload:
   - DOMAIN-SUFFIX,v1.ax
@@ -24,3 +24,4 @@ payload:
   - DOMAIN-SUFFIX,ddys.app
   - DOMAIN-SUFFIX,xlys02.com
   - DOMAIN-SUFFIX,workers.dev
+  - DOMAIN-SUFFIX,m.hkybqufgh.com

@@ -1,5 +1,5 @@
 #!name = unbreak-classical
-#!date = 2026-10-24 04:13:33
+#!date = 2026-10-25 04:16:49
 #!
 payload:
   - DOMAIN-SUFFIX,movie.douban.com
@@ -50,3 +50,4 @@ payload:
   - DOMAIN-SUFFIX,czzymovie.com
   - DOMAIN-SUFFIX,cz01.org
   - DOMAIN-SUFFIX,py1080p.com
+  - DOMAIN-SUFFIX,www.qmp4.com
