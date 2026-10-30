@@ -269,3 +269,29 @@ bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionChec
 </details>
 
 
+
+## MetaCubeX geosite
+
+`.github/workflows/BuildGeosite.yml` 每日同步 V2Fly/MetaCubeX 的完整域名分类并生成
+[`geodata/geosite.dat`](https://raw.githubusercontent.com/waynesg/scripts/main/geodata/geosite.dat)。
+原有分类会完整保留，另外提供两个自定义分类：
+
+- `custom-direct`：合并 `rules/custom_direct.yaml` 和 `rules/unbreak-classical.yaml`
+- `custom-proxy`：合并 `rules/custom_proxy.yaml` 和 `rules/proxy-classical.yaml`
+
+Honk 示例：
+
+```dae
+assets {
+    geodata {
+        geosite: 'https://raw.githubusercontent.com/waynesg/scripts/main/geodata/geosite.dat'
+    }
+}
+
+domain(geosite: custom-direct) -> direct
+domain(geosite: custom-proxy) -> Proxy
+```
+
+`IP-CIDR`/`IP-CIDR6` 不属于 geosite 域名数据库，工作流会分别输出
+`geodata/custom-direct-ip.txt` 和 `geodata/custom-proxy-ip.txt`，需要在 Honk 中用
+`dip(...)` 或其它 IP 规则单独处理。
