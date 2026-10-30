@@ -8,14 +8,14 @@ ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 OUT_DIR="${1:-$ROOT_DIR/geodata}"
 WORK_DIR="${WORK_DIR:-$(mktemp -d)}"
 COMMUNITY_DIR="$WORK_DIR/community"
-CONVERTER_DIR="$WORK_DIR/converter"
+BUILDER_DIR="$WORK_DIR/meta-rules-dat"
 
 cleanup() { rm -rf "$WORK_DIR"; }
 trap cleanup EXIT
 
 mkdir -p "$OUT_DIR"
 git clone --depth=1 https://github.com/v2fly/domain-list-community.git "$COMMUNITY_DIR"
-git clone --depth=1 https://github.com/MetaCubeX/meta-rules-converter.git "$CONVERTER_DIR"
+git clone --depth=1 https://github.com/MetaCubeX/meta-rules-dat.git "$BUILDER_DIR"
 
 python3 - "$ROOT_DIR" "$COMMUNITY_DIR/data" "$OUT_DIR" <<'PY'
 import pathlib, re, sys
@@ -59,9 +59,9 @@ for group, names in groups.items():
     (out / (group + "-ip.txt")).write_text("\n".join(sorted(ips)) + ("\n" if ips else ""), encoding="utf-8")
 PY
 
-(cd "$CONVERTER_DIR" && go run ./ --datapath="$COMMUNITY_DIR/data")
-test -s "$CONVERTER_DIR/geosite.dat"
-cp "$CONVERTER_DIR/geosite.dat" "$OUT_DIR/geosite.dat"
+(cd "$BUILDER_DIR/custom" && go run ./ --datapath="$COMMUNITY_DIR/data")
+test -s "$BUILDER_DIR/geosite.dat"
+cp "$BUILDER_DIR/geosite.dat" "$OUT_DIR/geosite.dat"
 sha256sum "$OUT_DIR/geosite.dat" > "$OUT_DIR/geosite.dat.sha256"
 date -u +%Y-%m-%dT%H:%M:%SZ > "$OUT_DIR/updated-at.txt"
 echo "Built $OUT_DIR/geosite.dat"

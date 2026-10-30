@@ -28,7 +28,6 @@ jobs:
       - name: Verify generated files
         run: |
           test -s geodata/geosite.dat
-          grep -q "custom-direct" geodata/geosite.dat || true
           test -s geodata/geosite.dat.sha256
 
       - name: Commit generated geodata
