@@ -59,9 +59,17 @@ for group, names in groups.items():
     (out / (group + "-ip.txt")).write_text("\n".join(sorted(ips)) + ("\n" if ips else ""), encoding="utf-8")
 PY
 
+# The upstream builder writes all artifacts to ./publish and may return a
+# non-zero status after successfully generating them (for optional exports).
+set +e
 (cd "$BUILDER_DIR" && go run ./ --datapath="$COMMUNITY_DIR/data")
-test -s "$BUILDER_DIR/geosite.dat"
-cp "$BUILDER_DIR/geosite.dat" "$OUT_DIR/geosite.dat"
+build_status=$?
+set -e
+test -s "$BUILDER_DIR/publish/geosite.dat"
+cp "$BUILDER_DIR/publish/geosite.dat" "$OUT_DIR/geosite.dat"
+if [ "$build_status" -ne 0 ]; then
+  echo "Builder returned $build_status after producing geosite.dat; continuing"
+fi
 sha256sum "$OUT_DIR/geosite.dat" > "$OUT_DIR/geosite.dat.sha256"
 date -u +%Y-%m-%dT%H:%M:%SZ > "$OUT_DIR/updated-at.txt"
 echo "Built $OUT_DIR/geosite.dat"
