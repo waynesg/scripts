@@ -1,6 +1,14 @@
 name: Build MetaCubeX geosite
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/BuildGeosite.yml"
+      - "rules/**"
+      - "scripts/build-geosite.sh"
+      - "scripts/verify-geosite.py"
   schedule:
     - cron: "20 2 * * *"
   workflow_dispatch:
@@ -29,6 +37,12 @@ jobs:
         run: |
           test -s geodata/geosite.dat
           test -s geodata/geosite.dat.sha256
+          test -s geodata/geosite-tags.txt
+          test -s geodata/geosite-summary.json
+          test -s geodata/source-revisions.txt
+          python3 scripts/verify-geosite.py geodata/geosite.dat \
+            --labels geodata/geosite-tags.txt \
+            --summary geodata/geosite-summary.json
 
       - name: Commit generated geodata
         run: |

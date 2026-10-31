@@ -17,6 +17,11 @@ mkdir -p "$OUT_DIR"
 git clone --depth=1 https://github.com/v2fly/domain-list-community.git "$COMMUNITY_DIR"
 git clone --depth=1 https://github.com/Loyalsoldier/domain-list-custom.git "$BUILDER_DIR"
 
+{
+  printf 'v2fly/domain-list-community %s\n' "$(git -C "$COMMUNITY_DIR" rev-parse HEAD)"
+  printf 'Loyalsoldier/domain-list-custom %s\n' "$(git -C "$BUILDER_DIR" rev-parse HEAD)"
+} > "$OUT_DIR/source-revisions.txt"
+
 python3 - "$ROOT_DIR" "$COMMUNITY_DIR/data" "$OUT_DIR" <<'PY'
 import pathlib, re, sys
 
@@ -71,5 +76,8 @@ if [ "$build_status" -ne 0 ]; then
   echo "Builder returned $build_status after producing geosite.dat; continuing"
 fi
 sha256sum "$OUT_DIR/geosite.dat" > "$OUT_DIR/geosite.dat.sha256"
+python3 "$ROOT_DIR/scripts/verify-geosite.py" "$OUT_DIR/geosite.dat" \
+  --labels "$OUT_DIR/geosite-tags.txt" \
+  --summary "$OUT_DIR/geosite-summary.json"
 date -u +%Y-%m-%dT%H:%M:%SZ > "$OUT_DIR/updated-at.txt"
 echo "Built $OUT_DIR/geosite.dat"

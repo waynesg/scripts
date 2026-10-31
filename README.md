@@ -272,12 +272,22 @@ bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionChec
 
 ## MetaCubeX geosite
 
-`.github/workflows/BuildGeosite.yml` 每日同步 V2Fly/MetaCubeX 的完整域名分类并生成
+`.github/workflows/BuildGeosite.yml` 每日同步 V2Fly 的完整域名分类并生成
 [`geodata/geosite.dat`](https://raw.githubusercontent.com/waynesg/scripts/main/geodata/geosite.dat)。
 原有分类会完整保留，另外提供两个自定义分类：
 
 - `custom-direct`：合并 `rules/custom_direct.yaml` 和 `rules/unbreak-classical.yaml`
 - `custom-proxy`：合并 `rules/custom_proxy.yaml` 和 `rules/proxy-classical.yaml`
+
+工作流会解析生成后的二进制文件，要求至少包含 1000 个分类，并检查 `cn`、
+`geolocation-!cn`、`private`、`category-ads-all`、`apple`、`google` 及两个自定义
+分类。完整分类清单、统计和上游版本分别保存在：
+
+- `geodata/geosite-tags.txt`
+- `geodata/geosite-summary.json`
+- `geodata/source-revisions.txt`
+
+因此构建器若只生成自定义分类，工作流会直接失败，不会覆盖完整的 `geosite.dat`。
 
 Honk 示例：
 

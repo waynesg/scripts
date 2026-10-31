@@ -1,0 +1,14 @@
+{
+  "categories": 1555,
+  "domain_entries": 109035,
+  "required_categories": [
+    "apple",
+    "category-ads-all",
+    "cn",
+    "custom-direct",
+    "custom-proxy",
+    "geolocation-!cn",
+    "google",
+    "private"
+  ]
+}
