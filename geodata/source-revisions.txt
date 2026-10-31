@@ -1,2 +1,2 @@
-v2fly/domain-list-community 1daade8c4bb957d21d1f5c09c2b050d699e8e96c
-Loyalsoldier/domain-list-custom efacb51b8950ae673ebb6dcb9e7ecdd1decb1b6d
+Loyalsoldier/v2ray-rules-dat release 202610302203
+upstream-sha256 5424b45285742debc038b0543ebc6d03c2be400519237879b3f146032e9bedf8

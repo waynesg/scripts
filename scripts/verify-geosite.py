@@ -2,6 +2,7 @@
 """Verify a V2Ray geosite.dat and export its category labels."""
 
 import argparse
+import hashlib
 import json
 from pathlib import Path
 
@@ -71,6 +72,7 @@ def main():
     parser.add_argument("input", type=Path)
     parser.add_argument("--labels", type=Path)
     parser.add_argument("--summary", type=Path)
+    parser.add_argument("--upstream", type=Path)
     parser.add_argument("--min-categories", type=int, default=1000)
     args = parser.parse_args()
 
@@ -85,6 +87,10 @@ def main():
         "GEOLOCATION-!CN",
         "GOOGLE",
         "PRIVATE",
+        "CHINA-LIST",
+        "GFW",
+        "APPLE-CN",
+        "GOOGLE-CN",
     }
     missing = sorted(required - set(unique_tags))
 
@@ -105,6 +111,22 @@ def main():
         "domain_entries": domain_count,
         "required_categories": sorted(tag.lower() for tag in required),
     }
+    if args.upstream:
+        upstream = args.upstream.read_bytes()
+        combined = args.input.read_bytes()
+        if not combined.startswith(upstream):
+            raise SystemExit("upstream database was modified or truncated")
+        upstream_tags, upstream_domains = inspect(args.upstream)
+        if len(tags) != len(upstream_tags) + 2 or domain_count <= upstream_domains:
+            raise SystemExit("expected complete upstream plus two custom categories")
+        summary.update({
+            "source": "Loyalsoldier/v2ray-rules-dat",
+            "upstream_sha256": hashlib.sha256(upstream).hexdigest(),
+            "upstream_bytes": len(upstream),
+            "upstream_categories": len(upstream_tags),
+            "upstream_domain_entries": upstream_domains,
+            "upstream_preserved_byte_for_byte": True,
+        })
     if args.summary:
         args.summary.write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(summary, sort_keys=True))

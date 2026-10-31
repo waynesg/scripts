@@ -270,24 +270,32 @@ bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionChec
 
 
 
-## MetaCubeX geosite
+## Loyalsoldier 完整 geosite + 自定义分类
 
-`.github/workflows/BuildGeosite.yml` 每日同步 V2Fly 的完整域名分类并生成
+`.github/workflows/BuildGeosite.yml` 每日下载
+[Loyalsoldier/v2ray-rules-dat 官方完整版](https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat)，并生成
 [`geodata/geosite.dat`](https://raw.githubusercontent.com/waynesg/scripts/main/geodata/geosite.dat)。
-原有分类会完整保留，另外提供两个自定义分类：
+它与 Honk 默认 GeoSite 更新源一致。上游原始二进制内容（包含所有分类、域名和属性）
+逐字节完整保留，另外追加两个自定义分类：
 
 - `custom-direct`：合并 `rules/custom_direct.yaml` 和 `rules/unbreak-classical.yaml`
 - `custom-proxy`：合并 `rules/custom_proxy.yaml` 和 `rules/proxy-classical.yaml`
 
-工作流会解析生成后的二进制文件，要求至少包含 1000 个分类，并检查 `cn`、
-`geolocation-!cn`、`private`、`category-ads-all`、`apple`、`google` 及两个自定义
-分类。完整分类清单、统计和上游版本分别保存在：
+构建不再使用 V2Fly 源文件重新生成基础库，也不再依赖 Go 构建器。
+脚本固定上游 release 版本后下载数据库及官方 SHA-256 校验文件，合并前验证校验和，
+合并后逐字节验证上游内容未被修改。最终库应为上游全部分类加上两个自定义分类，
+大小接近并略大于上游完整版（目前约 10.8 MiB）。
+
+工作流还会检查 `cn`、`geolocation-!cn`、`private`、`category-ads-all`、`apple`、
+`google`、`china-list`、`gfw`、`apple-cn`、`google-cn` 及两个自定义分类。
+完整分类清单、统计和上游 release/校验和分别保存在：
 
 - `geodata/geosite-tags.txt`
 - `geodata/geosite-summary.json`
 - `geodata/source-revisions.txt`
 
-因此构建器若只生成自定义分类，工作流会直接失败，不会覆盖完整的 `geosite.dat`。
+如果下载不完整、校验和不匹配或合并丢失上游内容，构建会直接失败，不会发布产物。
+修改 `rules/` 或构建脚本推送到 `main` 时也会触发构建。
 
 Honk 示例：
 

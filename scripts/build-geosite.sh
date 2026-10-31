@@ -1,83 +1,44 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Build a complete MetaCubeX/V2Fly geosite.dat and append the local rule sets.
+# Preserve the official Loyalsoldier database and append local categories.
 # Usage: build-geosite.sh [output-directory]
-
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-OUT_DIR="${1:-$ROOT_DIR/geodata}"
-WORK_DIR="${WORK_DIR:-$(mktemp -d)}"
-COMMUNITY_DIR="$WORK_DIR/community"
-BUILDER_DIR="$WORK_DIR/custom"
+mkdir -p "${1:-$ROOT_DIR/geodata}"
+OUT_DIR="$(cd "${1:-$ROOT_DIR/geodata}" && pwd)"
+WORK_DIR="$(mktemp -d "${TMPDIR:-/tmp}/geosite.XXXXXXXX")"
 
-cleanup() { rm -rf "$WORK_DIR"; }
-trap cleanup EXIT
-
-mkdir -p "$OUT_DIR"
-git clone --depth=1 https://github.com/v2fly/domain-list-community.git "$COMMUNITY_DIR"
-git clone --depth=1 https://github.com/Loyalsoldier/domain-list-custom.git "$BUILDER_DIR"
-
-{
-  printf 'v2fly/domain-list-community %s\n' "$(git -C "$COMMUNITY_DIR" rev-parse HEAD)"
-  printf 'Loyalsoldier/domain-list-custom %s\n' "$(git -C "$BUILDER_DIR" rev-parse HEAD)"
-} > "$OUT_DIR/source-revisions.txt"
-
-python3 - "$ROOT_DIR" "$COMMUNITY_DIR/data" "$OUT_DIR" <<'PY'
-import pathlib, re, sys
-
-root = pathlib.Path(sys.argv[1])
-data = pathlib.Path(sys.argv[2])
-out = pathlib.Path(sys.argv[3])
-
-groups = {
-    "custom-direct": ["custom_direct.yaml", "unbreak-classical.yaml"],
-    "custom-proxy": ["custom_proxy.yaml", "proxy-classical.yaml"],
-}
-rule_re = re.compile(r"^\s*-\s*(DOMAIN-SUFFIX|DOMAIN-KEYWORD|DOMAIN|IP-CIDR6?|DOMAIN-REGEX),\s*([^,\s]+)")
-domain_re = re.compile(r"^[A-Za-z0-9_*.-]+$")
-
-for group, names in groups.items():
-    entries, ips = set(), set()
-    for name in names:
-        path = root / "rules" / name
-        if not path.exists():
-            raise SystemExit(f"missing rule file: {path}")
-        for line in path.read_text(encoding="utf-8", errors="ignore").splitlines():
-            m = rule_re.match(line)
-            if not m:
-                continue
-            kind, value = m.groups()
-            value = value.strip().lower()
-            if kind == "DOMAIN-SUFFIX" and domain_re.match(value):
-                entries.add("domain:" + value.lstrip("."))
-            elif kind == "DOMAIN" and domain_re.match(value):
-                entries.add("full:" + value)
-            elif kind == "DOMAIN-KEYWORD" and domain_re.match(value):
-                entries.add("keyword:" + value)
-            elif kind == "DOMAIN-REGEX":
-                entries.add("regexp:" + value)
-            elif kind.startswith("IP-CIDR"):
-                ips.add(value)
-    if not entries:
-        raise SystemExit(f"no domain entries found for {group}")
-    (data / group).write_text("\n".join(sorted(entries)) + "\n", encoding="utf-8")
-    (out / (group + "-ip.txt")).write_text("\n".join(sorted(ips)) + ("\n" if ips else ""), encoding="utf-8")
+curl -fsSL --retry 3 \
+  https://api.github.com/repos/Loyalsoldier/v2ray-rules-dat/releases/latest \
+  -o "$WORK_DIR/release.json"
+RELEASE_TAG="$(python3 - "$WORK_DIR/release.json" <<'PY'
+import json, re, sys
+with open(sys.argv[1], encoding="utf-8") as source:
+    tag = json.load(source)["tag_name"]
+if not re.fullmatch(r"[A-Za-z0-9._-]+", tag):
+    raise SystemExit("invalid upstream release tag")
+print(tag)
 PY
+)"
+BASE_URL="https://github.com/Loyalsoldier/v2ray-rules-dat/releases/download/$RELEASE_TAG"
+curl -fsSL --retry 3 "$BASE_URL/geosite.dat" -o "$WORK_DIR/geosite.dat"
+curl -fsSL --retry 3 "$BASE_URL/geosite.dat.sha256sum" -o "$WORK_DIR/geosite.dat.sha256sum"
+(cd "$WORK_DIR" && shasum -a 256 -c geosite.dat.sha256sum)
 
-# The upstream builder writes all artifacts to ./publish and may return a
-# non-zero status after successfully generating them (for optional exports).
-set +e
-(cd "$BUILDER_DIR" && go run ./ --datapath="$COMMUNITY_DIR/data")
-build_status=$?
-set -e
-test -s "$BUILDER_DIR/publish/geosite.dat"
-cp "$BUILDER_DIR/publish/geosite.dat" "$OUT_DIR/geosite.dat"
-if [ "$build_status" -ne 0 ]; then
-  echo "Builder returned $build_status after producing geosite.dat; continuing"
-fi
-sha256sum "$OUT_DIR/geosite.dat" > "$OUT_DIR/geosite.dat.sha256"
-python3 "$ROOT_DIR/scripts/verify-geosite.py" "$OUT_DIR/geosite.dat" \
-  --labels "$OUT_DIR/geosite-tags.txt" \
-  --summary "$OUT_DIR/geosite-summary.json"
-date -u +%Y-%m-%dT%H:%M:%SZ > "$OUT_DIR/updated-at.txt"
-echo "Built $OUT_DIR/geosite.dat"
+python3 "$ROOT_DIR/scripts/merge-geosite.py" \
+  --upstream "$WORK_DIR/geosite.dat" --rules-dir "$ROOT_DIR/rules" \
+  --output-dir "$WORK_DIR/publish"
+python3 "$ROOT_DIR/scripts/verify-geosite.py" "$WORK_DIR/publish/geosite.dat" \
+  --upstream "$WORK_DIR/geosite.dat" \
+  --labels "$WORK_DIR/publish/geosite-tags.txt" \
+  --summary "$WORK_DIR/publish/geosite-summary.json"
+printf 'Loyalsoldier/v2ray-rules-dat release %s\n' "$RELEASE_TAG" \
+  > "$WORK_DIR/publish/source-revisions.txt"
+printf 'upstream-sha256 %s\n' "$(shasum -a 256 "$WORK_DIR/geosite.dat" | cut -d ' ' -f 1)" \
+  >> "$WORK_DIR/publish/source-revisions.txt"
+(cd "$WORK_DIR/publish" && shasum -a 256 geosite.dat > geosite.dat.sha256)
+date -u +%Y-%m-%dT%H:%M:%SZ > "$WORK_DIR/publish/updated-at.txt"
+
+# Publish only after the checksum and upstream-preservation checks pass.
+cp "$WORK_DIR/publish/"* "$OUT_DIR/"
+echo "Built $OUT_DIR/geosite.dat from Loyalsoldier release $RELEASE_TAG"

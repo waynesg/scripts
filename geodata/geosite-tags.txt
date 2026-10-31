@@ -85,6 +85,7 @@ apkcombo
 apkmirror
 apkpure
 apple
+apple-cn
 apple-dev
 apple-intelligence
 apple-music
@@ -346,6 +347,7 @@ chatwhores
 cheetahmobile
 chegg
 chesscom
+china-list
 chinabroadnet
 chinamobile
 chinanews
@@ -600,6 +602,7 @@ geolocation-!cn
 geolocation-cn
 gettyimages
 getui
+gfw
 gfycat
 ggsel
 giffgaff
@@ -624,6 +627,7 @@ gog
 golang
 goodreads
 google
+google-cn
 google-deepmind
 google-gemini
 google-play
@@ -1464,6 +1468,9 @@ wikidot
 wikihow
 wikimedia
 wildberries
+win-extra
+win-spy
+win-update
 windsurf
 windy
 wink

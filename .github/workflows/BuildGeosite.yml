@@ -1,4 +1,4 @@
-name: Build MetaCubeX geosite
+name: Build Loyalsoldier geosite
 
 on:
   push:
@@ -8,6 +8,7 @@ on:
       - ".github/workflows/BuildGeosite.yml"
       - "rules/**"
       - "scripts/build-geosite.sh"
+      - "scripts/merge-geosite.py"
       - "scripts/verify-geosite.py"
   schedule:
     - cron: "20 2 * * *"
@@ -16,17 +17,16 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: build-geosite
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout scripts
         uses: actions/checkout@v4
-
-      - name: Setup Go
-        uses: actions/setup-go@v5
-        with:
-          go-version: "1.22.x"
 
       - name: Build complete geosite.dat
         run: |
@@ -40,9 +40,8 @@ jobs:
           test -s geodata/geosite-tags.txt
           test -s geodata/geosite-summary.json
           test -s geodata/source-revisions.txt
-          python3 scripts/verify-geosite.py geodata/geosite.dat \
-            --labels geodata/geosite-tags.txt \
-            --summary geodata/geosite-summary.json
+          (cd geodata && shasum -a 256 -c geosite.dat.sha256)
+          python3 scripts/verify-geosite.py geodata/geosite.dat
 
       - name: Commit generated geodata
         run: |
@@ -52,6 +51,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No geodata changes"
           else
-            git commit -m "更新 MetaCubeX geosite 数据"
+            git commit -m "更新 Loyalsoldier geosite 与自定义分类"
             git push
           fi
