@@ -1,6 +1,6 @@
 {
   "categories": 1564,
-  "domain_entries": 531131,
+  "domain_entries": 531865,
   "required_categories": [
     "apple",
     "apple-cn",
@@ -16,9 +16,9 @@
     "private"
   ],
   "source": "Loyalsoldier/v2ray-rules-dat",
-  "upstream_sha256": "054409f16eeafc0ad558fea815ab812a0ed8c2d80d92a2043c8366ebb116d1b5",
-  "upstream_bytes": 11423362,
+  "upstream_sha256": "97ef2a060a3ab60840f75a135c26872c4e1fbaa2847d0f4de57a927460f71e88",
+  "upstream_bytes": 11441850,
   "upstream_categories": 1562,
-  "upstream_domain_entries": 530614,
+  "upstream_domain_entries": 531348,
   "upstream_preserved_byte_for_byte": true
 }
