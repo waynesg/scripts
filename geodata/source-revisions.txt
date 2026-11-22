@@ -1,2 +1,2 @@
-Loyalsoldier/v2ray-rules-dat release 202611192204
-upstream-sha256 e0fa5edd4b078d23c8b04c4e36bd1edda0f2ad32be4ea3312457ee8515f6fce4
+Loyalsoldier/v2ray-rules-dat release 202611212204
+upstream-sha256 95f47f3b6a848db9979e8bd8daff9b213b7b159b803519c86038ac30aab2b5c2
