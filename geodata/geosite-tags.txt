@@ -1372,6 +1372,7 @@ torproject
 trackernetwork
 trae
 translatewiki
+transtelecom
 trello
 trustasia
 trustwallet
